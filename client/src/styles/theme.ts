@@ -1,25 +1,43 @@
 export const theme = {
-  text: "#FBFAFA",
-  textDark: "#689CAE",
-
+  text: "#6B6E7F;",
+  textSecondary: "#baac9d",
+  textDark: "#6e6e5f",
   title: "#FBFAFA",
-  titleDark: "#689CAE",
-
-  toggleBorder: "#6B8096",
+  titleDark: "#B2B29B",
 
   background: "#FBFAFA",
-  backgroundDark: "#689CAE",
 
-  backgroundDarkerMobile: "#689CAE",
-
-  cardBackgroundColor: "#689CAE",
-
-  scrollBar: "#065333",
-  scrollBarHover: "#689CAE"
+  scrollBar: {
+    main: "#c7c7c7",
+    hover: "#adadad"
+  },
+  colors: {
+    white: "#FBFAFA",
+    black: "#1C1D1F",
+    textWhite: "#E9F1FA",
+    grey: "#9a9a9a",
+    grey02: "rgba(154, 154, 154, 0.2)",
+    grey06: "rgba(154, 154, 154, 0.6)",
+    lightBlue: "#2E5D9F",
+    lightBlue02: "rgba(46, 93, 159,0.2)",
+    superLightBlue: "rgba(29, 78, 216, 0.10)",
+    darkBlue: "#21416f",
+    lightGrey: "#f0f0f0",
+    error: "#d32f2f",
+    red: "#d91e1e",
+    green02: "rgba(114, 197, 161,0.2)",
+    softGrey: "#eaeaea"
+  }
 };
 
-export const maxWidth = "@media(max-width: 769px)";
-export const minWidth = "@media(min-width: 769px)";
+//https://screensiz.es/
+export const mobile = "@media(max-width: 480px)";
+export const tablet = "@media(min-width: 481px)";
+export const laptop = "@media(min-width: 769px)";
+export const maxLaptop = "@media(max-width: 769px)";
+export const maxDesktop = "@media(max-width: 1025px)";
+export const desktop = "@media(min-width: 1025px)";
+export const desktopLarge = "@media(min-width: 1400px)";
 
 /* 
 #FBFAFA

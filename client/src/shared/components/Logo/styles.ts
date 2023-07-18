@@ -1,25 +1,24 @@
-import styled from 'styled-components'
+import { desktop } from "~/styles/theme";
+import styled from "styled-components";
 
-interface ContainerProps {
-    onClick: React.MouseEventHandler<HTMLDivElement>
-}
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  width: 230px;
+  cursor: pointer;
 
-export const Container = styled.div<ContainerProps>`
-    display: flex;
-    align-items: center;
-    width: 230px;
-    gap: 15px;
-    padding: 15px;
-    cursor: pointer;
-`
+  img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  ${desktop} {
+    height: 90px;
+  }
+`;
 
 export const LogoText = styled.h2`
-    font-size: 20px;
-    color: ${({ theme }) => theme.text}
-`
-
-export const LogoIndent = styled.span`
-    font-size: 20px;
-    color: ${({ theme }) => theme.title}
-    
-`
+  font-size: 20px;
+  color: ${({ theme }) => theme.colors.darkBlue};
+`;

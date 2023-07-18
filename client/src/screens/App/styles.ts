@@ -1,14 +1,16 @@
 import styled from "styled-components";
-import { minWidth, maxWidth } from 'styles/theme';
+import { tablet, laptop } from "styles/theme";
 
 export const AppContainer = styled.div`
-    background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.colors.white};
+  min-height: 100vh;
+`;
 
-    ${minWidth}{
-        min-height:100vh;
-    }
-    ${maxWidth}{
-        min-height:100vh;
-    }
-`
-
+export const Container = styled.div`
+  ${tablet} {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+`;

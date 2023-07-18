@@ -1,10 +1,24 @@
-import axios from "axios";
-import { ChangeEvent, useEffect, useState } from "react";
+import { axios } from "~/config/interceptors";
+
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import StyledButton from "~/shared/components/Button";
 
-import { loginStore } from "../../hooks/stores/login";
+import Section from "~/shared/components/Section";
+import StyledInput from "~/shared/components/StyledInput";
 
-import { Container, TitleText } from "./styles";
+import { BASE_URL } from "~/config/variables";
+
+import { useUserStore } from "~/hooks/stores/user";
+import useToastStore from "~/hooks/stores/toast";
+
+import {
+  Container,
+  FormContainer,
+  ButtonContainer,
+  InputContainer,
+  ToolsContainer
+} from "./styles";
 
 interface UserCredentials {
   username: string;
@@ -12,12 +26,14 @@ interface UserCredentials {
 }
 
 const Login = () => {
-  const setIsLogedIn = loginStore((state) => state.setIsLogedIn);
-  const isLogedIn = loginStore((state) => state.isLogedIn);
+  const user = useUserStore((state) => state.user);
+  const setAccessToken = useUserStore((state) => state.setAccessToken);
+  const setUser = useUserStore((state) => state.setUser);
   const navigate = useNavigate();
+  const setToastOptions = useToastStore((state) => state.setToastOptions);
 
   useEffect(() => {
-    isLogedIn && navigate("/");
+    user && navigate("/");
   }, []);
 
   const [loginInfo, setLoginInfo] = useState<UserCredentials>({
@@ -25,52 +41,86 @@ const Login = () => {
     password: ""
   });
 
-  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setLoginInfo({
-      ...loginInfo,
-      [event.target.name]: event.target.value
-    });
-  };
-
-  const handleLogin = async () => {
-    try {
-      const response = await axios.post("http://192.168.1.80:4000/auth/login", loginInfo);
-      if (response.data.message) {
-        alert(response.data.message);
-      } else {
-        localStorage.setItem("token", response.data.token);
-        setIsLogedIn();
-        navigate("/");
-      }
-    } catch (err) {
-      console.error(err);
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { id, value } = event.target;
+    if (id !== undefined && value !== undefined) {
+      setLoginInfo((prevValues) => ({
+        ...prevValues,
+        [id]: value
+      }));
     }
   };
 
+  const handleLogin = async () => {
+    const newUser = {
+      _id: "123",
+      email: "email@email.com",
+      name: "name",
+      lastName: "lastName",
+      accessToken: "string",
+      admin: false
+    };
+    setUser(newUser);
+    navigate("/");
+    //localStorage.removeItem("token");
+    //
+    //try {
+    //  const response = await axios.post(`${BASE_URL}auth/login`, loginInfo);
+    //  if (response.status === 200) {
+    //    const { user, accessToken } = response.data;
+    //
+    //    setToastOptions({
+    //      isVisible: true,
+    //      message: response.data.message,
+    //      severity: response.status
+    //    });
+    //
+    //    setAccessToken(accessToken);
+    //    setUser(user);
+    //    navigate("/");
+    //  }
+    //} catch (err) {
+    //  console.error(err);
+    //  setToastOptions({
+    //    isVisible: true,
+    //    message: "Erro ao encontrar utilizador, tente novamente.",
+    //    severity: "error"
+    //  });
+    //}
+  };
+
   return (
-    <Container>
-      <TitleText>Login Page</TitleText>
-
-      <input
-        placeholder="Username"
-        type="text"
-        value={loginInfo.username}
-        name="username"
-        onChange={(e) => handleInputChange(e)}
-      />
-      <input
-        placeholder="Password"
-        type="password"
-        value={loginInfo.password}
-        name="password"
-        onChange={(e) => handleInputChange(e)}
-      />
-
-      <div>
-        <button onClick={() => handleLogin()}>Login</button>
-        <button onClick={() => navigate("/register")}>Register new user</button>
-      </div>
-    </Container>
+    <Section>
+      <Container>
+        <h2>Iniciar Sessão </h2>
+        <FormContainer>
+          <InputContainer>
+            <StyledInput
+              id={"username"}
+              type={"text"}
+              label={"Email"}
+              value={loginInfo.username}
+              onChange={handleInputChange}
+            />
+            <StyledInput
+              id={"password"}
+              type={"password"}
+              label={"Password"}
+              value={loginInfo.password}
+              onChange={handleInputChange}
+            />
+          </InputContainer>
+          <ButtonContainer>
+            <StyledButton text="Login" onClick={() => handleLogin()} />
+            {/* <StyledButton variant="text" text="Registar" onClick={() => navigate("/register")} /> */}
+          </ButtonContainer>
+          <ToolsContainer>
+            {/* <span>Esqueci-me da senha</span> */}
+            <span onClick={() => navigate("/registar")}>Fazer novo registo</span>
+          </ToolsContainer>
+        </FormContainer>
+      </Container>
+    </Section>
   );
 };
 

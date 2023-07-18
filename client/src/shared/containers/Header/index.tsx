@@ -1,59 +1,22 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 import Logo from "shared/components/Logo";
-import Menu from "shared/containers/Menu";
+import Menu from "./components/Menu";
 
-import ButtonIcon from "~/shared/components/ButtonIcon";
+import Toast from "~/shared/components/Toast";
 
-import PersonIcon from "@mui/icons-material/Person";
+import useToastStore from "~/hooks/stores/toast";
 
-import { Wrapper, Container, MenuAndUserContainer } from "./styles";
+import { Wrapper } from "./styles";
 
 const Header = () => {
-  const [isVisible, setIsVisible] = React.useState(true);
-  const [lastScrollTop, setLastScrollTop] = React.useState(0);
-  const [isDesktop, setIsDesktop] = React.useState(false);
-
-  React.useEffect(() => {
-    if (window.innerWidth > 768) {
-      setIsDesktop(true);
-    } else {
-      setIsDesktop(false);
-    }
-  }, []);
-
-  React.useEffect(() => {
-    if (!isDesktop) {
-      const handleScroll = () => {
-        const currentScrollTop = window.pageYOffset;
-        if (currentScrollTop > lastScrollTop) {
-          setIsVisible(false);
-        } else {
-          setIsVisible(true);
-        }
-        setLastScrollTop(currentScrollTop);
-      };
-
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }
-  }, [isDesktop, lastScrollTop]);
-
+  const toast = useToastStore((state) => state.toast);
   return (
-    <Wrapper isVisible={isVisible}>
-      {isVisible && (
-        <Container isVisible={isVisible}>
-          <Logo />
-          <MenuAndUserContainer>
-            <Menu />
-            <ButtonIcon margin="0 0 0 20px">
-              <PersonIcon />
-            </ButtonIcon>
-          </MenuAndUserContainer>
-        </Container>
-      )}
+    <Wrapper>
+      <Logo />
+      <>
+        <Toast isVisible={toast.isVisible} message={toast.message} severity={toast.severity} />
+      </>
     </Wrapper>
   );
 };

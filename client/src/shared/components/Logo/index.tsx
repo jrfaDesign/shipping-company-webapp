@@ -1,22 +1,16 @@
+import { useNavigate } from "react-router-dom";
 
-import { useNavigate } from 'react-router-dom';
+import { Container, LogoText } from "./styles";
 
-import { LogoIcon } from 'assets/images/svgs';
-
-import {
-    Container,
-    LogoText,
-    LogoIndent,
-} from './styles'
+import LogoImage from "~/assets/images/imgs/logo.png";
 
 export default function Logo() {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate()
-
-    return (
-        <Container onClick={() => navigate('/')} >
-            <LogoIcon fill="#00DC82" />
-            <LogoText> Starter Zustand <LogoIndent>+</LogoIndent> Rn </LogoText>
-        </Container>
-    )
+  return (
+    <Container onClick={() => navigate("/")}>
+      {/* <img src={LogoImage} /> */}
+      <LogoText>SwiftShip</LogoText>
+    </Container>
+  );
 }

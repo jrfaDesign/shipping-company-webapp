@@ -1,12 +1,20 @@
-export interface ResponseApiMonster {
-  results: Monster[];
-  count: number;
-  next: string | null;
-  previous: string | null;
-};
-
-export interface Monster {
+export interface User {
+  _id: string;
+  accessToken: string;
+  admin?: boolean;
   name: string;
-  size: string;
-  alignment: string;
-};
+  lastName: string;
+  email: string;
+}
+
+export interface Orders {
+  _id: string;
+  requestedClient: string;
+  deliveryStatus: "Completed" | "Cancelled" | "On the road";
+  requestedDate: Date;
+  deliveryDate: Date;
+  deliveryAddress: string;
+  state: string;
+  zip: string;
+  weight: number;
+}

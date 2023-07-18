@@ -1,79 +1,231 @@
-import { ChangeEvent, useEffect, useState } from "react";
+import { axios } from "~/config/interceptors";
+
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 
-import { loginStore } from "../../hooks/stores/login";
+import StyledButton from "~/shared/components/Button";
+import Section from "~/shared/components/Section";
+import StyledInput from "~/shared/components/StyledInput";
+import Toast from "~/shared/components/Toast";
+import { DEFAULT_TOAST_VALUE } from "~/shared/components/Toast/utils";
 
-import { Container, TitleText } from "./styles";
+import { BASE_URL } from "~/config/variables";
 
-interface UserCredentials {
+import { useUserStore } from "~/hooks/stores/user";
+import { validateEmail } from "~/hooks/globalHooks";
+import useToastStore from "~/hooks/stores/toast";
+
+import { Container, FormContainer, ButtonContainer, InputContainer } from "./styles";
+
+interface RegisterUserForm {
+  name: string;
+  lastName: string;
+  email: string;
   username: string;
   password: string;
+  confirmPassword: string;
+}
+
+interface FormErrorsProps {
+  name?: string;
+  lastName?: string;
+  email?: string;
+  username?: string;
+  password?: string;
+  confirmPassword?: string;
+}
+
+interface ToastOptionsProps {
+  isVisible: boolean;
+  message: string;
+  severity: "info" | "error" | "warning" | "success";
 }
 
 const Register = () => {
-  const setIsLogedIn = loginStore((state) => state.setIsLogedIn);
-  const isLogedIn = loginStore((state) => state.isLogedIn);
+  const user = useUserStore((state) => state.user);
   const navigate = useNavigate();
 
   useEffect(() => {
-    isLogedIn && navigate("/");
+    user && navigate("/");
   }, []);
 
-  const [registerInfo, setRegisterInfo] = useState<UserCredentials>({
+  const [registerForm, setRegisterForm] = useState<RegisterUserForm>({
+    name: "",
+    lastName: "",
+    email: "",
     username: "",
-    password: ""
+    password: "",
+    confirmPassword: ""
   });
 
-  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setRegisterInfo({
-      ...registerInfo,
-      [event.target.name]: event.target.value
-    });
+  const [formErrors, setFormErrors] = useState<FormErrorsProps>({});
+
+  const setToastOptions = useToastStore((state) => state.setToastOptions);
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { id, value } = event.target;
+    if (id !== undefined && value !== undefined) {
+      setRegisterForm((prevValues) => ({
+        ...prevValues,
+        [id]: value
+      }));
+    }
   };
 
   const handleRegister = async () => {
-    if (registerInfo.username == null || registerInfo.password == null) {
-      alert("Empty");
-      return;
+    const errors: FormErrorsProps = {};
+
+    if (!registerForm.name) {
+      errors.name = "É necessário preencher o nome.";
     }
-    try {
-      const response = await axios.post("http://localhost:4000/auth/register", registerInfo);
-      // ? add a toast library?
-      console.log(response);
-      alert(response.data.message);
-    } catch (err) {
-      console.error(err);
-      alert("deu bode");
+    if (!registerForm.lastName) {
+      errors.lastName = "É necessário preencher o nome.";
     }
-    // setIsLogedIn();
-    // navigate("/");
+
+    if (!registerForm.email) {
+      errors.email = "É necessário preencher o email.";
+    } else if (!validateEmail(registerForm.email)) {
+      errors.email = "O email é inválido.";
+    }
+
+    if (!registerForm.username) {
+      errors.username = "É necessário preencher o nome de utilizador.";
+    } else if (
+      registerForm.username === registerForm.password ||
+      registerForm.username.includes(registerForm.name) ||
+      registerForm.username.includes(registerForm.lastName)
+    ) {
+      errors.username = "O nome de utilizador não pode ser igual à password ou conter o seu nome.";
+    }
+
+    if (!registerForm.password) {
+      errors.password = "O assunto é obrigatório.";
+    } else if (registerForm.confirmPassword !== registerForm.password) {
+      errors.password = "As palavras devem ser iguais.";
+    }
+    if (!registerForm.confirmPassword) {
+      errors.confirmPassword = "É necessário preencher a mensagem.";
+    } else if (registerForm.confirmPassword !== registerForm.password) {
+      errors.confirmPassword = "As palavras devem ser iguais.";
+    }
+    setFormErrors(errors);
+    if (Object.keys(errors).length === 0) {
+      try {
+        const registerData = {
+          name: registerForm.name,
+          lastName: registerForm.lastName,
+          username: registerForm.username,
+          email: registerForm.email,
+          password: registerForm.password
+        };
+        const response = await axios.post(`${BASE_URL}auth/register`, registerData);
+
+        if (response.status === 200) {
+          if (response.data.message === "Registo realizado com sucesso!") {
+            setToastOptions({
+              isVisible: true,
+              message: response.data.message,
+              severity: response.status
+            });
+            setRegisterForm({
+              name: "",
+              lastName: "",
+              email: "",
+              username: "",
+              password: "",
+              confirmPassword: ""
+            });
+          } else {
+            setFormErrors({ ...errors, email: "Utilizador já existe" });
+            setToastOptions({
+              isVisible: true,
+              message: response.data.message,
+              severity: response.status
+            });
+          }
+          navigate("/login");
+        }
+      } catch (err) {
+        console.error(err);
+        setToastOptions({
+          isVisible: true,
+          message: "There was an error, try again later",
+          severity: "error"
+        });
+      }
+    }
   };
 
   return (
-    <Container>
-      <TitleText>Register Page</TitleText>
+    <Section>
+      <Container>
+        <h2>Registar</h2>
 
-      <input
-        placeholder="Username"
-        type="text"
-        value={registerInfo.username}
-        name="username"
-        onChange={(e) => handleInputChange(e)}
-      />
-      <input
-        placeholder="Password"
-        type="password"
-        value={registerInfo.password}
-        name="password"
-        onChange={(e) => handleInputChange(e)}
-      />
+        <FormContainer>
+          <InputContainer>
+            <StyledInput
+              id={"name"}
+              type={"text"}
+              label={"Nome"}
+              value={registerForm.name}
+              error={formErrors.name ? true : false}
+              errorText={formErrors.name}
+              onChange={handleInputChange}
+            />
+            <StyledInput
+              id={"lastName"}
+              type={"text"}
+              label={"Último nome"}
+              value={registerForm.lastName}
+              error={formErrors.lastName ? true : false}
+              errorText={formErrors.lastName}
+              onChange={handleInputChange}
+            />
+            <StyledInput
+              id={"email"}
+              type={"email"}
+              label={"Email"}
+              value={registerForm.email}
+              error={formErrors.email ? true : false}
+              errorText={formErrors.email}
+              onChange={handleInputChange}
+            />
+            <StyledInput
+              id={"username"}
+              type={"text"}
+              label={"Nome de utilizador"}
+              value={registerForm.username}
+              error={formErrors.username ? true : false}
+              errorText={formErrors.username}
+              onChange={handleInputChange}
+            />
+            <StyledInput
+              id={"password"}
+              type={"password"}
+              label={"Password"}
+              value={registerForm.password}
+              error={formErrors.password ? true : false}
+              errorText={formErrors.password}
+              onChange={handleInputChange}
+            />
+            <StyledInput
+              id={"confirmPassword"}
+              type={"password"}
+              label={"Confirmar password"}
+              value={registerForm.confirmPassword}
+              error={formErrors.confirmPassword ? true : false}
+              errorText={formErrors.confirmPassword}
+              onChange={handleInputChange}
+            />
 
-      <div>
-        <button onClick={() => handleRegister()}>Register</button>
-        <button onClick={() => navigate("/login")}>Sign in</button>
-      </div>
-    </Container>
+            <p>qualquer coisa de confirmo cenas coise recolha de dados</p>
+          </InputContainer>
+          <ButtonContainer>
+            <StyledButton text="Registar" onClick={() => handleRegister()} />
+          </ButtonContainer>
+        </FormContainer>
+      </Container>
+    </Section>
   );
 };
 

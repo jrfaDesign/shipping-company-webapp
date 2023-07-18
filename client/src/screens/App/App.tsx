@@ -1,30 +1,21 @@
-import { Route, Routes } from "react-router-dom";
+import { AppContainer, Container } from "./styles";
 
-import Login from "../Login";
-import Register from "../Register";
-import Home from "../Home";
+import { useUserStore } from "~/hooks/stores/user";
 
-import { RouteBlocker } from "../../routes/RouteBlocker";
+import View from "./View";
 
-import { AppContainer } from "./styles";
+const App = () => {
+  const user = useUserStore((state) => state.user);
 
-function App() {
   return (
     <div>
       <AppContainer>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/" element={<RouteBlocker />}>
-            <Route index element={<Home />} />
-            {/* 
-            Add page here
-            */}
-          </Route>
-        </Routes>
+        <Container>
+          <View user={user} />
+        </Container>
       </AppContainer>
     </div>
   );
-}
+};
 
 export default App;
