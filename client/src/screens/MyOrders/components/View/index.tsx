@@ -7,7 +7,8 @@ import Table from "../Table";
 import Pagination from "@mui/material/Pagination";
 import { Paginate } from "~/hooks/globalHooks";
 
-import { Container, PaginationContainer, TalbeWrapper } from "./styles";
+import { PaginationContainer, TalbeWrapper } from "./styles";
+import FullPageWhiteContainer from "~/shared/containers/FullPageWhiteContainer";
 
 interface Props {
   orders: Orders[];
@@ -37,7 +38,7 @@ const View = ({ orders }: Props) => {
   }, [orders]);
 
   if (selectedData.length === 0) {
-    return <Container>Parece que há encomendas neste momento</Container>; // or display a loading spinner or fallback content
+    return <FullPageWhiteContainer>Parece que há encomendas neste momento</FullPageWhiteContainer>; // or display a loading spinner or fallback content
   }
 
   const paginatedContent = selectedData
@@ -45,7 +46,7 @@ const View = ({ orders }: Props) => {
     : undefined;
 
   return (
-    <Container>
+    <FullPageWhiteContainer>
       <TalbeWrapper>
         <Filters data={orders} setSelectedData={setSelectedData} />
         <Table data={paginatedContent} />
@@ -59,7 +60,7 @@ const View = ({ orders }: Props) => {
           onChange={handleChange}
         />
       </PaginationContainer>
-    </Container>
+    </FullPageWhiteContainer>
   );
 };
 

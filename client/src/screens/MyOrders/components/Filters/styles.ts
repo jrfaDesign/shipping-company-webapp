@@ -40,9 +40,9 @@ export const SearchInputContainer = styled.div`
   }
 `;
 
-export const TotalText = styled.span`
+export const TotalText = styled.div`
   color: #6b6e7f;
-
+  width: 85px;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

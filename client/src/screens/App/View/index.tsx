@@ -12,7 +12,6 @@ import { routes } from "~/routes";
 import { AppContainer, Body, ContentWrapper, ContentContainer } from "./styles";
 import { User as UserProps } from "~/types/app";
 
-import { width } from "@mui/system";
 import DrawerMenu from "~/shared/containers/DrawerMenu";
 
 interface Props {
