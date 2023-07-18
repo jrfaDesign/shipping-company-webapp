@@ -18,12 +18,19 @@ export const Header = styled.div<CellProps>`
 
 export const OrderContainer = styled.div`
   display: flex;
-  padding: 23px 40px;
+  padding: 23.8px 40px;
   border-bottom: 1px solid #989ba5;
   cursor: pointer;
 
   :last-child {
     border-bottom: 0px solid #989ba5;
+  }
+
+  :hover {
+    background-color: ${({ theme }) => theme.colors.superLightBlue05};
+    :first-child {
+      background-color: white;
+    }
   }
 `;
 
@@ -50,10 +57,9 @@ export const Cell = styled.div<CellProps>`
     .on-the-road{
         color: rgb(248, 197, 10);
         background-color: rgba(248, 197, 10,0.1);
-
-
-
     }
+
+
 
 
 

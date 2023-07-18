@@ -71,18 +71,20 @@ const DrawerMenu = () => {
           </DrawerHead>
           <DrawerMenuContainer>
             <List>
-              {menuItems.map((item, idx) => (
-                <ListItem
-                  key={item.name + idx}
-                  disablePadding
-                  onClick={() => handleNavigation(item.path)}
-                >
-                  <ListItemButton>
-                    <ListItemIcon>{item.icon}</ListItemIcon>
-                    <ListItemText primary={item.name} />
-                  </ListItemButton>
-                </ListItem>
-              ))}
+              {menuItems
+                .filter((item) => item.icon)
+                .map((item, idx) => (
+                  <ListItem
+                    key={item.name + idx}
+                    disablePadding
+                    onClick={() => handleNavigation(item.path)}
+                  >
+                    <ListItemButton>
+                      <ListItemIcon>{item.icon}</ListItemIcon>
+                      <ListItemText primary={item.name} />
+                    </ListItemButton>
+                  </ListItem>
+                ))}
             </List>
             <div>
               <Divider />

@@ -21,6 +21,7 @@ export const theme = {
     lightBlue: "#2E5D9F",
     lightBlue02: "rgba(46, 93, 159,0.2)",
     superLightBlue: "rgba(29, 78, 216, 0.10)",
+    superLightBlue05: "rgba(29, 78, 216, 0.05)",
     darkBlue: "#21416f",
     lightGrey: "#f0f0f0",
     error: "#d32f2f",
