@@ -51,16 +51,8 @@ const Login = () => {
     }
   };
 
-  const handleLogin = async () => {
-    const newUser = {
-      _id: "123",
-      email: "email@email.com",
-      name: "name",
-      lastName: "lastName",
-      accessToken: "string",
-      admin: false
-    };
-    setUser(newUser);
+  const handleLogin = async (user: any) => {
+    setUser(user);
     navigate("/");
     //localStorage.removeItem("token");
     //
@@ -89,6 +81,23 @@ const Login = () => {
     //}
   };
 
+  const newUser = {
+    _id: "123",
+    email: "email@email.com",
+    name: "name",
+    lastName: "lastName",
+    accessToken: "string",
+    admin: false
+  };
+  const newAdmin = {
+    _id: "123",
+    email: "email@email.com",
+    name: "name",
+    lastName: "lastName",
+    accessToken: "string",
+    admin: true
+  };
+
   return (
     <Section>
       <Container>
@@ -111,7 +120,8 @@ const Login = () => {
             />
           </InputContainer>
           <ButtonContainer>
-            <StyledButton text="Login" onClick={() => handleLogin()} />
+            <StyledButton text="Login Admin" onClick={() => handleLogin(newAdmin)} />
+            <StyledButton text="Login User" onClick={() => handleLogin(newUser)} />
             {/* <StyledButton variant="text" text="Registar" onClick={() => navigate("/register")} /> */}
           </ButtonContainer>
           <ToolsContainer>

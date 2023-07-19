@@ -1,18 +1,24 @@
 import Login from "../screens/Login";
 
+//Admin
 import HomeAdmin from "~/screens/HomeAdmin";
+import UserManagement from "~/screens/UserManagement";
 
+//User
 import HomeClient from "~/screens/HomeClient";
 import MyOrders from "~/screens/MyOrders";
 
+//Legal
 import Register from "~/screens/Register";
 import Contacts from "~/screens/Contacts";
 import PrivacyPolitics from "~/screens/PrivacyPolitics";
 import Cookies from "~/screens/Cookies";
 
+//Icons
 import HomeIcon from "@mui/icons-material/Home";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import NewOrder from "~/screens/NewOrder";
+import PersonIcon from "@mui/icons-material/Person";
 
 export const routes = [
   // =================================================================>
@@ -23,6 +29,13 @@ export const routes = [
     name: "Home",
     admin: true,
     icon: <HomeIcon />
+  },
+  {
+    path: "/utilizadores",
+    element: <UserManagement />,
+    name: "Utilizadores",
+    admin: true,
+    icon: <PersonIcon />
   },
 
   // =================================================================>

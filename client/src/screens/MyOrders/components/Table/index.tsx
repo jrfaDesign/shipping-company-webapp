@@ -17,8 +17,6 @@ const Table = ({ data }: Props) => {
     return formattedDate;
   }
 
-  console.log(data);
-
   const getStatusClass = {
     Completed: "completed",
     Cancelled: "cancelled",

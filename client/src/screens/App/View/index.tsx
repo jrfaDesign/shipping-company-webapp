@@ -13,6 +13,7 @@ import { AppContainer, Body, ContentWrapper, ContentContainer } from "./styles";
 import { User as UserProps } from "~/types/app";
 
 import DrawerMenu from "~/shared/containers/DrawerMenu";
+import Login from "~/screens/Login";
 
 interface Props {
   user: UserProps | null;
@@ -26,7 +27,6 @@ const View = ({ user }: Props) => {
 
   useEffect(() => {
     if (!user) {
-      //navigate("/login");
       setAllRoutes(null);
     }
 
@@ -38,14 +38,12 @@ const View = ({ user }: Props) => {
 
   return (
     <div>
-      <Routes>
-        {!user &&
-          routes.map(
-            (route) =>
-              route.noUser && <Route key={route.path} path={route.path} element={route.element} />
-          )}
-        {!user && <Route path="*" element={<Error />} />}
-      </Routes>
+      {!user && (
+        <Routes>
+          <Route path={"/login"} element={<Login />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      )}
       {user && (
         <>
           <AppContainer>
@@ -59,6 +57,7 @@ const View = ({ user }: Props) => {
                       allRoutes.map((route) => (
                         <Route key={route.path} path={route.path} element={route.element} />
                       ))}
+                    <Route path="*" element={<Error />} />
                   </Routes>
                 </Body>
                 <Footer />
