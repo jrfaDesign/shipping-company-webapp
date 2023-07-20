@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "1",
+    "name": "João",
+    "lastName": "Silva",
+    "email": "joao.silva@example.com",
+    "contact": "+351 910000001",
+    "company": "ABC123"
+  },
+  {
+    "_id": "2",
+    "name": "Maria",
+    "lastName": "Santos",
+    "email": "maria.santos@example.com",
+    "contact": "+351 910000002",
+    "company": "XYZ789"
+  },
+  {
+    "_id": "3",
+    "name": "Pedro",
+    "lastName": "Almeida",
+    "email": "pedro.almeida@example.com",
+    "contact": "+351 910000003",
+    "company": "123DEF"
+  },
+  {
+    "_id": "4",
+    "name": "Ana",
+    "lastName": "Lima",
+    "email": "ana.lima@example.com",
+    "contact": "+351 910000004",
+    "company": "GHI456"
+  },
+  {
+    "_id": "5",
+    "name": "Marta",
+    "lastName": "Gomes",
+    "email": "marta.gomes@example.com",
+    "contact": "+351 910000005",
+    "company": "JKL789"
+  }
+]

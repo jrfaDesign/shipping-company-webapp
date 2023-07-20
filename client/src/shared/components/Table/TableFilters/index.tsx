@@ -4,13 +4,13 @@ import { useScreenWidth } from "~/hooks/globalHooks";
 
 import SearchInput from "~/shared/components/SearchInput";
 
-import { Orders } from "~/types/app";
+import { Orders, RegisteredUser } from "~/types/app";
 import OptionsButtons from "./components/OptionsButtons";
 
 import { Container, TextOptionsContainer, SearchInputContainer, TotalText } from "./styles";
 interface Props {
-  data: Orders[];
-  setSelectedData: Dispatch<SetStateAction<undefined>>;
+  data: (Orders | RegisteredUser)[];
+  setSelectedData: Dispatch<SetStateAction<(Orders | RegisteredUser)[]>>;
 }
 
 const Filters = ({ data, setSelectedData }: Props) => {

@@ -31,7 +31,14 @@ const View = ({ user }: Props) => {
     }
 
     if (user) {
-      const newRouting = routes.filter((route) => route.admin === user.admin);
+      const newRouting = routes.filter((route) => {
+        if (route.admin === user.admin) {
+          return route;
+        } else if (route.noUser) {
+          return route;
+        }
+      });
+
       setAllRoutes(newRouting);
     }
   }, [user]);
@@ -54,7 +61,7 @@ const View = ({ user }: Props) => {
                 <Body>
                   <Routes>
                     {allRoutes &&
-                      allRoutes.map((route) => (
+                      allRoutes.map((route: any) => (
                         <Route key={route.path} path={route.path} element={route.element} />
                       ))}
                     <Route path="*" element={<Error />} />
