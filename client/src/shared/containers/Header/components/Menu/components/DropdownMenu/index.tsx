@@ -8,18 +8,30 @@ import Divider from "@mui/material/Divider";
 import Logout from "@mui/icons-material/Logout";
 import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
 
-import { MenuItemWithIcon, Menu } from "./styles";
+import { OptionContainer, Menu } from "./styles";
+import StyledSelectComponent from "~/shared/components/Select";
 
 interface Props {
-  user: UserProps | null;
-  logout: () => void;
   anchorEl: HTMLElement | null;
   open: boolean;
   handleClose: () => void;
 }
 
-const DropdownMenu = ({ user, logout, anchorEl, open, handleClose }: Props) => {
+const DropdownMenu = ({ anchorEl, open, handleClose }: Props) => {
   const navigate = useNavigate();
+
+  const selectedOptions = {
+    label: "Test Options",
+    options: [
+      { value: "", label: " - " },
+      { value: "", label: " - " },
+      { value: "", label: " - " },
+      { value: "", label: " - " },
+      { value: "", label: " - " },
+      { value: "", label: " - " },
+      { value: "", label: " - " }
+    ]
+  };
 
   return (
     <Menu
@@ -59,43 +71,42 @@ const DropdownMenu = ({ user, logout, anchorEl, open, handleClose }: Props) => {
       transformOrigin={{ horizontal: "right", vertical: "top" }}
       anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
     >
-      {user && (
-        <MenuItem
-          onClick={() => {
-            handleClose();
-            navigate("/area-pessoal");
-          }}
-        >
-          A minha conta
-        </MenuItem>
-      )}
-      {user && <Divider />}
-      <MenuItem
-        onClick={() => {
-          handleClose();
-          user ? logout() : null;
-          navigate("/login");
-        }}
-      >
-        <MenuItemWithIcon>
-          <ListItemIcon>
-            <Logout fontSize="small" />
-          </ListItemIcon>
-          {user ? "Sair" : "Entrar"}
-        </MenuItemWithIcon>
-      </MenuItem>
-      {!user && (
-        <div>
-          <MenuItem onClick={() => navigate("/registar")}>
-            <MenuItemWithIcon>
-              <ListItemIcon>
-                <AppRegistrationIcon fontSize="small" />
-              </ListItemIcon>
-              {"Registar"}
-            </MenuItemWithIcon>
-          </MenuItem>
-        </div>
-      )}
+      <OptionContainer>
+        <StyledSelectComponent
+          style={"outlined"}
+          label={selectedOptions.label}
+          value={selectedOptions}
+          onChange={(e) => {}}
+          options={selectedOptions.options}
+        />
+      </OptionContainer>
+      <OptionContainer>
+        <StyledSelectComponent
+          style={"outlined"}
+          label={selectedOptions.label}
+          value={selectedOptions}
+          onChange={(e) => {}}
+          options={selectedOptions.options}
+        />
+      </OptionContainer>
+      <OptionContainer>
+        <StyledSelectComponent
+          style={"outlined"}
+          label={selectedOptions.label}
+          value={selectedOptions}
+          onChange={(e) => {}}
+          options={selectedOptions.options}
+        />
+      </OptionContainer>
+      <OptionContainer>
+        <StyledSelectComponent
+          style={"outlined"}
+          label={selectedOptions.label}
+          value={selectedOptions}
+          onChange={(e) => {}}
+          options={selectedOptions.options}
+        />
+      </OptionContainer>
     </Menu>
   );
 };

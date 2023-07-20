@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-
-import Table from "~/shared/components/Table";
+import { useEffect } from "react";
 
 import { useRegisteredUsersStore } from "~/hooks/stores/registeredUsers";
 import Loading from "~/shared/components/Loading";

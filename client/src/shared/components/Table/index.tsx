@@ -41,8 +41,14 @@ const Table = ({ tableType, data }: Props) => {
     }
   }, [data]);
 
-  if (selectedData.length === 0) {
-    return <FullPageWhiteContainer>Parece que há encomendas neste momento</FullPageWhiteContainer>; // or display a loading spinner or fallback content
+  if (data.length === 0) {
+    return (
+      <FullPageWhiteContainer>
+        <span className="no-data">
+          Parece que não há {tableType === "orders" ? "encomendas" : "utilziadores"} neste momento.
+        </span>
+      </FullPageWhiteContainer>
+    ); // or display a loading spinner or fallback content
   }
 
   const paginatedContent = selectedData
@@ -51,18 +57,33 @@ const Table = ({ tableType, data }: Props) => {
   return (
     <FullPageWhiteContainer>
       <TalbeWrapper>
-        <TableFilters data={data} setSelectedData={setSelectedData} />
-        <TableData tableType={tableType} data={paginatedContent as (Orders | RegisteredUser)[]} />
+        <TableFilters
+          tableType={tableType}
+          selectedData={selectedData}
+          origialData={data}
+          setSelectedData={setSelectedData}
+        />
+
+        {selectedData.length === 0 ? (
+          <span className="no-data">
+            Parece que não há {tableType === "orders" ? "encomendas" : "utilziadores"} neste
+            momento.
+          </span>
+        ) : (
+          <TableData tableType={tableType} data={paginatedContent as (Orders | RegisteredUser)[]} />
+        )}
       </TalbeWrapper>
 
-      <PaginationContainer>
-        <Pagination
-          count={Math.ceil(selectedData.length / itemsPerPage)}
-          shape="rounded"
-          page={currentPage}
-          onChange={handleChange}
-        />
-      </PaginationContainer>
+      {selectedData.length > 0 && (
+        <PaginationContainer>
+          <Pagination
+            count={Math.ceil(selectedData.length / itemsPerPage)}
+            shape="rounded"
+            page={currentPage}
+            onChange={handleChange}
+          />
+        </PaginationContainer>
+      )}
     </FullPageWhiteContainer>
   );
 };

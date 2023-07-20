@@ -5,7 +5,12 @@ export const Container = styled.div`
   margin-left: auto;
 `;
 
-export const MenuIconContainer = styled.div`
+interface MenuIconContainerProps {
+  filterMenuIsOpen: boolean;
+  onClick: any;
+}
+
+export const MenuIconContainer = styled.div<MenuIconContainerProps>`
   border: 1px solid ${({ theme }) => theme.colors.lightBlue};
   border-radius: 10px;
   cursor: pointer;
@@ -15,10 +20,12 @@ export const MenuIconContainer = styled.div`
   margin-left: 20px;
   max-width: 25px;
 
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${(props) =>
+    props.filterMenuIsOpen ? props.theme.colors.lightBlue : props.theme.colors.white};
   padding: 10px;
   svg {
-    fill: ${({ theme }) => theme.colors.lightBlue};
+    fill: ${(props) =>
+      props.filterMenuIsOpen ? props.theme.colors.white : props.theme.colors.lightBlue};
   }
 
   :hover {

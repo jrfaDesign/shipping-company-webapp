@@ -4,7 +4,7 @@ export const TABLE_HEADER = {
     { label: "Estado de Entrega" },
     { label: "Data de Entrega" },
     { label: "Peso" },
-    { label: "Destino" },
+    { label: "Cliente Destino" },
     { label: "Morada" },
     { label: "Código Postal" },
     { label: "Cidade" },

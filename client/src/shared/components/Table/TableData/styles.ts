@@ -20,7 +20,7 @@ export const Header = styled.div<CellProps>`
 
 export const OrderContainer = styled.div`
   display: flex;
-  padding: 18.5px 40px;
+  padding: 18.2px 40px;
   border-bottom: 1px solid #989ba5;
   cursor: pointer;
 
