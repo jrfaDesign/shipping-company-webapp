@@ -12,54 +12,60 @@ import { routes } from "~/routes";
 import { AppContainer, Body, ContentWrapper, ContentContainer } from "./styles";
 import { User as UserProps } from "~/types/app";
 
-import { width } from "@mui/system";
 import DrawerMenu from "~/shared/containers/DrawerMenu";
+import Login from "~/screens/Login";
+
+import { useScreenWidth } from "~/hooks/globalHooks";
 
 interface Props {
   user: UserProps | null;
 }
 
 const View = ({ user }: Props) => {
-  const navigate = useNavigate();
   const [allRoutes, setAllRoutes] = useState<any>(null);
-
   const isDrawerOpen = useDrawerStore((state) => state.drawerIsOpen);
+  const screenWidth = useScreenWidth();
 
   useEffect(() => {
     if (!user) {
-      //navigate("/login");
       setAllRoutes(null);
     }
 
     if (user) {
-      const newRouting = routes.filter((route) => route.admin === user.admin);
+      const newRouting = routes.filter((route) => {
+        if (route.admin === user.admin) {
+          return route;
+        } else if (route.noUser) {
+          return route;
+        }
+      });
+
       setAllRoutes(newRouting);
     }
   }, [user]);
 
   return (
     <div>
-      <Routes>
-        {!user &&
-          routes.map(
-            (route) =>
-              route.noUser && <Route key={route.path} path={route.path} element={route.element} />
-          )}
-        {!user && <Route path="*" element={<Error />} />}
-      </Routes>
+      {!user && (
+        <Routes>
+          <Route path={"/login"} element={<Login />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      )}
       {user && (
         <>
           <AppContainer>
-            <DrawerMenu />
+            {screenWidth > 769 && <DrawerMenu />}
             <ContentContainer open={isDrawerOpen}>
               <Header />
               <ContentWrapper>
                 <Body>
                   <Routes>
                     {allRoutes &&
-                      allRoutes.map((route) => (
+                      allRoutes.map((route: any) => (
                         <Route key={route.path} path={route.path} element={route.element} />
                       ))}
+                    <Route path="*" element={<Error />} />
                   </Routes>
                 </Body>
                 <Footer />

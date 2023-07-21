@@ -9,6 +9,7 @@ export interface User {
 
 export interface Orders {
   _id: string;
+  _companyId: string;
   requestedClient: string;
   deliveryStatus: "Completed" | "Cancelled" | "On the road";
   requestedDate: Date;
@@ -17,4 +18,23 @@ export interface Orders {
   state: string;
   zip: string;
   weight: number;
+}
+
+export interface RegisteredUser {
+  _id: string;
+  name: string;
+  lastName: string;
+  email: string;
+  contact: string;
+  company: string;
+}
+
+export interface RegistedComapny {
+  _id: string;
+  name: string;
+  email: string;
+  contact: string;
+  address: string;
+  state: string;
+  zip: string;
 }

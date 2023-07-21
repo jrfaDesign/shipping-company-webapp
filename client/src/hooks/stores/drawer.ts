@@ -6,7 +6,7 @@ interface DrawerStore {
 }
 
 const useDrawerStore = create<DrawerStore>((set) => ({
-  drawerIsOpen: true,
+  drawerIsOpen: false,
   toggleDrawer: () => set((state) => ({ drawerIsOpen: !state.drawerIsOpen }))
 }));
 

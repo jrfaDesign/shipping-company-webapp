@@ -88,6 +88,7 @@ const GlobalStyles = createGlobalStyle`
         padding-right: 70px !important;
         padding-top: 10px !important;
         padding-bottom: 10px !important;
+
     }
 
 
