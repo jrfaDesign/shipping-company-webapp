@@ -17,7 +17,7 @@ const MyOrders = () => {
 
   if (loadingOrders) {
     return <Loading />;
-  } else if (!loadingOrders && orders) {
+  } else if (!loadingOrders) {
     return <View orders={orders} />;
   }
 };
