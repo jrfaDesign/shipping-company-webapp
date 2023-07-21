@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { routes } from "~/routes";
 import { useNavigate } from "react-router-dom";
@@ -13,7 +13,11 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Divider, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+
 import Logout from "@mui/icons-material/Logout";
+
+import { useScreenWidth } from "~/hooks/globalHooks";
 
 import { Container, DrawerHead, DrawerMenuContainer } from "./styles";
 
@@ -23,6 +27,8 @@ const DrawerMenu = () => {
   const user = useUserStore((state) => state.user);
   const logout = useUserStore((state) => state.logout);
   const navigate = useNavigate();
+
+  const screenWidth = useScreenWidth();
 
   const drawerIsOpen = useDrawerStore((state) => state.drawerIsOpen);
   const toggleDrawer = useDrawerStore((state) => state.toggleDrawer);
@@ -35,6 +41,12 @@ const DrawerMenu = () => {
     logout();
     navigate("/login");
   };
+
+  useEffect(() => {
+    if (screenWidth <= 769) {
+      toggleDrawer;
+    }
+  }, []);
 
   const menuItems = routes.filter((route) => {
     if (user && !route.noUser) {
@@ -49,13 +61,15 @@ const DrawerMenu = () => {
   return (
     <Container open={drawerIsOpen}>
       <Box>
-        <IconButton color="inherit" aria-label="open drawer" onClick={toggleDrawer} edge="start">
-          <MenuIcon />
-        </IconButton>
+        {!drawerIsOpen && (
+          <IconButton color="inherit" aria-label="open drawer" onClick={toggleDrawer} edge="start">
+            <MenuIcon />
+          </IconButton>
+        )}
 
         <Drawer
           variant="persistent"
-          anchor="left"
+          anchor={screenWidth <= 769 ? "right" : "left"}
           open={drawerIsOpen}
           sx={{
             width: drawerWidth,
@@ -67,7 +81,7 @@ const DrawerMenu = () => {
           }}
         >
           <DrawerHead onClick={toggleDrawer}>
-            <ChevronLeftIcon />
+            {screenWidth <= 769 ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </DrawerHead>
           <DrawerMenuContainer>
             <List>

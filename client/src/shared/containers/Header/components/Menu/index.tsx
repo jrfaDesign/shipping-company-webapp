@@ -28,15 +28,13 @@ const Menu = () => {
 
   return (
     <div>
-      <IconButton
-        className="drop-menu"
-        onClick={handleClick}
-        size="small"
-        sx={{ ml: 2 }}
-        aria-haspopup="true"
-      >
-        <Avatar style={{ cursor: "pointer" }} sx={{ bgcolor: theme.textDark }} alt="User Tag">
-          {user ? user.name.charAt(0) : <PersonIcon />}
+      <IconButton onClick={handleClick} size="small" sx={{ ml: 2 }} aria-haspopup="true">
+        <Avatar
+          style={{ cursor: "pointer" }}
+          sx={{ bgcolor: theme.colors.darkBlue }}
+          alt="User Tag"
+        >
+          {user ? user.name.charAt(0).toLocaleUpperCase() : <PersonIcon />}
         </Avatar>
       </IconButton>
 
@@ -52,5 +50,3 @@ const Menu = () => {
 };
 
 export default Menu;
-
-const DropMenu = styled.div``;

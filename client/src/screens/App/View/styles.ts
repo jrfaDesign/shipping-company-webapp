@@ -1,6 +1,5 @@
-import { width } from "@mui/system";
 import styled from "styled-components";
-import { laptop } from "~/styles/theme";
+import { laptop, tablet } from "~/styles/theme";
 
 export const AppContainer = styled.div`
   display: flex;
@@ -8,6 +7,7 @@ export const AppContainer = styled.div`
 `;
 
 export const Body = styled.div`
+  width: 100%;
   overflow: auto;
   overflow-x: hidden;
   height: 100%;
@@ -26,6 +26,10 @@ interface ContentContainerProps {
   open: boolean;
 }
 export const ContentContainer = styled.div<ContentContainerProps>`
-  width: ${(props) => (props.open ? "-webkit-calc(100% - 290px)" : "-webkit-calc(100% - 60px)")};
-  transition: all 0.2s ease;
+  width: 100%;
+  ${laptop} {
+    //width: ${(props) =>
+      props.open ? "-webkit-calc(100% - 290px)" : "-webkit-calc(100% - 60px)"};
+    transition: all 0.2s ease;
+  }
 `;
