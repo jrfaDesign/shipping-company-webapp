@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { tablet } from "~/styles/theme";
 
 interface CellProps {
   width?: string;
@@ -8,21 +9,32 @@ export const OrdersTable = styled.div``;
 
 export const Header = styled.div<CellProps>`
   margin: 0 auto;
-  width ${(props) => props.width ?? "170px"}  ;
+  width: 120px  ;
   color: ${({ theme }) => theme.colors.lightBlue};
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding:5px 20px 5px 10px;
+  padding:2px 10px 2px 5px;
+  
+  ${tablet} {
+    font-size: 16px;
+    padding:5px 20px 5px 10px;
+    width ${(props) => props.width ?? "170px"}  ;
+  }
 
 `;
 
 export const OrderContainer = styled.div`
   display: flex;
-  padding: 18.2px 40px;
+  padding: 7.8px 20px;
   border-bottom: 1px solid #989ba5;
   cursor: pointer;
+
+  ${tablet} {
+    font-size: 16px;
+    padding: 18.2px 40px;
+  }
 
   :last-child {
     border-bottom: 0px solid #989ba5;
@@ -48,13 +60,20 @@ export const OrderContainer = styled.div`
 `;
 
 export const Cell = styled.div<CellProps>`
-  width ${(props) => props.width ?? "170px"} ;
+  width:120px ;
   color: ${({ theme }) => theme.text}
-  padding:5px 20px 5px 10px;
-
+  padding:2px 10px 2px 5px;
+  font-size: 12px;
+  
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  
+  ${tablet} {
+    font-size: 16px;
+    padding:5px 20px 5px 10px;
+    width ${(props) => props.width ?? "170px"} ;
+  }
 
   .status{
         border-radius: 10px;

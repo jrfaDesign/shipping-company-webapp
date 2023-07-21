@@ -15,6 +15,7 @@ interface Props {
   setSelectedData: Dispatch<SetStateAction<(Orders | RegisteredUser)[]>>;
   filterMenuIsOpen: boolean;
   handleClickFilterBtn: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  filterInformation: any;
 }
 
 const OptionsButtons = ({
@@ -22,15 +23,27 @@ const OptionsButtons = ({
   origialData,
   setSelectedData,
   filterMenuIsOpen,
-  handleClickFilterBtn
+  handleClickFilterBtn,
+  filterInformation
 }: Props) => {
   const navigate = useNavigate();
   return (
     <Container>
-      <MenuIconContainer onClick={handleClickFilterBtn as any} filterMenuIsOpen={filterMenuIsOpen}>
-        <FilterListIcon />
-      </MenuIconContainer>
-      <MenuIconContainer onClick={() => navigate("/encomendas/nova-encomeda")}>
+      {filterInformation && filterInformation.length > 0 && (
+        <MenuIconContainer
+          onClick={handleClickFilterBtn as any}
+          filterMenuIsOpen={filterMenuIsOpen}
+        >
+          <FilterListIcon />
+        </MenuIconContainer>
+      )}
+      <MenuIconContainer
+        onClick={() =>
+          navigate(
+            tableType === "orders" ? "/encomendas/nova-encomeda" : "/utilizadores/novo-utilizador"
+          )
+        }
+      >
         <AddIcon />
       </MenuIconContainer>
     </Container>

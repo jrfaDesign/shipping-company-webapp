@@ -1,36 +1,29 @@
-import { useNavigate } from "react-router-dom";
-
-import { User as UserProps } from "~/types/app";
-
-import MenuItem from "@mui/material/MenuItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import Divider from "@mui/material/Divider";
-import Logout from "@mui/icons-material/Logout";
-import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
-
 import { OptionContainer, Menu } from "./styles";
 import StyledSelectComponent from "~/shared/components/Select";
+import { Dispatch, SetStateAction } from "react";
 
 interface Props {
+  filterInformation: any;
+  filterOptions: any;
+  setFilterOptions: Dispatch<SetStateAction<undefined>>;
   anchorEl: HTMLElement | null;
   open: boolean;
   handleClose: () => void;
 }
 
-const DropdownMenu = ({ anchorEl, open, handleClose }: Props) => {
-  const navigate = useNavigate();
-
-  const selectedOptions = {
-    label: "Test Options",
-    options: [
-      { value: "", label: " - " },
-      { value: "", label: " - " },
-      { value: "", label: " - " },
-      { value: "", label: " - " },
-      { value: "", label: " - " },
-      { value: "", label: " - " },
-      { value: "", label: " - " }
-    ]
+const DropdownMenu = ({
+  filterOptions,
+  setFilterOptions,
+  filterInformation,
+  anchorEl,
+  open,
+  handleClose
+}: Props) => {
+  const handleFilterPicking = (e: any, key: any) => {
+    setFilterOptions((prevValues: any) => ({
+      ...prevValues,
+      [key]: e.target.value
+    }));
   };
 
   return (
@@ -71,42 +64,18 @@ const DropdownMenu = ({ anchorEl, open, handleClose }: Props) => {
       transformOrigin={{ horizontal: "right", vertical: "top" }}
       anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
     >
-      <OptionContainer>
-        <StyledSelectComponent
-          style={"outlined"}
-          label={selectedOptions.label}
-          value={selectedOptions}
-          onChange={(e) => {}}
-          options={selectedOptions.options}
-        />
-      </OptionContainer>
-      <OptionContainer>
-        <StyledSelectComponent
-          style={"outlined"}
-          label={selectedOptions.label}
-          value={selectedOptions}
-          onChange={(e) => {}}
-          options={selectedOptions.options}
-        />
-      </OptionContainer>
-      <OptionContainer>
-        <StyledSelectComponent
-          style={"outlined"}
-          label={selectedOptions.label}
-          value={selectedOptions}
-          onChange={(e) => {}}
-          options={selectedOptions.options}
-        />
-      </OptionContainer>
-      <OptionContainer>
-        <StyledSelectComponent
-          style={"outlined"}
-          label={selectedOptions.label}
-          value={selectedOptions}
-          onChange={(e) => {}}
-          options={selectedOptions.options}
-        />
-      </OptionContainer>
+      {filterInformation.map((filterOption: any, idx: any) => (
+        <OptionContainer key={`${idx}_${filterOption.label}`}>
+          <StyledSelectComponent
+            style={"outlined"}
+            label={filterOption.label}
+            value={filterOptions[filterOption.label]}
+            onChange={(e: any) => handleFilterPicking(e, filterOption.label)}
+            options={filterOption.options}
+            multiple={filterOption.multiple}
+          />
+        </OptionContainer>
+      ))}
     </Menu>
   );
 };
