@@ -7,12 +7,15 @@ export const AppContainer = styled.div`
 `;
 
 export const Body = styled.div`
-  width: 100%;
   overflow: auto;
   overflow-x: hidden;
   height: 100%;
   padding: 14px 14px;
   background-color: #e5e5e5;
+
+  ${laptop} {
+    width: 100%;
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -28,8 +31,7 @@ interface ContentContainerProps {
 export const ContentContainer = styled.div<ContentContainerProps>`
   width: 100%;
   ${laptop} {
-    //width: ${(props) =>
-      props.open ? "-webkit-calc(100% - 290px)" : "-webkit-calc(100% - 60px)"};
+    width: ${(props) => (props.open ? "-webkit-calc(100% - 310px)" : "-webkit-calc(100% - 80px)")};
     transition: all 0.2s ease;
   }
 `;

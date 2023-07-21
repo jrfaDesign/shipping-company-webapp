@@ -73,6 +73,7 @@ const DrawerMenu = () => {
           open={drawerIsOpen}
           sx={{
             width: drawerWidth,
+            zIndex: 99,
             flexShrink: 0,
             "& .MuiDrawer-paper": {
               width: drawerWidth,
