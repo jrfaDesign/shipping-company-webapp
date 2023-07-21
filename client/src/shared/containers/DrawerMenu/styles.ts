@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { desktop } from "~/styles/theme";
+import { desktop, laptop } from "~/styles/theme";
 
 interface ContainerProps {
   open: boolean;
@@ -15,7 +15,8 @@ export const Container = styled.div<ContainerProps>`
 export const DrawerHead = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
+
   cursor: pointer;
   padding: 20px;
 
@@ -25,6 +26,10 @@ export const DrawerHead = styled.div`
     :hover {
       background-color: ${({ theme }) => theme.colors.grey02};
     }
+  }
+
+  ${laptop} {
+    justify-content: flex-end;
   }
 `;
 

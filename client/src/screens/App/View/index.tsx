@@ -12,18 +12,18 @@ import { routes } from "~/routes";
 import { AppContainer, Body, ContentWrapper, ContentContainer } from "./styles";
 import { User as UserProps } from "~/types/app";
 
-import { width } from "@mui/system";
 import DrawerMenu from "~/shared/containers/DrawerMenu";
+
+import { useScreenWidth } from "~/hooks/globalHooks";
 
 interface Props {
   user: UserProps | null;
 }
 
 const View = ({ user }: Props) => {
-  const navigate = useNavigate();
   const [allRoutes, setAllRoutes] = useState<any>(null);
-
   const isDrawerOpen = useDrawerStore((state) => state.drawerIsOpen);
+  const screenWidth = useScreenWidth();
 
   useEffect(() => {
     if (!user) {
@@ -50,7 +50,7 @@ const View = ({ user }: Props) => {
       {user && (
         <>
           <AppContainer>
-            <DrawerMenu />
+            {screenWidth > 769 && <DrawerMenu />}
             <ContentContainer open={isDrawerOpen}>
               <Header />
               <ContentWrapper>
