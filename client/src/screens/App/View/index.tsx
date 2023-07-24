@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
-import { Route, Routes, Navigate, useNavigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import useDrawerStore from "~/hooks/stores/drawer";
 
@@ -25,6 +26,8 @@ const View = ({ user }: Props) => {
   const [allRoutes, setAllRoutes] = useState<any>(null);
   const isDrawerOpen = useDrawerStore((state) => state.drawerIsOpen);
   const screenWidth = useScreenWidth();
+
+  const is404 = useLocation().pathname === "/404";
 
   useEffect(() => {
     if (!user) {
@@ -52,8 +55,8 @@ const View = ({ user }: Props) => {
           <Route path="*" element={<Error />} />
         </Routes>
       )}
-      {user && (
-        <>
+      {user &&
+        (!is404 ? (
           <AppContainer>
             {screenWidth > 769 && <DrawerMenu />}
             <ContentContainer open={isDrawerOpen}>
@@ -72,8 +75,11 @@ const View = ({ user }: Props) => {
               </ContentWrapper>
             </ContentContainer>
           </AppContainer>
-        </>
-      )}
+        ) : (
+          <Routes>
+            <Route path="*" element={<Error />} />
+          </Routes>
+        ))}
     </div>
   );
 };
