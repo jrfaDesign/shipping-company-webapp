@@ -47,3 +47,5 @@ export const KEY_TO_LABEL = {
   Contacto: "contact",
   Email: "email"
 };
+
+export const SORT_EXCEPTIONS = ["deliveryStatus", undefined];

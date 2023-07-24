@@ -9,7 +9,7 @@ import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 import { OrdersTable, OrderContainer, Cell, Header } from "./styles";
-import { KEY_TO_LABEL, STATUS_CLASS, STATUS_LABEL, TABLE_HEADER } from "./utils";
+import { KEY_TO_LABEL, SORT_EXCEPTIONS, STATUS_CLASS, STATUS_LABEL, TABLE_HEADER } from "./utils";
 
 interface Props {
   tableType: "orders" | "users";
@@ -29,7 +29,8 @@ const TableData = ({ tableType, data }: Props) => {
   const sortData = (key: any) => {
     const objectKey = KEY_TO_LABEL[key] as any;
 
-    if (objectKey === "deliveryStatus") {
+    // TODO: add exception if no sort function is to be enable
+    if (SORT_EXCEPTIONS.includes(objectKey)) {
       return null;
     }
     if (sortKey === objectKey) {
@@ -68,11 +69,10 @@ const TableData = ({ tableType, data }: Props) => {
 
   const SortIcon = (key: any) => {
     const objectKey = KEY_TO_LABEL[key] as any;
-    // TODO: add exception if no sort function is to be enable
-    if (objectKey === "deliveryStatus") {
+
+    if (SORT_EXCEPTIONS.includes(objectKey)) {
       return null;
     }
-
     if (sortKey === objectKey) {
       if (sortState === "asc") {
         return <ArrowDropUpIcon />;
