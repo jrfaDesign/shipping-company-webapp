@@ -67,8 +67,11 @@ const Filters = ({
       const { shipper, client } = data;
 
       if (
-        (client.name && client.lastName && client.name.toLowerCase().includes(lowerSearchField)) ||
-        (client.lastName && client.lastName.toLowerCase().includes(lowerSearchField))
+        (client &&
+          client.name &&
+          client.lastName &&
+          client.name.toLowerCase().includes(lowerSearchField)) ||
+        (data.lastName && data.lastName.toLowerCase().includes(lowerSearchField))
       ) {
         return true;
       } else if (

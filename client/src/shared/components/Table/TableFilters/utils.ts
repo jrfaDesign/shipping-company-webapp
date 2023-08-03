@@ -1,8 +1,11 @@
 export const getFilterOptions = (
-  tableType: string,
+  tableType: "orders" | "users",
   data: any,
   tableForAdmin: boolean | undefined
 ) => {
+  if (tableType === "users") {
+    return null;
+  }
   //TODO: get options one ** new option ** based on all orders.state
   const allCitiesOptions = data.reduce((acc: any, current: any) => {
     const stateExists = acc.some((item: any) => item.value === current.client.state);
