@@ -5,8 +5,7 @@ import { desktop } from "~/styles/theme";
 export const Wrapper = styled.div`
   max-width: 500px;
   margin: 0 auto;
-  height: 90vh;
-
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,8 +66,7 @@ export const Background = styled.div<BackgroundProps>`
   position: absolute;
   left: 0;
   right: 0;
-  height: 200vh;
-
+  height: 100%;
   width: 100%;
   background-image: ${(props) => `url(${props.img})`};
   background-size: cover;
