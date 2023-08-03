@@ -13,10 +13,11 @@ import { KEY_TO_LABEL, SORT_EXCEPTIONS, STATUS_CLASS, STATUS_LABEL, TABLE_HEADER
 
 interface Props {
   tableType: "orders" | "users";
+  tableForAdmin?: boolean;
   data: (Orders | RegisteredUser)[];
 }
 
-const TableData = ({ tableType, data }: Props) => {
+const TableData = ({ tableType, tableForAdmin, data }: Props) => {
   const [sortState, setSortState] = useState<"asc" | "desc" | "unsorted">("unsorted");
   const [sortKey, setSortKey] = useState<string | null>(null);
 
@@ -33,11 +34,10 @@ const TableData = ({ tableType, data }: Props) => {
     if (SORT_EXCEPTIONS.includes(objectKey)) {
       return null;
     }
+
     if (sortKey === objectKey) {
-      // If the same key is clicked, toggle the sort order
       setSortState(sortState === "asc" ? "desc" : "asc");
     } else {
-      // If a new key is clicked, sort in ascending order by default
       setSortKey(objectKey);
       setSortState("asc");
     }
@@ -45,6 +45,10 @@ const TableData = ({ tableType, data }: Props) => {
 
   /* The `sortedData` variable is using the `useMemo` hook to memoize the sorted data based on the
   current sort state and sort key. And then we will use it to display in the table */
+  const getNestedValue = (obj: any, keys: string[]) => {
+    return keys.reduce((acc, key) => (acc ? acc[key] : null), obj);
+  };
+
   const sortedData = useMemo(() => {
     if (sortState === "unsorted") {
       return data;
@@ -52,10 +56,17 @@ const TableData = ({ tableType, data }: Props) => {
 
     const sortingMultiplier = sortState === "asc" ? 1 : -1;
 
+    // Compare the values based on the sort key
     return [...data].sort((a: any, b: any) => {
-      // Compare the values based on the sort key
-      const aValue = a[sortKey!];
-      const bValue = b[sortKey!];
+      let aValue, bValue;
+
+      if (sortKey!.includes(".")) {
+        aValue = getNestedValue(a, sortKey!.split("."));
+        bValue = getNestedValue(b, sortKey!.split("."));
+      } else {
+        aValue = a[sortKey!];
+        bValue = b[sortKey!];
+      }
 
       if (aValue < bValue) {
         return -1 * sortingMultiplier;
@@ -87,16 +98,24 @@ const TableData = ({ tableType, data }: Props) => {
       <HorizontalScrollContainer width="100%" padding="0">
         <OrdersTable>
           <OrderContainer>
-            {TABLE_HEADER[tableType].map((headerText) => (
-              <Header
-                key={headerText.label}
-                width={headerText?.width}
-                onClick={() => sortData(headerText.label)}
-              >
-                {headerText.label}
-                {SortIcon(headerText.label)}
-              </Header>
-            ))}
+            {TABLE_HEADER[tableType]
+              .filter((header: any) => {
+                if (tableForAdmin) {
+                  return header.tableForAdmin || !header.tableForAdmin;
+                } else if (!tableForAdmin) {
+                  return !header.tableForAdmin;
+                }
+              })
+              .map((headerText: any) => (
+                <Header
+                  key={headerText.label}
+                  width={headerText?.width}
+                  onClick={() => sortData(headerText.label)}
+                >
+                  {headerText.label}
+                  {SortIcon(headerText.label)}
+                </Header>
+              ))}
           </OrderContainer>
           {tableType === "orders" && (
             <>
@@ -109,11 +128,16 @@ const TableData = ({ tableType, data }: Props) => {
                     </span>
                   </Cell>
                   <Cell>{formatDate(data.deliveryDate as any)}</Cell>
+                  {tableForAdmin && <Cell>{data.shipper._id} </Cell>}
+                  {tableForAdmin && <Cell>{data.shipper.name} </Cell>}
                   <Cell>{data.weight} kg</Cell>
-                  <Cell>{data.requestedClient} </Cell>
-                  <Cell>{data.deliveryAddress}</Cell>
-                  <Cell>{data.zip}</Cell>
-                  <Cell>{data.state}</Cell>
+                  <Cell>{data.client.name} </Cell>
+                  <Cell>{data.client.contact} </Cell>
+                  <Cell>{data.client.email ? data.client.email : " - "} </Cell>
+                  <Cell>{data.client.deliveryAddress}</Cell>
+                  <Cell>{data.client.zip}</Cell>
+                  <Cell>{data.client.state}</Cell>
+                  <Cell>{data.client.region}</Cell>
                 </OrderContainer>
               ))}
             </>
@@ -124,12 +148,14 @@ const TableData = ({ tableType, data }: Props) => {
                 <OrderContainer key={data._id}>
                   <Cell>{data._id}</Cell>
                   <Cell width="300px">
-                    {data.name} {data.lastName}
+                    {data.client.name} {data.client.lastName}
                   </Cell>
 
-                  <Cell width="350px">{data.company}</Cell>
-                  <Cell>{data.contact}</Cell>
-                  <Cell width="450px">{data.email} </Cell>
+                  <Cell>{data.client.email ? data.client.email : " - "} </Cell>
+                  <Cell>{data.client.deliveryAddress}</Cell>
+                  <Cell>{data.client.zip}</Cell>
+                  <Cell>{data.client.state}</Cell>
+                  <Cell>{data.client.region}</Cell>
                 </OrderContainer>
               ))}
             </>

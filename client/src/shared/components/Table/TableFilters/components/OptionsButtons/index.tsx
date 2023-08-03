@@ -11,7 +11,7 @@ import { Container, MenuIconContainer } from "./styles";
 
 interface Props {
   tableType: "orders" | "users";
-  origialData: (Orders | RegisteredUser)[];
+  originalData: (Orders | RegisteredUser)[];
   setSelectedData: Dispatch<SetStateAction<(Orders | RegisteredUser)[]>>;
   filterMenuIsOpen: boolean;
   handleClickFilterBtn: (event: React.MouseEvent<HTMLButtonElement>) => void;
@@ -20,7 +20,7 @@ interface Props {
 
 const OptionsButtons = ({
   tableType,
-  origialData,
+  originalData,
   setSelectedData,
   filterMenuIsOpen,
   handleClickFilterBtn,

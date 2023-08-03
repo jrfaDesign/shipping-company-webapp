@@ -3,19 +3,27 @@ export const TABLE_HEADER = {
     { label: "Data do Pedido" },
     { label: "Estado de Entrega" },
     { label: "Data de Entrega" },
+    { label: "Expeditor ID", tableForAdmin: true },
+    { label: "Expeditor Nome", tableForAdmin: true },
     { label: "Peso" },
-    { label: "Cliente Destino" },
+    { label: "Destinatário" },
+    { label: "Contacto" },
+    { label: "Email" },
     { label: "Morada" },
     { label: "Código Postal" },
-    { label: "Cidade" }
+    { label: "Concelho" },
+    { label: "Região" }
   ],
 
   users: [
     { label: "Id" },
     { label: "Nome", width: "300px" },
-    { label: "Empresa", width: "350px" },
     { label: "Contacto" },
-    { label: "Email", width: "450px" }
+    { label: "Email", width: "450px" },
+    { label: "Morada" },
+    { label: "Código Postal" },
+    { label: "Concelho" },
+    { label: "Região" }
   ]
 };
 
@@ -38,14 +46,13 @@ export const KEY_TO_LABEL = {
   "Estado de Entrega": "deliveryStatus",
   "Data de Entrega": "deliveryDate",
   Peso: "weight",
-  "Cliente Destino": "requestedClient",
-  Morada: "deliveryAddress",
-  "Código Postal": "zip",
-  Cidade: "state",
+  "Cliente Destino": "client.name",
+  Morada: "client.deliveryAddress",
+  "Código Postal": "client.zip",
+  Cidade: "client.state",
+
   Nome: "name",
-  Empresa: "company",
-  Contacto: "contact",
-  Email: "email"
+  Empresa: "company"
 };
 
 export const SORT_EXCEPTIONS = ["deliveryStatus", undefined];
