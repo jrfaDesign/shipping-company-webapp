@@ -22,17 +22,7 @@ export default defineConfig({
     svgrPlugin()
   ],
   build: {
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          // Here you can define manual chunks based on the module ID
-          // For example:
-          if (id.includes("node_modules")) {
-            return "vendor";
-          }
-        }
-      }
-    }
+    chunkSizeWarningLimit: 1600
   },
   server: {
     port: 4001
