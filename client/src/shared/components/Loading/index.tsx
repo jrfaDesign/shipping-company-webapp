@@ -10,9 +10,10 @@ interface Props {
 
 const Loading = ({ height }: Props) => {
   const theme = useTheme();
+
   return (
     <Container height={height}>
-      <Box sx={{ display: "flex", color: theme.colors.lightBlue }}>
+      <Box sx={{ display: "flex", color: "#2E5D9F" }}>
         <CircularProgress color={"inherit"} size={60} />
       </Box>
     </Container>

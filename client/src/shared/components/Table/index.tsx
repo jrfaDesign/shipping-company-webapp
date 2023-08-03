@@ -13,15 +13,19 @@ import TableData from "./TableData";
 import { PaginationContainer, TalbeWrapper } from "./styles";
 import TableFilters from "./TableFilters";
 
+import { useScreenWidth } from "~/hooks/globalHooks";
+
 interface Props {
   tableType: "orders" | "users";
   data: (Orders | RegisteredUser)[];
+  tableForAdmin?: boolean;
 }
 
-const Table = ({ tableType, data }: Props) => {
+const Table = ({ tableType, data, tableForAdmin }: Props) => {
   const [selectedData, setSelectedData] = useState<(Orders | RegisteredUser)[]>([]);
+  const screenWidth = useScreenWidth();
 
-  const itemsPerPage = 8;
+  const itemsPerPage = screenWidth > 769 ? 8 : 10;
   const [currentPage, setCurrentPage] = useState(1);
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -58,9 +62,10 @@ const Table = ({ tableType, data }: Props) => {
     <FullPageWhiteContainer>
       <TalbeWrapper>
         <TableFilters
+          tableForAdmin={tableForAdmin}
           tableType={tableType}
           selectedData={selectedData}
-          origialData={data}
+          originalData={data}
           setSelectedData={setSelectedData}
         />
 
@@ -70,7 +75,11 @@ const Table = ({ tableType, data }: Props) => {
             momento.
           </span>
         ) : (
-          <TableData tableType={tableType} data={paginatedContent as (Orders | RegisteredUser)[]} />
+          <TableData
+            tableType={tableType}
+            data={paginatedContent as (Orders | RegisteredUser)[]}
+            tableForAdmin={tableForAdmin}
+          />
         )}
       </TalbeWrapper>
 

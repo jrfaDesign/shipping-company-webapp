@@ -67,13 +67,13 @@ const GlobalStyles = createGlobalStyle`
   
     /* Handle */
     ::-webkit-scrollbar-thumb {
-      background: ${({ theme }) => theme.scrollBar.main};
+      background: #c7c7c7;
       border-radius: 0px;
     }
   
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-      background: ${({ theme }) => theme.scrollBar.hover};
+      background: #adadad;
     }
 
     .css-wjdhjv{

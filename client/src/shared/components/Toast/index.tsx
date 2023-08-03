@@ -9,6 +9,9 @@ interface Props {
 }
 
 const Toast = ({ isVisible, message, severity }: Props) => {
+  if (!isVisible || !severity) {
+    return null;
+  }
   const setToastOptions = useToastStore((state) => state.setToastOptions);
 
   const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
@@ -22,19 +25,18 @@ const Toast = ({ isVisible, message, severity }: Props) => {
     });
   };
 
-  if (severity)
-    return (
-      <Snackbar
-        open={isVisible}
-        autoHideDuration={3000}
-        onClose={handleClose}
-        anchorOrigin={{ vertical: "top", horizontal: "right" }}
-      >
-        <Alert onClose={handleClose} severity={severity} sx={{ width: "100%" }}>
-          {message}
-        </Alert>
-      </Snackbar>
-    );
+  return (
+    <Snackbar
+      open={isVisible}
+      autoHideDuration={3000}
+      onClose={handleClose}
+      anchorOrigin={{ vertical: "top", horizontal: "right" }}
+    >
+      <Alert onClose={handleClose} severity={severity} sx={{ width: "100%" }}>
+        {message}
+      </Alert>
+    </Snackbar>
+  );
 };
 
 export default Toast;

@@ -6,7 +6,7 @@ export const Container = styled.div`
 `;
 
 interface MenuIconContainerProps {
-  filterMenuIsOpen: boolean;
+  filterMenuIsOpen?: boolean;
   onClick: any;
 }
 

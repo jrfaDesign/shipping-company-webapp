@@ -15,7 +15,7 @@ export const useOrdersStore = create<OrdersSore>((set) => ({
 
   fetchOrders: async () => {
     try {
-      set({ orders: ORDERS });
+      set({ orders: ORDERS as Orders[] });
     } catch (err) {
       console.error(err);
     } finally {

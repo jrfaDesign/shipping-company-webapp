@@ -1,112 +1,279 @@
 [
   {
     "_id": "1",
+    "shipper": {
+      "_id": "VSP_1",
+      "name": "VASP"
+    },
+    "client": {
+      "name": "Rui Silva",
+      "contact": "+351 910000001",
+      "email": "email@example.com",
+      "deliveryAddress": "Rua das Flores, 123",
+      "state": "Porto",
+      "region": "region",
+      "zip": "4000-001"
+    },
     "requestedClient": "João Silva",
     "deliveryStatus": "Completed",
     "requestedDate": "2023-04-17T10:00:00.000Z",
     "deliveryDate": "2023-04-18T14:30:00.000Z",
-    "deliveryAddress": "Rua das Flores, 123",
-    "state": "Porto",
-    "zip": "4000-001 ",
     "weight": 10
   },
   {
     "_id": "2",
+    "shipper": {
+      "_id": "VSP_2",
+      "name": "VASP 2"
+    },
+    "client": {
+      "name": "Ana Santos",
+      "contact": "+351 920000002",
+      "email": "email@example.com",
+      "deliveryAddress": "Avenida Central, 456",
+      "state": "Lisboa",
+      "region": "region",
+      "zip": "1000-002"
+    },
     "requestedClient": "Ana Santos",
     "deliveryStatus": "On the road",
     "requestedDate": "2023-04-16T09:15:00.000Z",
     "deliveryDate": "2023-04-17T11:45:00.000Z",
-    "deliveryAddress": "Avenida Central, 456",
-    "state": "Lisboa",
-    "zip": "1000-002 ",
     "weight": 5
   },
   {
     "_id": "3",
+    "shipper": {
+      "_id": "VSP_1",
+      "name": "VASP"
+    },
+    "client": {
+      "name": "Maria Pereira",
+      "contact": "+351 930000003",
+      "email": "email@example.com",
+      "deliveryAddress": "Rua da Liberdade, 789",
+      "state": "Coimbra",
+      "region": "region",
+      "zip": "3000-003"
+    },
     "requestedClient": "Maria Pereira",
     "deliveryStatus": "On the road",
     "requestedDate": "2023-04-19T08:45:00.000Z",
     "deliveryDate": "2023-04-20T13:30:00.000Z",
-    "deliveryAddress": "Rua da Liberdade, 789, 3000-003 Coimbra",
-    "state": "Coimbra",
-    "zip": "3000-003",
     "weight": 8
   },
   {
     "_id": "4",
+    "shipper": {
+      "_id": "VSP_1",
+      "name": "VASP"
+    },
+    "client": {
+      "name": "António Gomes",
+      "contact": "+351 960000004",
+      "email": null,
+      "deliveryAddress": "Avenida da República, 246",
+      "state": "Lisboa",
+      "region": "region",
+      "zip": "1050-012"
+    },
     "requestedClient": "António Gomes",
     "deliveryStatus": "On the road",
     "requestedDate": "2023-04-18T11:30:00.000Z",
     "deliveryDate": "2023-04-19T14:15:00.000Z",
-    "deliveryAddress": "Avenida da República, 246, 1050-012 Lisboa",
-    "state": "Lisboa",
-    "zip": "1050-012",
     "weight": 12
   },
   {
     "_id": "5",
+    "shipper": {
+      "_id": "VSP_1",
+      "name": "VASP"
+    },
+    "client": {
+      "name": "Sofia Santos",
+      "contact": "+351 910000005",
+      "email": null,
+      "deliveryAddress": "Rua Direita, 123",
+      "state": "Porto",
+
+      "region": "region",
+      "zip": "4000-002"
+    },
     "requestedClient": "Sofia Santos",
     "deliveryStatus": "Cancelled",
     "requestedDate": "2023-04-20T09:00:00.000Z",
     "deliveryDate": "2023-04-21T12:45:00.000Z",
-    "deliveryAddress": "Rua Direita, 123, 4000-002 Porto",
-    "state": "Porto",
-    "zip": "4000-002",
     "weight": 6
   },
   {
     "_id": "6",
+    "shipper": {
+      "_id": "VSP_1",
+      "name": "VASP"
+    },
+    "client": {
+      "name": "João Silva",
+      "contact": "+351 910000001",
+      "email": "email@example.com",
+      "deliveryAddress": "Rua das Flores, 123",
+      "state": "Porto",
+
+      "region": "region",
+      "zip": "4000-001"
+    },
     "requestedClient": "João Silva",
     "deliveryStatus": "Completed",
     "requestedDate": "2023-04-17T10:00:00.000Z",
     "deliveryDate": "2023-04-18T14:30:00.000Z",
-    "deliveryAddress": "Rua das Flores, 123",
-    "state": "Porto",
-    "zip": "4000-001 ",
     "weight": 10
   },
   {
     "_id": "7",
+    "shipper": {
+      "_id": "VSP_1",
+      "name": "VASP"
+    },
+    "client": {
+      "name": "Ana Santos",
+      "contact": "+351 920000002",
+      "email": "email@example.com",
+      "deliveryAddress": "Avenida Central, 456",
+      "state": "Lisboa",
+      "region": "region",
+      "zip": "1000-002"
+    },
     "requestedClient": "Ana Santos",
     "deliveryStatus": "On the road",
     "requestedDate": "2023-04-16T09:15:00.000Z",
     "deliveryDate": "2023-04-17T11:45:00.000Z",
-    "deliveryAddress": "Avenida Central, 456",
-    "state": "Lisboa",
-    "zip": "1000-002 ",
     "weight": 5
   },
   {
-    "_id": "8",
-    "requestedClient": "Maria Pereira",
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-04-19T08:45:00.000Z",
-    "deliveryDate": "2023-04-20T13:30:00.000Z",
-    "deliveryAddress": "Rua da Liberdade, 789, 3000-003 Coimbra",
-    "state": "Coimbra",
-    "zip": "3000-003",
-    "weight": 8
-  },
-  {
     "_id": "9",
+    "shipper": {
+      "_id": "VSP_1",
+      "name": "VASP"
+    },
+    "client": {
+      "name": "António Gomes",
+      "contact": "+351 960000004",
+      "email": "email@example.com",
+      "deliveryAddress": "Avenida da República, 246",
+      "state": "Lisboa",
+      "region": "region",
+      "zip": "1050-012"
+    },
     "requestedClient": "António Gomes",
     "deliveryStatus": "On the road",
     "requestedDate": "2023-04-18T11:30:00.000Z",
     "deliveryDate": "2023-04-19T14:15:00.000Z",
-    "deliveryAddress": "Avenida da República, 246, 1050-012 Lisboa",
-    "state": "Lisboa",
-    "zip": "1050-012",
     "weight": 12
   },
   {
     "_id": "10",
+    "shipper": {
+      "_id": "VSP_1",
+      "name": "VASP"
+    },
+    "client": {
+      "name": "Sofia Santos",
+      "contact": "+351 910000005",
+      "email": "email@example.com",
+      "deliveryAddress": "Rua Direita, 123",
+      "state": "Porto",
+
+      "region": "region",
+      "zip": "4000-002"
+    },
     "requestedClient": "Sofia Santos",
     "deliveryStatus": "Cancelled",
     "requestedDate": "2023-04-20T09:00:00.000Z",
     "deliveryDate": "2023-04-21T12:45:00.000Z",
-    "deliveryAddress": "Rua Direita, 123, 4000-002 Porto",
-    "state": "Porto",
-    "zip": "4000-002",
     "weight": 6
+  },
+  {
+    "_id": "11",
+    "shipper": {
+      "_id": "VSP_1",
+      "name": "VASP"
+    },
+    "client": {
+      "name": "Rui Silva",
+      "contact": "+351 910000001",
+      "email": "email@example.com",
+      "deliveryAddress": "Rua das Flores, 123",
+      "state": "Porto",
+
+      "region": "region",
+      "zip": "4000-001"
+    },
+    "requestedClient": "João Silva",
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-04-17T10:00:00.000Z",
+    "deliveryDate": "2023-04-18T14:30:00.000Z",
+    "weight": 10
+  },
+  {
+    "_id": "12",
+    "shipper": {
+      "_id": "VSP_1",
+      "name": "VASP"
+    },
+    "client": {
+      "name": "Ana Santos",
+      "contact": "+351 920000002",
+      "email": "email@example.com",
+      "deliveryAddress": "Avenida Central, 456",
+      "state": "Lisboa",
+      "region": "region",
+      "zip": "1000-002"
+    },
+    "requestedClient": "Ana Santos",
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-04-16T09:15:00.000Z",
+    "deliveryDate": "2023-04-17T11:45:00.000Z",
+    "weight": 5
+  },
+  {
+    "_id": "13",
+    "shipper": {
+      "_id": "VSP_1",
+      "name": "VASP"
+    },
+    "client": {
+      "name": "Maria Pereira",
+      "contact": "+351 930000003",
+      "email": "",
+      "deliveryAddress": "Rua da Liberdade, 789",
+      "state": "Coimbra",
+      "region": "region",
+      "zip": "3000-003"
+    },
+    "requestedClient": "Maria Pereira",
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-04-19T08:45:00.000Z",
+    "deliveryDate": "2023-04-20T13:30:00.000Z",
+    "weight": 8
+  },
+  {
+    "_id": "14",
+    "shipper": {
+      "_id": "VSP_1",
+      "name": "VASP"
+    },
+    "client": {
+      "name": "António Gomes",
+      "contact": "+351 960000004",
+      "email": "email@example.com",
+      "deliveryAddress": "Avenida da República, 246",
+      "state": "Lisboa",
+      "region": "region",
+      "zip": "1050-012"
+    },
+    "requestedClient": "António Gomes",
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-04-18T11:30:00.000Z",
+    "deliveryDate": "2023-04-19T14:15:00.000Z",
+    "weight": 12
   }
 ]

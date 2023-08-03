@@ -9,20 +9,21 @@ export const OrdersTable = styled.div``;
 
 export const Header = styled.div<CellProps>`
   margin: 0 auto;
-  width: 120px  ;
+  width: 160px;
   color: ${({ theme }) => theme.colors.lightBlue};
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding:2px 10px 2px 5px;
-  
+
+  display: flex;
+  align-items: center;
+
   ${tablet} {
     font-size: 16px;
-    padding:5px 20px 5px 10px;
-    width ${(props) => props.width ?? "170px"}  ;
+    padding: 5px 20px 5px 10px;
+    width: ${(props) => props.width ?? "200px"};
   }
-
 `;
 
 export const OrderContainer = styled.div`
@@ -60,7 +61,7 @@ export const OrderContainer = styled.div`
 `;
 
 export const Cell = styled.div<CellProps>`
-  width:120px ;
+  width:160px ;
   color: ${({ theme }) => theme.text}
   padding:2px 10px 2px 5px;
   font-size: 12px;
@@ -72,7 +73,7 @@ export const Cell = styled.div<CellProps>`
   ${tablet} {
     font-size: 16px;
     padding:5px 20px 5px 10px;
-    width ${(props) => props.width ?? "170px"} ;
+    width ${(props) => props.width ?? "200px"} ;
   }
 
   .status{
