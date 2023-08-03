@@ -12,12 +12,19 @@ import { Container, TextOptionsContainer, SearchInputContainer, TotalText } from
 import { getFilterOptions } from "./utils";
 interface Props {
   tableType: "orders" | "users";
-  origialData: (Orders | RegisteredUser)[];
+  originalData: (Orders | RegisteredUser)[];
   selectedData: (Orders | RegisteredUser)[] | null;
   setSelectedData: Dispatch<SetStateAction<(Orders | RegisteredUser)[]>>;
+  tableForAdmin?: boolean;
 }
 
-const Filters = ({ tableType, origialData, selectedData, setSelectedData }: Props) => {
+const Filters = ({
+  tableType,
+  originalData,
+  selectedData,
+  setSelectedData,
+  tableForAdmin
+}: Props) => {
   const screenWidth = useScreenWidth();
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -31,7 +38,7 @@ const Filters = ({ tableType, origialData, selectedData, setSelectedData }: Prop
   };
 
   const [searchField, setSearchField] = useState("");
-  const filterInformation = getFilterOptions(tableType, origialData);
+  const filterInformation = getFilterOptions(tableType, originalData, tableForAdmin);
   const [filterOptions, setFilterOptions] = useState();
 
   useEffect(() => {
@@ -47,31 +54,37 @@ const Filters = ({ tableType, origialData, selectedData, setSelectedData }: Prop
   }, []);
 
   useEffect(() => {
-    // TODO :  This handles all filters, to add new options we need to add in the getFilterOptions()
-    // TODO : function the selector and the respective options and add in the filterLabelToObjectKey the key to match to object key
+    // TODO :  This handles all filters, to add new options we need to add in the getFilterOptions() function
+    // TODO :  the selector and the respective options and add in the filterLabelToObjectKey the key to match to object key
     const filterLabelToObjectKey = {
-      Cidade: "state",
+      Expeditor: "shipper._id",
+      Cidade: "client.state",
       "Estado de Entrega": "deliveryStatus"
     };
 
-    const filteredData = origialData.filter((data: any) => {
+    const filteredData = originalData.filter((data: any) => {
       const lowerSearchField = searchField.toLowerCase();
+      const { shipper, client } = data;
 
       if (
-        (data.name && data.lastName && data.name.toLowerCase().includes(lowerSearchField)) ||
-        (data.lastName && data.lastName.toLowerCase().includes(lowerSearchField))
-      ) {
-        return true;
-      } else if (data.company && data.company.toLowerCase().includes(lowerSearchField)) {
-        return true;
-      } else if (
-        data.deliveryAddress &&
-        data.deliveryAddress.toLowerCase().includes(lowerSearchField)
+        (client.name && client.lastName && client.name.toLowerCase().includes(lowerSearchField)) ||
+        (client.lastName && client.lastName.toLowerCase().includes(lowerSearchField))
       ) {
         return true;
       } else if (
-        data.requestedClient &&
-        data.requestedClient.toLowerCase().includes(lowerSearchField)
+        tableForAdmin &&
+        shipper.name &&
+        shipper.name.toLowerCase().includes(lowerSearchField)
+      ) {
+        return true;
+      } else if (
+        client.deliveryAddress &&
+        client.deliveryAddress.toLowerCase().includes(lowerSearchField)
+      ) {
+        return true;
+      } else if (
+        client.requestedClient &&
+        client.requestedClient.toLowerCase().includes(lowerSearchField)
       ) {
         return true;
       } else {
@@ -81,17 +94,31 @@ const Filters = ({ tableType, origialData, selectedData, setSelectedData }: Prop
 
     let filteredDataWithFilters = filteredData;
 
+    //console.log(filteredDataWithFilters[0].shipper._id);
+    console.log(filterOptions);
+
     if (filterOptions) {
       filteredDataWithFilters = filteredData.filter((data: any) =>
         Object.keys(filterOptions).every((filterOption: string) => {
+          const objectKey = filterLabelToObjectKey[filterOption];
+
           if (!filterOptions[filterOption] || filterOptions[filterOption].length === 0) {
             // If the filter option has no value, consider it a match
             return true;
           }
-          return (
-            data[filterLabelToObjectKey[filterOption]] &&
-            filterOptions[filterOption].includes(data[filterLabelToObjectKey[filterOption]])
+
+          const objectKeys = objectKey.split(".");
+          const objectValue = objectKeys.reduce(
+            (obj, key) => (obj && obj[key] !== undefined ? obj[key] : undefined),
+            data
           );
+
+          if (objectValue === undefined) {
+            // If any key in the objectKeys is undefined, consider it a non-match
+            return false;
+          }
+
+          return filterOptions[filterOption].includes(objectValue);
         })
       );
     }
@@ -106,7 +133,7 @@ const Filters = ({ tableType, origialData, selectedData, setSelectedData }: Prop
         {screenWidth < 769 && (
           <OptionsButtons
             tableType={tableType}
-            origialData={origialData}
+            originalData={originalData}
             setSelectedData={setSelectedData}
             filterMenuIsOpen={open}
             handleClickFilterBtn={handleClickFilterBtn}
@@ -131,7 +158,7 @@ const Filters = ({ tableType, origialData, selectedData, setSelectedData }: Prop
       {screenWidth >= 769 && (
         <OptionsButtons
           tableType={tableType}
-          origialData={origialData}
+          originalData={originalData}
           setSelectedData={setSelectedData}
           filterMenuIsOpen={open}
           handleClickFilterBtn={handleClickFilterBtn}

@@ -3,6 +3,7 @@ import Login from "../screens/Login";
 //Admin
 import HomeAdmin from "~/screens/HomeAdmin";
 import UserManagement from "~/screens/UserManagement";
+import AdminOrders from "~/screens/AdminOrders";
 
 //User
 import HomeClient from "~/screens/HomeClient";
@@ -36,6 +37,13 @@ export const routes = [
     name: "Utilizadores",
     admin: true,
     icon: <PersonIcon />
+  },
+  {
+    path: "/encomendas",
+    element: <AdminOrders />,
+    name: "Encomendas",
+    admin: true,
+    icon: <LocalShippingIcon />
   },
 
   // =================================================================>
