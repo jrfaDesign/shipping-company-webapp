@@ -2,7 +2,7 @@ import styled from "styled-components";
 import TextField from "@mui/material/TextField";
 
 interface InputWrapperProps {
-  width: string;
+  width: any;
 }
 
 export const InputWrapper = styled.div<InputWrapperProps>`

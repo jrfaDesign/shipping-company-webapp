@@ -11,7 +11,6 @@
       "email": "email@example.com",
       "deliveryAddress": "Rua das Flores, 123",
       "state": "Porto",
-
       "region": "region",
       "zip": "4000-001"
     },

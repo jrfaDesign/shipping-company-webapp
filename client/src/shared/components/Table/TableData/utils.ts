@@ -1,4 +1,17 @@
-export const TABLE_HEADER = {
+import { KeyToLabel } from "~/types/app";
+
+interface TableColumn {
+  label: string;
+  tableForAdmin?: boolean;
+  width?: string;
+}
+
+export interface TableHeaders {
+  orders?: TableColumn[];
+  users?: TableColumn[];
+}
+
+export const TABLE_HEADER: TableHeaders = {
   orders: [
     { label: "Data do Pedido" },
     { label: "Estado de Entrega" },
@@ -28,20 +41,21 @@ export const TABLE_HEADER = {
 };
 
 // TODO: change the index.ts to use this
-export const STATUS_CLASS = {
+export const STATUS_CLASS: KeyToLabel = {
   Completed: "completed",
   Cancelled: "cancelled",
   "On the road": "on-the-road"
 };
 
-export const STATUS_LABEL = {
+export const STATUS_LABEL: KeyToLabel = {
   Completed: "Completa",
   Cancelled: "Cancelada",
   "On the road": "Em distribuição"
 };
 
 // TODO: add exception if no sort function is to be enable
-export const KEY_TO_LABEL = {
+
+export const KEY_TO_LABEL: KeyToLabel = {
   "Data do Pedido": "requestedDate",
   "Estado de Entrega": "deliveryStatus",
   "Data de Entrega": "deliveryDate",

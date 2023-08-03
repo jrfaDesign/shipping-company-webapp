@@ -9,7 +9,14 @@ import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 import { OrdersTable, OrderContainer, Cell, Header } from "./styles";
-import { KEY_TO_LABEL, SORT_EXCEPTIONS, STATUS_CLASS, STATUS_LABEL, TABLE_HEADER } from "./utils";
+import {
+  KEY_TO_LABEL,
+  SORT_EXCEPTIONS,
+  STATUS_CLASS,
+  STATUS_LABEL,
+  TableHeaders,
+  TABLE_HEADER
+} from "./utils";
 
 interface Props {
   tableType: "orders" | "users";
@@ -98,7 +105,7 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
       <HorizontalScrollContainer width="100%" padding="0">
         <OrdersTable>
           <OrderContainer>
-            {TABLE_HEADER[tableType]
+            {(TABLE_HEADER[tableType] as any)
               .filter((header: any) => {
                 if (tableForAdmin) {
                   return header.tableForAdmin || !header.tableForAdmin;

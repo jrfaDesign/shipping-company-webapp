@@ -29,7 +29,7 @@ const StyledButton = ({ variant, disabled, onClick, text, startIcon, endIcon }: 
     );
   } else {
     return (
-      <Stack sx={{ color: theme.colors.lightBlue }}>
+      <Stack sx={{ color: "#2E5D9F" }}>
         <IconButton color={"inherit"} onClick={onClick}>
           {startIcon ? startIcon : endIcon}
         </IconButton>

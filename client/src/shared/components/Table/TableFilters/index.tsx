@@ -3,7 +3,7 @@ import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { useScreenWidth } from "~/hooks/globalHooks";
 
 import SearchInput from "~/shared/components/SearchInput";
-import DropdownMenu from "~/shared/containers/Header/components/Menu/components/DropdownMenu";
+import DropdownMenu from "~/shared/components/Table/TableFilters/components/DropdownMenu";
 
 import { Orders, RegisteredUser } from "~/types/app";
 import OptionsButtons from "./components/OptionsButtons";
@@ -94,22 +94,19 @@ const Filters = ({
 
     let filteredDataWithFilters = filteredData;
 
-    //console.log(filteredDataWithFilters[0].shipper._id);
-    console.log(filterOptions);
-
     if (filterOptions) {
       filteredDataWithFilters = filteredData.filter((data: any) =>
         Object.keys(filterOptions).every((filterOption: string) => {
-          const objectKey = filterLabelToObjectKey[filterOption];
+          const objectKey = (filterLabelToObjectKey as any)[filterOption];
 
-          if (!filterOptions[filterOption] || filterOptions[filterOption].length === 0) {
+          if (!filterOptions[filterOption] || (filterOptions[filterOption] as any).length === 0) {
             // If the filter option has no value, consider it a match
             return true;
           }
 
           const objectKeys = objectKey.split(".");
           const objectValue = objectKeys.reduce(
-            (obj, key) => (obj && obj[key] !== undefined ? obj[key] : undefined),
+            (obj: any, key: any) => (obj && obj[key] !== undefined ? obj[key] : undefined),
             data
           );
 
@@ -118,7 +115,7 @@ const Filters = ({
             return false;
           }
 
-          return filterOptions[filterOption].includes(objectValue);
+          return (filterOptions[filterOption] as any).includes(objectValue);
         })
       );
     }

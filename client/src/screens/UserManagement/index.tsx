@@ -15,7 +15,7 @@ const UserManagement = () => {
 
   if (isLoading) {
     return <Loading />;
-  } else if (!isLoading) {
+  } else {
     return <View data={registeredUsers} />;
   }
 };

@@ -1,7 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
-
 import Logo from "shared/components/Logo";
-import Menu from "./components/Menu";
 
 import Toast from "~/shared/components/Toast";
 
@@ -9,7 +6,7 @@ import useToastStore from "~/hooks/stores/toast";
 import { useScreenWidth } from "~/hooks/globalHooks";
 import useDrawerStore from "~/hooks/stores/drawer";
 
-import { Wrapper, DrawerMobileContainer } from "./styles";
+import { Wrapper } from "./styles";
 
 import DrawerMenu from "../DrawerMenu";
 import styled from "styled-components";

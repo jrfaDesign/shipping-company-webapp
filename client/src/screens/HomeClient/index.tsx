@@ -19,11 +19,9 @@ const HomeClient = () => {
 
   if (loadingOrders) {
     return <Loading />;
-  } else if (!loadingOrders) {
+  } else {
     return <View orders={orders} />;
   }
-
-  return <View />;
 };
 
 export default HomeClient;

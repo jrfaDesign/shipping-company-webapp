@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ResultClass, User, CourseClass, EbookClass } from "~/types/app";
+import { Orders, RegisteredUser } from "~/types/app";
 
 export const useScreenWidth = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -24,13 +24,7 @@ export const toUrlString = (str: string): string => {
 };
 
 export const Paginate = (
-  items:
-    | (CourseClass | EbookClass)[]
-    | (CourseClass | EbookClass | ResultClass | User)[]
-    | CourseClass[]
-    | EbookClass[]
-    | ResultClass[]
-    | User[],
+  items: (Orders | RegisteredUser)[],
   currentPage: number,
   itemsPerPage: number
 ) => {
@@ -50,7 +44,7 @@ export const validateEmail = (email: string) => {
 };
 
 export const statusToString = (status: number) => {
-  const string = {
+  const string: { [key: number]: string } = {
     200: "success",
     400: "error",
     401: "error",

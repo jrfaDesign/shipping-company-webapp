@@ -14,8 +14,8 @@ export interface Orders {
     name: string;
   };
   deliveryStatus: "Completed" | "Cancelled" | "On the road";
-  requestedDate: Date;
-  deliveryDate: Date;
+  requestedDate: Date | string;
+  deliveryDate: Date | string;
   weight: number;
   client: {
     name: string;
@@ -46,4 +46,8 @@ export interface RegistedComapny {
   state: string;
   zip: string;
   allOrder: [];
+}
+
+export interface KeyToLabel {
+  [key: string]: string;
 }
