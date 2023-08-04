@@ -66,32 +66,25 @@ const Filters = ({
       const lowerSearchField = searchField.toLowerCase();
       const { shipper, client } = data;
 
-      if (
-        (client &&
-          client.name &&
-          client.lastName &&
-          client.name.toLowerCase().includes(lowerSearchField)) ||
-        (data.lastName && data.lastName.toLowerCase().includes(lowerSearchField))
-      ) {
-        return true;
-      } else if (
-        tableForAdmin &&
-        shipper.name &&
-        shipper.name.toLowerCase().includes(lowerSearchField)
-      ) {
-        return true;
-      } else if (
-        client.deliveryAddress &&
-        client.deliveryAddress.toLowerCase().includes(lowerSearchField)
-      ) {
-        return true;
-      } else if (
-        client.requestedClient &&
-        client.requestedClient.toLowerCase().includes(lowerSearchField)
-      ) {
-        return true;
-      } else {
-        return false;
+      if (tableType === "orders") {
+        if (
+          client.name.toLowerCase().includes(lowerSearchField) ||
+          client.lastName.toLowerCase().includes(lowerSearchField)
+        ) {
+          return true;
+        } else if (tableForAdmin && shipper.name.toLowerCase().includes(lowerSearchField)) {
+          return true;
+        } else if (client.deliveryAddress.toLowerCase().includes(lowerSearchField)) {
+          return true;
+        } else if (client.requestedClient.toLowerCase().includes(lowerSearchField)) {
+          return true;
+        }
+      } else if (tableType === "users") {
+        if (data.name.toLowerCase().includes(lowerSearchField)) {
+          return true;
+        } else if (data.company.toLowerCase().includes(lowerSearchField)) {
+          return true;
+        }
       }
     });
 

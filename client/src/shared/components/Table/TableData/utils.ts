@@ -33,8 +33,7 @@ export const TABLE_HEADER: TableHeaders = {
     { label: "Nome", width: "300px" },
     { label: "Contacto" },
     { label: "Email", width: "450px" },
-    { label: "Contacto" },
-    { label: "Empresa" }
+    { label: "Empresa", width: "300px" }
   ]
 };
 

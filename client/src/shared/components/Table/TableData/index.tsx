@@ -155,14 +155,12 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
                 <OrderContainer key={data._id}>
                   <Cell>{data._id}</Cell>
                   <Cell width="300px">
-                    {data.client.name} {data.client.lastName}
+                    {data.name} {data.lastName}
                   </Cell>
 
-                  <Cell>{data.client.email ? data.client.email : " - "} </Cell>
-                  <Cell>{data.client.deliveryAddress}</Cell>
-                  <Cell>{data.client.zip}</Cell>
-                  <Cell>{data.client.state}</Cell>
-                  <Cell>{data.client.region}</Cell>
+                  <Cell>{data.contact}</Cell>
+                  <Cell width="450px">{data.email ? data.email : " - "} </Cell>
+                  <Cell width="300px">{data.company}</Cell>
                 </OrderContainer>
               ))}
             </>
