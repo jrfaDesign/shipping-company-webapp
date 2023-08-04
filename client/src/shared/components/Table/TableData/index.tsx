@@ -8,7 +8,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
-import { OrdersTable, OrderContainer, Cell, Header } from "./styles";
+import { Container, OrdersTable, OrderContainer, Cell, Header } from "./styles";
 import {
   KEY_TO_LABEL,
   SORT_EXCEPTIONS,
@@ -101,10 +101,10 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
   };
 
   return (
-    <div style={{ height: "100%", display: "flex" }}>
+    <Container>
       <HorizontalScrollContainer width="100%" padding="0">
         <OrdersTable>
-          <OrderContainer>
+          <OrderContainer className="sticky-container">
             {(TABLE_HEADER[tableType] as any)
               .filter((header: any) => {
                 if (tableForAdmin) {
@@ -169,7 +169,7 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
           )}
         </OrdersTable>
       </HorizontalScrollContainer>
-    </div>
+    </Container>
   );
 };
 

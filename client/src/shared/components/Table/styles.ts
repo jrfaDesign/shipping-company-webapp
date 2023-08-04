@@ -6,6 +6,7 @@ export const PaginationContainer = styled.div`
   justify-content: flex-end;
 
   padding: 10px 20px;
+  box-shadow: 0px -10px 10px -3px rgba(0, 0, 0, 0.15);
 `;
 
 export const TalbeWrapper = styled.div`

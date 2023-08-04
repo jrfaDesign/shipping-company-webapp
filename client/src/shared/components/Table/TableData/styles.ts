@@ -5,6 +5,18 @@ interface CellProps {
   width?: string;
 }
 
+export const Container = styled.div`
+  height: 100%;
+  overflow: scroll;
+
+  .sticky-container {
+    background:white
+    position: sticky;
+    top: 0; /* Stick to the top of the container */
+    z-index: 1;
+  }
+`;
+
 export const OrdersTable = styled.div``;
 
 export const Header = styled.div<CellProps>`
@@ -21,8 +33,8 @@ export const Header = styled.div<CellProps>`
 
   ${tablet} {
     font-size: 16px;
-    padding: 5px 20px 5px 10px;
-    width: ${(props) => props.width ?? "200px"};
+    padding: 5px 5px 5px 10px;
+    width: ${(props) => props.width ?? "160px"};
   }
 `;
 
@@ -63,7 +75,7 @@ export const OrderContainer = styled.div`
 export const Cell = styled.div<CellProps>`
   width:160px ;
   color: ${({ theme }) => theme.text}
-  padding:2px 10px 2px 5px;
+  padding:2px 5px 2px 5px;
   font-size: 12px;
   
   overflow: hidden;
@@ -73,7 +85,7 @@ export const Cell = styled.div<CellProps>`
   ${tablet} {
     font-size: 16px;
     padding:5px 20px 5px 10px;
-    width ${(props) => props.width ?? "200px"} ;
+    width ${(props) => props.width ?? "160px"} ;
   }
 
   .status{

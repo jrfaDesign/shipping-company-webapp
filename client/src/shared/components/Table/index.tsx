@@ -23,9 +23,8 @@ interface Props {
 
 const Table = ({ tableType, data, tableForAdmin }: Props) => {
   const [selectedData, setSelectedData] = useState<(Orders | RegisteredUser)[]>([]);
-  const screenWidth = useScreenWidth();
 
-  const itemsPerPage = screenWidth > 769 ? 8 : 10;
+  const itemsPerPage = 40;
   const [currentPage, setCurrentPage] = useState(1);
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -81,18 +80,17 @@ const Table = ({ tableType, data, tableForAdmin }: Props) => {
             tableForAdmin={tableForAdmin}
           />
         )}
+        {selectedData.length > 0 && (
+          <PaginationContainer>
+            <Pagination
+              count={Math.ceil(selectedData.length / itemsPerPage)}
+              shape="rounded"
+              page={currentPage}
+              onChange={handleChange}
+            />
+          </PaginationContainer>
+        )}
       </TalbeWrapper>
-
-      {selectedData.length > 0 && (
-        <PaginationContainer>
-          <Pagination
-            count={Math.ceil(selectedData.length / itemsPerPage)}
-            shape="rounded"
-            page={currentPage}
-            onChange={handleChange}
-          />
-        </PaginationContainer>
-      )}
     </FullPageWhiteContainer>
   );
 };
