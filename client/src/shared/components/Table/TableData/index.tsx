@@ -8,7 +8,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
-import { OrdersTable, OrderContainer, Cell, Header } from "./styles";
+import { Container, OrdersTable, OrderContainer, Cell, Header } from "./styles";
 import {
   KEY_TO_LABEL,
   SORT_EXCEPTIONS,
@@ -101,10 +101,10 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
   };
 
   return (
-    <div style={{ height: "100%", display: "flex" }}>
+    <Container>
       <HorizontalScrollContainer width="100%" padding="0">
         <OrdersTable>
-          <OrderContainer>
+          <OrderContainer className="sticky-container">
             {(TABLE_HEADER[tableType] as any)
               .filter((header: any) => {
                 if (tableForAdmin) {
@@ -155,21 +155,19 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
                 <OrderContainer key={data._id}>
                   <Cell>{data._id}</Cell>
                   <Cell width="300px">
-                    {data.client.name} {data.client.lastName}
+                    {data.name} {data.lastName}
                   </Cell>
 
-                  <Cell>{data.client.email ? data.client.email : " - "} </Cell>
-                  <Cell>{data.client.deliveryAddress}</Cell>
-                  <Cell>{data.client.zip}</Cell>
-                  <Cell>{data.client.state}</Cell>
-                  <Cell>{data.client.region}</Cell>
+                  <Cell>{data.contact}</Cell>
+                  <Cell width="450px">{data.email ? data.email : " - "} </Cell>
+                  <Cell width="300px">{data.company}</Cell>
                 </OrderContainer>
               ))}
             </>
           )}
         </OrdersTable>
       </HorizontalScrollContainer>
-    </div>
+    </Container>
   );
 };
 

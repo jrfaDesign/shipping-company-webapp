@@ -12,6 +12,7 @@ interface ContentContainerProps {
 
 export const Wrapper = styled.div<WrapperProps>`
   width: ${(props) => props.width};
+  height: 100%;
   display: flex;
   justify-content: center;
   border-bottom: ${(props) =>
@@ -22,6 +23,7 @@ export const Wrapper = styled.div<WrapperProps>`
 
 export const ContentContainer = styled.div<ContentContainerProps>`
   padding: ${(props) => (props.padding ? props.padding : "35px 10px")};
+  height: 100%;
   display: flex;
   overflow-x: auto;
   overflow-y: none;

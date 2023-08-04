@@ -7,7 +7,7 @@ export const AppContainer = styled.div`
 `;
 
 export const Body = styled.div`
-  overflow: auto;
+  overflow: hidden;
   overflow-x: hidden;
   height: 100%;
   padding: 14px 14px;
