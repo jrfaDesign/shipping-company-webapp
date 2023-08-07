@@ -3,12 +3,17 @@ import Login from "../screens/Login";
 //Admin
 import HomeAdmin from "~/screens/HomeAdmin";
 import UserManagement from "~/screens/UserManagement";
+import UserDetails from "~/screens/UserDetails";
 import ShipperManagement from "~/screens/ShipperManagement";
+import ShipperDetails from "~/screens/ShipperDetails";
 import AdminOrders from "~/screens/AdminOrders";
 
 //User
 import HomeClient from "~/screens/HomeClient";
 import MyOrders from "~/screens/MyOrders";
+
+//Both Users
+import OrdersDetails from "~/screens/OrdersDetails";
 
 //Legal
 import Register from "~/screens/Register";
@@ -41,6 +46,12 @@ export const routes = [
     icon: <PersonIcon />
   },
   {
+    path: "/utilizadores/:id",
+    element: <UserDetails />,
+    name: "Utilizadores detalhes",
+    admin: true
+  },
+  {
     path: "/expeditores",
     element: <ShipperManagement />,
     name: "Expeditores",
@@ -48,11 +59,29 @@ export const routes = [
     icon: <ApartmentIcon />
   },
   {
+    path: "/expeditores/:id",
+    element: <ShipperDetails />,
+    name: "Expeditores detalhes",
+    admin: true
+  },
+  {
     path: "/encomendas",
     element: <AdminOrders />,
     name: "Encomendas",
     admin: true,
     icon: <LocalShippingIcon />
+  },
+  {
+    path: "/encomendas/:id",
+    element: <OrdersDetails />,
+    name: "Encomendas",
+    admin: true
+  },
+  {
+    path: "/encomendas/nova-encomeda",
+    element: <NewOrder />,
+    name: "Nova Encomenda",
+    admin: true
   },
 
   // =================================================================>
@@ -74,11 +103,20 @@ export const routes = [
     icon: <LocalShippingIcon />
   },
   {
+    path: "/encomendas/:id",
+    element: <OrdersDetails />,
+    name: "Encomendas",
+    admin: false
+  },
+  {
     path: "/encomendas/nova-encomeda",
     element: <NewOrder />,
     name: "Nova Encomenda",
     admin: false
   },
+
+  // =================================================================>
+  // Both Users
 
   // =================================================================>
   // Legal

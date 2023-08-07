@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 
-import { Orders, RegisteredUser } from "~/types/app";
+import { Orders, RegisteredUser, RegistedShipper } from "~/types/app";
+
+import { useNavigate } from "react-router-dom";
 
 import HorizontalScrollContainer from "~/shared/containers/HorizontalScrollContainer";
 
@@ -14,12 +16,14 @@ import { KEY_TO_LABEL, SORT_EXCEPTIONS, STATUS_CLASS, STATUS_LABEL, TABLE_HEADER
 interface Props {
   tableType: "orders" | "users" | "shippers";
   tableForAdmin?: boolean;
-  data: (Orders | RegisteredUser)[];
+  data: (Orders | RegisteredUser | RegistedShipper)[];
 }
 
 const TableData = ({ tableType, tableForAdmin, data }: Props) => {
   const [sortState, setSortState] = useState<"asc" | "desc" | "unsorted">("unsorted");
   const [sortKey, setSortKey] = useState<string | null>(null);
+
+  const navigate = useNavigate();
 
   function formatDate(dateString: String) {
     const date = new Date(dateString as any);
@@ -93,6 +97,11 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
     } else return <ArrowRightIcon />;
   };
 
+  const handleRowSelection = (data: Orders | RegisteredUser | RegistedShipper) => {
+    const { _id } = data;
+    navigate(_id);
+  };
+
   return (
     <Container>
       <HorizontalScrollContainer width="100%" padding="0">
@@ -121,7 +130,7 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
           {tableType === "orders" && (
             <>
               {sortedData.map((data: any) => (
-                <OrderContainer key={data._id}>
+                <OrderContainer key={data._id} onClick={() => handleRowSelection(data)}>
                   <Cell>{formatDate(data.requestedDate as any)}</Cell>
                   <Cell>
                     <span className={`status ${STATUS_CLASS[data.deliveryStatus]}`}>
@@ -146,7 +155,7 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
           {tableType === "users" && (
             <>
               {sortedData.map((data: any) => (
-                <OrderContainer key={data._id}>
+                <OrderContainer key={data._id} onClick={() => handleRowSelection(data)}>
                   <Cell>{data._id}</Cell>
                   <Cell width="300px">
                     {data.name} {data.lastName}
@@ -162,7 +171,7 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
           {tableType === "shippers" && (
             <>
               {sortedData.map((data: any) => (
-                <OrderContainer key={data._id}>
+                <OrderContainer key={data._id} onClick={() => handleRowSelection(data)}>
                   <Cell>{data._id}</Cell>
                   <Cell>{data.name}</Cell>
 
