@@ -39,14 +39,14 @@ const Table = ({ tableType, data, tableForAdmin }: Props) => {
   };
 
   useEffect(() => {
-    setCurrentPage(1);
-  }, [selectedData]);
-
-  useEffect(() => {
     if (data) {
       setSelectedData(data);
     }
   }, [data]);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedData]);
 
   if (data.length === 0) {
     return (
@@ -61,12 +61,13 @@ const Table = ({ tableType, data, tableForAdmin }: Props) => {
           neste momento.
         </span>
       </FullPageWhiteContainer>
-    ); // or display a loading spinner or fallback content
+    );
   }
 
   const paginatedContent = selectedData
     ? Paginate(selectedData, currentPage, itemsPerPage)
     : undefined;
+
   return (
     <FullPageWhiteContainer>
       <TalbeWrapper>

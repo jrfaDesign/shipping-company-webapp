@@ -8,15 +8,8 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
-import { Container, OrdersTable, OrderContainer, Cell, Header } from "./styles";
-import {
-  KEY_TO_LABEL,
-  SORT_EXCEPTIONS,
-  STATUS_CLASS,
-  STATUS_LABEL,
-  TableHeaders,
-  TABLE_HEADER
-} from "./utils";
+import { Container, OrdersTable, OrderContainer, Cell } from "./styles";
+import { KEY_TO_LABEL, SORT_EXCEPTIONS, STATUS_CLASS, STATUS_LABEL, TABLE_HEADER } from "./utils";
 
 interface Props {
   tableType: "orders" | "users" | "shippers";

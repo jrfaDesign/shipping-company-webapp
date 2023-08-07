@@ -85,6 +85,16 @@ const Filters = ({
         } else if (data.company.toLowerCase().includes(lowerSearchField)) {
           return true;
         }
+      } else if (tableType === "shippers") {
+        if (data.name.toLowerCase().includes(lowerSearchField)) {
+          return true;
+        } else if (data.email.toLowerCase().includes(lowerSearchField)) {
+          return true;
+        } else if (data.address.toLowerCase().includes(lowerSearchField)) {
+          return true;
+        } else if (data.state.toLowerCase().includes(lowerSearchField)) {
+          return true;
+        }
       }
     });
 
