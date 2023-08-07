@@ -73,6 +73,7 @@ export const OrderContainer = styled.div`
 `;
 
 export const Cell = styled.div<CellProps>`
+
   width:160px ;
   color: ${({ theme }) => theme.text}
   padding:2px 5px 2px 5px;
@@ -81,6 +82,13 @@ export const Cell = styled.div<CellProps>`
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+
+  &.header{
+    color: ${({ theme }) => theme.colors.lightBlue};
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
   
   ${tablet} {
     font-size: 16px;

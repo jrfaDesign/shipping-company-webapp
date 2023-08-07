@@ -19,7 +19,7 @@ import {
 } from "./utils";
 
 interface Props {
-  tableType: "orders" | "users";
+  tableType: "orders" | "users" | "shippers";
   tableForAdmin?: boolean;
   data: (Orders | RegisteredUser)[];
 }
@@ -114,14 +114,15 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
                 }
               })
               .map((headerText: any) => (
-                <Header
+                <Cell
+                  className="header"
                   key={headerText.label}
                   width={headerText?.width}
                   onClick={() => sortData(headerText.label)}
                 >
                   {headerText.label}
                   {SortIcon(headerText.label)}
-                </Header>
+                </Cell>
               ))}
           </OrderContainer>
           {tableType === "orders" && (
@@ -161,6 +162,23 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
                   <Cell>{data.contact}</Cell>
                   <Cell width="450px">{data.email ? data.email : " - "} </Cell>
                   <Cell width="300px">{data.company}</Cell>
+                </OrderContainer>
+              ))}
+            </>
+          )}
+          {tableType === "shippers" && (
+            <>
+              {sortedData.map((data: any) => (
+                <OrderContainer key={data._id}>
+                  <Cell>{data._id}</Cell>
+                  <Cell>{data.name}</Cell>
+
+                  <Cell>{data.orders.length}</Cell>
+                  <Cell>{data.contact}</Cell>
+                  <Cell width="350px">{data.email ? data.email : " - "} </Cell>
+                  <Cell width="450px">{data.address}</Cell>
+                  <Cell>{data.zip}</Cell>
+                  <Cell>{data.state}</Cell>
                 </OrderContainer>
               ))}
             </>

@@ -3,6 +3,7 @@ import Login from "../screens/Login";
 //Admin
 import HomeAdmin from "~/screens/HomeAdmin";
 import UserManagement from "~/screens/UserManagement";
+import ShipperManagement from "~/screens/ShipperManagement";
 import AdminOrders from "~/screens/AdminOrders";
 
 //User
@@ -18,6 +19,7 @@ import Cookies from "~/screens/Cookies";
 //Icons
 import HomeIcon from "@mui/icons-material/Home";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import ApartmentIcon from "@mui/icons-material/Apartment";
 import NewOrder from "~/screens/NewOrder";
 import PersonIcon from "@mui/icons-material/Person";
 
@@ -37,6 +39,13 @@ export const routes = [
     name: "Utilizadores",
     admin: true,
     icon: <PersonIcon />
+  },
+  {
+    path: "/expeditores",
+    element: <ShipperManagement />,
+    name: "Expeditores",
+    admin: true,
+    icon: <ApartmentIcon />
   },
   {
     path: "/encomendas",
