@@ -27,6 +27,17 @@ const OptionsButtons = ({
   filterInformation
 }: Props) => {
   const navigate = useNavigate();
+
+  const handleAddButtonAction = () => {
+    switch (tableType) {
+      case "orders":
+        return navigate("/encomendas/nova-encomeda");
+      case "users":
+        return navigate("/utilizadores/novo-utilizador");
+      case "shippers":
+        return navigate("/expeditores/novo-expeditor");
+    }
+  };
   return (
     <Container>
       {filterInformation && filterInformation.length > 0 && (
@@ -37,13 +48,7 @@ const OptionsButtons = ({
           <FilterListIcon />
         </MenuIconContainer>
       )}
-      <MenuIconContainer
-        onClick={() =>
-          navigate(
-            tableType === "orders" ? "/encomendas/nova-encomeda" : "/utilizadores/novo-utilizador"
-          )
-        }
-      >
+      <MenuIconContainer onClick={() => handleAddButtonAction()}>
         <AddIcon />
       </MenuIconContainer>
     </Container>

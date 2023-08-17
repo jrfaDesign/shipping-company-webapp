@@ -1,48 +1,32 @@
 import React from "react";
+import GoBackButton from "~/shared/components/GoBackButton";
 
-import {
-  Container,
-  HeaderContainer,
-  HeaderWrapper,
-  HeaderTitleText,
-  ButtonContainer,
-  ChildrenContainer
-} from "./styles";
+import { Container, Header, ChildrenContainer } from "./styles";
 
 interface Props {
   children: React.ReactNode;
   header?: HeaderProps;
   margin?: string;
-  padding?: boolean;
 }
 
 interface HeaderProps {
   title: string;
-  button?: HeaderButtonProps;
+  goBackTo: string;
 }
 
-interface HeaderButtonProps {
-  icon: any;
-  action: () => void;
-}
-
-const FullPageWhiteContainer = ({ children, header, margin, padding }: Props) => {
+const FullPageWhiteContainer = ({ children, header, margin }: Props) => {
   return (
     <Container margin={margin}>
       <>
         {header && (
-          <HeaderContainer>
-            <HeaderWrapper>
-              <HeaderTitleText>{header.title}</HeaderTitleText>
-              {header.button && (
-                <ButtonContainer onClick={header.button?.action}>
-                  {header.button?.icon}
-                </ButtonContainer>
-              )}
-            </HeaderWrapper>
-          </HeaderContainer>
+          <div>
+            <Header>
+              <GoBackButton navigateLocation={header.goBackTo} />
+              {header.title}
+            </Header>
+          </div>
         )}
-        <ChildrenContainer padding={padding}>{children}</ChildrenContainer>
+        <ChildrenContainer padding={header ? true : false}>{children}</ChildrenContainer>
       </>
     </Container>
   );

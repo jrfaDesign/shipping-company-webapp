@@ -1,7 +1,18 @@
 import React from "react";
+import FullPageWhiteContainer from "~/shared/containers/FullPageWhiteContainer";
+import ShipperForm from "./components/ShipperForm";
 
 const ShipperCreationForm = () => {
-  return <div>ShipperCreationForm</div>;
+  const HEADER = {
+    title: "Novo expeditor",
+    goBackTo: "/expeditores"
+  };
+
+  return (
+    <FullPageWhiteContainer header={HEADER}>
+      <ShipperForm />
+    </FullPageWhiteContainer>
+  );
 };
 
 export default ShipperCreationForm;

@@ -106,7 +106,7 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
     <Container>
       <HorizontalScrollContainer width="100%" padding="0">
         <OrdersTable>
-          <OrderContainer className="sticky-container">
+          <OrderContainer>
             {(TABLE_HEADER[tableType] as any)
               .filter((header: any) => {
                 if (tableForAdmin) {
@@ -130,7 +130,7 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
           {tableType === "orders" && (
             <>
               {sortedData.map((data: any) => (
-                <OrderContainer key={data._id} onClick={() => handleRowSelection(data)}>
+                <OrderContainer key={data._id} onDoubleClick={() => handleRowSelection(data)}>
                   <Cell>{formatDate(data.requestedDate as any)}</Cell>
                   <Cell>
                     <span className={`status ${STATUS_CLASS[data.deliveryStatus]}`}>
@@ -155,7 +155,7 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
           {tableType === "users" && (
             <>
               {sortedData.map((data: any) => (
-                <OrderContainer key={data._id} onClick={() => handleRowSelection(data)}>
+                <OrderContainer key={data._id} onDoubleClick={() => handleRowSelection(data)}>
                   <Cell>{data._id}</Cell>
                   <Cell width="300px">
                     {data.name} {data.lastName}
@@ -171,7 +171,7 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
           {tableType === "shippers" && (
             <>
               {sortedData.map((data: any) => (
-                <OrderContainer key={data._id} onClick={() => handleRowSelection(data)}>
+                <OrderContainer key={data._id} onDoubleClick={() => handleRowSelection(data)}>
                   <Cell>{data._id}</Cell>
                   <Cell>{data.name}</Cell>
 

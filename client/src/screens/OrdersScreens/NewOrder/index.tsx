@@ -5,15 +5,14 @@ import FullPageWhiteContainer from "~/shared/containers/FullPageWhiteContainer";
 
 import NewOrderForm from "./components/NewOrderForm";
 
-import { Header } from "./styles";
-
 const NewOrder = () => {
+  const HEADER = {
+    title: "Nova encomenda",
+    goBackTo: "/encomendas"
+  };
+
   return (
-    <FullPageWhiteContainer>
-      <Header>
-        <GoBackButton navigateLocation={"/encomendas"} />
-        Nova encomenda
-      </Header>
+    <FullPageWhiteContainer header={HEADER}>
       <NewOrderForm />
     </FullPageWhiteContainer>
   );

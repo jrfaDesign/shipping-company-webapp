@@ -43,6 +43,16 @@ export const validateEmail = (email: string) => {
   return re.test(email);
 };
 
+export const validatePortugueseMobileNumber = (number: string) => {
+  const re = /^(?:(?:\+|00)351\s?)?9[1236]\d{7}$/;
+  return re.test(number);
+};
+
+export const validatePortugueseZipCode = (zipCode: string) => {
+  const re = /^\d{4}-\d{3}$/;
+  return re.test(zipCode);
+};
+
 export const statusToString = (status: number) => {
   const string: { [key: number]: string } = {
     200: "success",

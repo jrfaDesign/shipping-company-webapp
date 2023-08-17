@@ -10,9 +10,9 @@ export const Container = styled.div`
   overflow: scroll;
 
   .sticky-container {
-    background:white
+    background: white;
     position: sticky;
-    top: 0; /* Stick to the top of the container */
+    top: 0;
     z-index: 1;
   }
 `;
