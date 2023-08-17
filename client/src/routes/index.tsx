@@ -2,31 +2,34 @@ import Login from "../screens/Login";
 
 //Admin
 import HomeAdmin from "~/screens/HomeAdmin";
-import UserManagement from "~/screens/UserManagement";
-import UserDetails from "~/screens/UserDetails";
-import ShipperManagement from "~/screens/ShipperManagement";
-import ShipperDetails from "~/screens/ShipperDetails";
-import AdminOrders from "~/screens/AdminOrders";
+import UserManagement from "~/screens/UserScreens/UserManagement";
+import UserDetails from "~/screens/UserScreens/UserDetails";
+
+import ShipperManagement from "~/screens/ShipperScreens/ShipperManagement";
+import ShipperDetails from "~/screens/ShipperScreens/ShipperDetails";
+import AdminOrders from "~/screens/OrdersScreens/AdminOrders";
 
 //User
 import HomeClient from "~/screens/HomeClient";
-import MyOrders from "~/screens/MyOrders";
+import MyOrders from "~/screens/OrdersScreens/MyOrders";
 
 //Both Users
-import OrdersDetails from "~/screens/OrdersDetails";
+import OrdersDetails from "~/screens/OrdersScreens/OrdersDetails";
 
 //Legal
 import Register from "~/screens/Register";
 import Contacts from "~/screens/Contacts";
-import PrivacyPolitics from "~/screens/PrivacyPolitics";
-import Cookies from "~/screens/Cookies";
+import PrivacyPolitics from "~/screens/LegalScreens/PrivacyPolitics";
+import Cookies from "~/screens/LegalScreens/Cookies";
 
 //Icons
 import HomeIcon from "@mui/icons-material/Home";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import ApartmentIcon from "@mui/icons-material/Apartment";
-import NewOrder from "~/screens/NewOrder";
+import NewOrder from "~/screens/OrdersScreens/NewOrder";
 import PersonIcon from "@mui/icons-material/Person";
+import ShipperCreationForm from "~/screens/ShipperScreens/ShipperCreationForm";
+import UserCreationForm from "~/screens/UserScreens/UserCreationForm";
 
 export const routes = [
   // =================================================================>
@@ -52,6 +55,12 @@ export const routes = [
     admin: true
   },
   {
+    path: "/utilizadores/novo-utilizador",
+    element: <UserCreationForm />,
+    name: "Novo Utilizador",
+    admin: true
+  },
+  {
     path: "/expeditores",
     element: <ShipperManagement />,
     name: "Expeditores",
@@ -62,6 +71,12 @@ export const routes = [
     path: "/expeditores/:id",
     element: <ShipperDetails />,
     name: "Expeditores detalhes",
+    admin: true
+  },
+  {
+    path: "/expeditores/novo-expeditor",
+    element: <ShipperCreationForm />,
+    name: "Novo Expeditor",
     admin: true
   },
   {
