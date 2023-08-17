@@ -5,16 +5,16 @@ import { useScreenWidth } from "~/hooks/globalHooks";
 import SearchInput from "~/shared/components/SearchInput";
 import DropdownMenu from "~/shared/components/Table/TableFilters/components/DropdownMenu";
 
-import { Orders, RegisteredUser } from "~/types/app";
+import { Orders, RegistedShipper, RegisteredUser } from "~/types/app";
 import OptionsButtons from "./components/OptionsButtons";
 
 import { Container, TextOptionsContainer, SearchInputContainer, TotalText } from "./styles";
 import { getFilterOptions } from "./utils";
 interface Props {
-  tableType: "orders" | "users";
-  originalData: (Orders | RegisteredUser)[];
-  selectedData: (Orders | RegisteredUser)[] | null;
-  setSelectedData: Dispatch<SetStateAction<(Orders | RegisteredUser)[]>>;
+  tableType: "orders" | "users" | "shippers";
+  originalData: (Orders | RegisteredUser | RegistedShipper)[];
+  selectedData: (Orders | RegisteredUser | RegistedShipper)[] | null;
+  setSelectedData: Dispatch<SetStateAction<(Orders | RegisteredUser | RegistedShipper)[]>>;
   tableForAdmin?: boolean;
 }
 
@@ -83,6 +83,16 @@ const Filters = ({
         if (data.name.toLowerCase().includes(lowerSearchField)) {
           return true;
         } else if (data.company.toLowerCase().includes(lowerSearchField)) {
+          return true;
+        }
+      } else if (tableType === "shippers") {
+        if (data.name.toLowerCase().includes(lowerSearchField)) {
+          return true;
+        } else if (data.email.toLowerCase().includes(lowerSearchField)) {
+          return true;
+        } else if (data.address.toLowerCase().includes(lowerSearchField)) {
+          return true;
+        } else if (data.state.toLowerCase().includes(lowerSearchField)) {
           return true;
         }
       }

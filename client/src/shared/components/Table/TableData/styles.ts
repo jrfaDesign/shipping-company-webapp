@@ -19,25 +19,6 @@ export const Container = styled.div`
 
 export const OrdersTable = styled.div``;
 
-export const Header = styled.div<CellProps>`
-  margin: 0 auto;
-  width: 160px;
-  color: ${({ theme }) => theme.colors.lightBlue};
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-
-  display: flex;
-  align-items: center;
-
-  ${tablet} {
-    font-size: 16px;
-    padding: 5px 5px 5px 10px;
-    width: ${(props) => props.width ?? "160px"};
-  }
-`;
-
 export const OrderContainer = styled.div`
   display: flex;
   padding: 7.8px 20px;
@@ -73,6 +54,7 @@ export const OrderContainer = styled.div`
 `;
 
 export const Cell = styled.div<CellProps>`
+
   width:160px ;
   color: ${({ theme }) => theme.text}
   padding:2px 5px 2px 5px;
@@ -81,6 +63,13 @@ export const Cell = styled.div<CellProps>`
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+
+  &.header{
+    color: ${({ theme }) => theme.colors.lightBlue};
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
   
   ${tablet} {
     font-size: 16px;

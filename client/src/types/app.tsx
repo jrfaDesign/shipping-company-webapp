@@ -37,7 +37,7 @@ export interface RegisteredUser {
   company: string;
 }
 
-export interface RegistedComapny {
+export interface RegistedShipper {
   _id: string;
   name: string;
   email: string;
@@ -45,7 +45,7 @@ export interface RegistedComapny {
   address: string;
   state: string;
   zip: string;
-  allOrder: [];
+  orders: string[];
 }
 
 export interface KeyToLabel {

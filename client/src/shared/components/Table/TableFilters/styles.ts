@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { tablet, laptop, maxLaptop } from "~/styles/theme";
+import { laptop, maxLaptop } from "~/styles/theme";
 
 export const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.superLightBlue};
