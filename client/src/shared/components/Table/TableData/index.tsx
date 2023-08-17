@@ -192,3 +192,4 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
 };
 
 export default TableData;
+

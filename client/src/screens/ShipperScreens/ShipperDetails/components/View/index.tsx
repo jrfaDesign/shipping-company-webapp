@@ -16,3 +16,4 @@ const View = ({ shipper }: Props) => {
 };
 
 export default View;
+
