@@ -8,13 +8,6 @@ interface CellProps {
 export const Container = styled.div`
   height: 100%;
   overflow: scroll;
-
-  .sticky-container {
-    background:white
-    position: sticky;
-    top: 0; /* Stick to the top of the container */
-    z-index: 1;
-  }
 `;
 
 export const OrdersTable = styled.div``;

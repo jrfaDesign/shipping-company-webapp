@@ -31,10 +31,10 @@ export const TABLE_HEADER: TableHeaders = {
 
   users: [
     { label: "Id" },
-    { label: "Nome", width: "300px" },
+    { label: "Nome", width: "400px" },
     { label: "Contacto" },
-    { label: "Email", width: "450px" },
-    { label: "Empresa", width: "300px" }
+    { label: "Email", width: "500px" },
+    { label: "Empresa", width: "400px" }
   ],
 
   shippers: [
@@ -88,3 +88,4 @@ export const SORT_EXCEPTIONS = [
   "client.zip",
   undefined
 ];
+

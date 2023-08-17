@@ -3,7 +3,7 @@ import { statusToString } from "../globalHooks";
 
 type ToastStore = {
   toast: ToastOptionProps;
-  setToastOptions: (toast: ToastOptionProps) => void;
+  setToastOptions: (toast: ToastOptionProps, response?: any) => void;
 };
 
 type ToastOptionProps = {
@@ -19,12 +19,12 @@ const useToastStore = create<ToastStore>((set) => ({
     severity: "info"
   },
 
-  setToastOptions: (toast: ToastOptionProps) => {
+  setToastOptions: (toast: ToastOptionProps, response: any) => {
     set({
       toast: {
-        isVisible: toast.isVisible,
-        message: toast.message,
-        severity: statusToString(toast.severity as any)
+        isVisible: response ? true : toast.isVisible,
+        message: response ? response.data.message : toast.message,
+        severity: statusToString(response ? response.status : (toast.severity as any))
       }
     });
   }
