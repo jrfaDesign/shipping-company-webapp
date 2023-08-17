@@ -5,7 +5,7 @@ import { useShippersStore } from "~/hooks/stores/shippers";
 import Loading from "~/shared/components/Loading";
 import FullPageWhiteContainer from "~/shared/containers/FullPageWhiteContainer";
 
-import UserForm from "./components/UserForm";
+import UserForm from "../../Forms/UserForm";
 
 const UserCreationForm = () => {
   const getShippers = useShippersStore((state) => state.fetchRegisteredShippers);

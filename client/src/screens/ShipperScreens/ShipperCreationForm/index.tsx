@@ -1,6 +1,6 @@
 import React from "react";
 import FullPageWhiteContainer from "~/shared/containers/FullPageWhiteContainer";
-import ShipperForm from "./components/ShipperForm";
+import ShipperForm from "../../Forms/ShipperForm";
 
 const ShipperCreationForm = () => {
   const HEADER = {

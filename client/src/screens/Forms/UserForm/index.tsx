@@ -7,7 +7,7 @@ import { useShippersStore } from "~/hooks/stores/shippers";
 import StyledButton from "~/shared/components/Button";
 import StyledInput from "~/shared/components/StyledInput";
 
-import { FormContainer, ButtonContainer, MultiInputContainer } from "./styles";
+import { FormContainer, ButtonContainer, MultiInputContainer } from "../styles";
 
 import { FormErrorsProps, FormProps, INITIAL_FORM_DATA, getFormErrors } from "./utils";
 import StyledSelectComponent from "~/shared/components/Select";
