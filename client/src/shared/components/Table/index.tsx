@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import { Orders, RegisteredUser } from "~/types/app";
+import { Orders, RegistedShipper, RegisteredUser } from "~/types/app";
 
 import { Paginate } from "~/hooks/globalHooks";
 
@@ -13,16 +13,16 @@ import TableData from "./TableData";
 import { PaginationContainer, TalbeWrapper } from "./styles";
 import TableFilters from "./TableFilters";
 
-import { useScreenWidth } from "~/hooks/globalHooks";
-
 interface Props {
-  tableType: "orders" | "users";
-  data: (Orders | RegisteredUser)[];
+  tableType: "orders" | "users" | "shippers";
+  data: (Orders | RegisteredUser | RegistedShipper)[];
   tableForAdmin?: boolean;
 }
 
 const Table = ({ tableType, data, tableForAdmin }: Props) => {
-  const [selectedData, setSelectedData] = useState<(Orders | RegisteredUser)[]>([]);
+  const [selectedData, setSelectedData] = useState<(Orders | RegisteredUser | RegistedShipper)[]>(
+    []
+  );
 
   const itemsPerPage = 40;
   const [currentPage, setCurrentPage] = useState(1);
@@ -44,19 +44,30 @@ const Table = ({ tableType, data, tableForAdmin }: Props) => {
     }
   }, [data]);
 
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedData]);
+
   if (data.length === 0) {
     return (
       <FullPageWhiteContainer>
         <span className="no-data">
-          Parece que não há {tableType === "orders" ? "encomendas" : "utilziadores"} neste momento.
+          Parece que não há{" "}
+          {tableType === "orders"
+            ? "encomendas"
+            : tableType === "users"
+            ? "utilziadores"
+            : "expeditores"}{" "}
+          neste momento.
         </span>
       </FullPageWhiteContainer>
-    ); // or display a loading spinner or fallback content
+    );
   }
 
   const paginatedContent = selectedData
     ? Paginate(selectedData, currentPage, itemsPerPage)
     : undefined;
+
   return (
     <FullPageWhiteContainer>
       <TalbeWrapper>
@@ -70,8 +81,13 @@ const Table = ({ tableType, data, tableForAdmin }: Props) => {
 
         {selectedData.length === 0 ? (
           <span className="no-data">
-            Parece que não há {tableType === "orders" ? "encomendas" : "utilziadores"} neste
-            momento.
+            Parece que não há{" "}
+            {tableType === "orders"
+              ? "encomendas"
+              : tableType === "users"
+              ? "utilziadores"
+              : "expeditores"}{" "}
+            neste momento.
           </span>
         ) : (
           <TableData

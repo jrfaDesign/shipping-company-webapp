@@ -1,9 +1,12 @@
 export const getFilterOptions = (
-  tableType: "orders" | "users",
+  tableType: "orders" | "users" | "shippers",
   data: any,
   tableForAdmin: boolean | undefined
 ) => {
   if (tableType === "users") {
+    return null;
+  }
+  if (tableType === "shippers") {
     return null;
   }
   //TODO: get options one ** new option ** based on all orders.state
