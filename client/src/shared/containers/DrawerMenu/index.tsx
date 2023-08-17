@@ -34,11 +34,13 @@ const DrawerMenu = () => {
   const toggleDrawer = useDrawerStore((state) => state.toggleDrawer);
 
   const handleNavigation = (path: string) => {
+    toggleDrawer();
     navigate(path);
   };
 
   const handleLogout = () => {
     logout();
+    toggleDrawer();
     navigate("/login");
   };
 

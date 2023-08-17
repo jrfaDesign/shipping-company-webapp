@@ -157,13 +157,13 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
               {sortedData.map((data: any) => (
                 <OrderContainer key={data._id} onDoubleClick={() => handleRowSelection(data)}>
                   <Cell>{data._id}</Cell>
-                  <Cell width="300px">
+                  <Cell width="400px">
                     {data.name} {data.lastName}
                   </Cell>
 
                   <Cell>{data.contact}</Cell>
-                  <Cell width="450px">{data.email ? data.email : " - "} </Cell>
-                  <Cell width="300px">{data.company}</Cell>
+                  <Cell width="500px">{data.email ? data.email : " - "} </Cell>
+                  <Cell width="400px">{data.company}</Cell>
                 </OrderContainer>
               ))}
             </>

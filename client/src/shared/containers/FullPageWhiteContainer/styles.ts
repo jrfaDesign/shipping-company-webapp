@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { laptop, maxLaptop } from "~/styles/theme";
+import { desktop, laptop, maxLaptop } from "~/styles/theme";
 
 interface ContainerProps {
   margin?: string;
@@ -48,7 +48,5 @@ interface ChildrenContainerProps {
 
 export const ChildrenContainer = styled.div<ChildrenContainerProps>`
   padding: ${(props) => (props.padding ? "30px 20px" : 0)};
-  ${laptop} {
-    height: 100%;
-  }
+  height: 100%;
 `;
