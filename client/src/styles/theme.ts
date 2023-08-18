@@ -11,9 +11,20 @@ export const theme = {
     main: "#c7c7c7",
     hover: "#adadad"
   },
+
+  data: {
+    green: "#4caf50",
+    green01: "rgba(76, 175, 80,0.1)",
+    red: "#F80A0A",
+    red01: "rgba(248, 10, 10,0.1)",
+    yellow: "#f8c50a",
+    yellow01: "rgba(248, 197, 10,0.1)"
+  },
+
   colors: {
     white: "#FBFAFA",
     black: "#1C1D1F",
+    black02: "rgb(28, 29, 31,0.2)",
     textWhite: "#E9F1FA",
     grey: "#9a9a9a",
     grey02: "rgba(154, 154, 154, 0.2)",

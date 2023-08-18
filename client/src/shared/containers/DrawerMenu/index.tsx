@@ -64,7 +64,13 @@ const DrawerMenu = () => {
     <Container open={drawerIsOpen}>
       <Box>
         {!drawerIsOpen && (
-          <IconButton color="inherit" aria-label="open drawer" onClick={toggleDrawer} edge="start">
+          <IconButton
+            className="drawer-btn"
+            color="inherit"
+            aria-label="open drawer"
+            onClick={toggleDrawer}
+            edge="start"
+          >
             <MenuIcon />
           </IconButton>
         )}

@@ -1,5 +1,9 @@
 import { create } from "zustand";
+import { axios } from "~/config/interceptors";
+import { BASE_URL } from "~/config/variables";
 import { Orders } from "~/types/app";
+import { formatDateToISOString } from "../globalHooks";
+import useDatePickerStore from "./datePicker";
 
 import ORDERS from "./fakeOrders.json";
 
@@ -19,8 +23,17 @@ export const useOrdersStore = create<OrdersSore>((set) => ({
   isLoadingById: false,
 
   fetchOrders: async () => {
+    const date = useDatePickerStore.getState().dateRange;
+    const [startDate, endDate] = date;
+
     try {
-      set({ orders: ORDERS as Orders[] });
+      const response = await axios.get(
+        `${BASE_URL}orders?startDate=${formatDateToISOString(
+          startDate as Date
+        )}&endDate=${formatDateToISOString(endDate as Date)}`
+      );
+      console.log(response);
+      set({ orders: response.data as Orders[] });
     } catch (err) {
       console.error(err);
     } finally {

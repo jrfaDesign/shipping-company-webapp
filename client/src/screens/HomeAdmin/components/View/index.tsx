@@ -1,9 +1,21 @@
 import React from "react";
 
-import { Container } from "../../styles";
+import { Orders } from "~/types/app";
 
-const View = () => {
-  return <Container>Home Admin</Container>;
+import WeeklyOrdersStatusGraph from "../WeeklyOrdersStatusGraph";
+import { Container } from "./styles";
+
+interface Props {
+  orders: Orders[];
+  loadingData: boolean;
+}
+
+const View = ({ orders, loadingData }: Props) => {
+  return (
+    <Container>
+      <WeeklyOrdersStatusGraph orders={orders} />
+    </Container>
+  );
 };
 
 export default View;

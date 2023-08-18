@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import useDatePickerStore from "~/hooks/stores/datePicker";
 
 import { useOrdersStore } from "~/hooks/stores/orders";
 
@@ -11,9 +12,11 @@ const AdminOrders = () => {
   const getOrders = useOrdersStore((state) => state.fetchOrders);
   const loadingOrders = useOrdersStore((state) => state.isLoading);
 
+  const dateRange = useDatePickerStore((state) => state.dateRange);
+
   useEffect(() => {
     getOrders();
-  }, []);
+  }, [dateRange]);
 
   if (loadingOrders) {
     return <Loading />;

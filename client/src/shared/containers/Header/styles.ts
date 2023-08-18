@@ -1,4 +1,4 @@
-import { laptop } from "./../../../styles/theme";
+import { laptop, desktop } from "./../../../styles/theme";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
@@ -13,11 +13,6 @@ export const Wrapper = styled.div`
   ${laptop} {
     margin-left: 15px;
   }
-`;
 
-export const DrawerMobileContainer = styled.div`
-height:100%
-height:100vh
-position:absolute
-  background-color: rgba(200, 200, 200, 0.3);
+ 
 `;

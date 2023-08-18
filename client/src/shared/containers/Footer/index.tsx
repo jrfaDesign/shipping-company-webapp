@@ -6,6 +6,7 @@ const Footer = () => {
   return (
     <Wrapper>
       <FooterText>© SwiftShip 2023</FooterText>
+      <FooterText>Version: 0.0.1</FooterText>
     </Wrapper>
   );
 };
