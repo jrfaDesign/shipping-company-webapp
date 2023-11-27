@@ -1,19 +1,22 @@
 import React from "react";
 
 import { Orders } from "~/types/app";
+import TotalNumberCard from "../TotalNumberCard";
 
 import WeeklyOrdersStatusGraph from "../WeeklyOrdersStatusGraph";
 import { Container } from "./styles";
 
 interface Props {
   orders: Orders[];
-  loadingData: boolean;
+  loading: boolean;
 }
 
-const View = ({ orders, loadingData }: Props) => {
+const View = ({ orders, loading }: Props) => {
+  console.log(orders);
   return (
     <Container>
-      <WeeklyOrdersStatusGraph orders={orders} />
+      <TotalNumberCard orders={orders} loading={loading} />
+      <WeeklyOrdersStatusGraph orders={orders} loading={loading} />
     </Container>
   );
 };

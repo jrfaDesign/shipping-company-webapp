@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { axios } from "~/config/interceptors";
 import { BASE_URL } from "~/config/variables";
 import { Orders } from "~/types/app";
-import { formatDateToISOString } from "../globalHooks";
+
 import useDatePickerStore from "./datePicker";
 
 import ORDERS from "./fakeOrders.json";
@@ -26,14 +26,22 @@ export const useOrdersStore = create<OrdersSore>((set) => ({
     const date = useDatePickerStore.getState().dateRange;
     const [startDate, endDate] = date;
 
+    // const startDateISO = new Date(startDate as any).toISOString();
+    // const endDateISO = new Date(endDate as any).toISOString();
+
+    const filteredORDERS = ORDERS.filter((item) => {
+      const requestedDate = new Date(item.requestedDate);
+      if (startDate && endDate) {
+        return requestedDate >= startDate && requestedDate <= endDate;
+      }
+    });
+
     try {
-      const response = await axios.get(
-        `${BASE_URL}orders?startDate=${formatDateToISOString(
-          startDate as Date
-        )}&endDate=${formatDateToISOString(endDate as Date)}`
+      /* const response = await axios.get(
+        `${BASE_URL}orders?startDate=${startDateISO}&endDate=${endDateISO}`
       );
-      console.log(response);
-      set({ orders: response.data as Orders[] });
+      set({ orders: response.data as Orders[] }); */
+      set({ orders: filteredORDERS as Orders[] });
     } catch (err) {
       console.error(err);
     } finally {

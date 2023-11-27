@@ -19,7 +19,7 @@ const HomeAdmin = () => {
     getOrders();
   }, [dateRange]);
 
-  return <View loadingData={loadingOrders} orders={orders} />;
+  return <View loading={loadingOrders} orders={orders} />;
 };
 
 export default HomeAdmin;
