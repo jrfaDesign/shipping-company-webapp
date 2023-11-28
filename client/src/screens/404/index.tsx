@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useUserStore } from "~/hooks/stores/user";
+
+import { useAppSelector } from "~/store/hooks";
+
 import StyledButton from "~/shared/components/Button";
 
 import Background404 from "~/assets/images/svgs/404background.svg";
@@ -8,7 +10,7 @@ import Background404 from "~/assets/images/svgs/404background.svg";
 import { Wrapper, Container, Heading, Subheading, Background } from "./styles";
 
 const Error = () => {
-  const user = useUserStore((state) => state.user);
+  const user = useAppSelector((state) => state.auth.user);
   const navigate = useNavigate();
 
   const currentLocation = useLocation().pathname;

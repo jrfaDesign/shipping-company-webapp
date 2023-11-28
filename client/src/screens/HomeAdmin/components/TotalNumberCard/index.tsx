@@ -4,7 +4,7 @@ import { Orders } from "~/types/app";
 import dayjs from "dayjs";
 
 import { useNavigate } from "react-router-dom";
-import useDatePickerStore from "~/hooks/stores/datePicker";
+import { useAppSelector } from "~/store/hooks";
 
 import { theme } from "~/styles/theme";
 import StyledButton from "~/shared/components/Button";
@@ -26,7 +26,7 @@ interface Props {
 
 const TotalNumberCard = ({ orders, loading }: Props) => {
   const navigate = useNavigate();
-  const dateRange = useDatePickerStore((state) => state.dateRange);
+  const dateRange = useAppSelector((state) => state.datePicker.dateRange);
 
   const [startDate, endDate] = dateRange;
 

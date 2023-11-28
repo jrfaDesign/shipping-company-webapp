@@ -25,8 +25,6 @@ interface Props {
 }
 
 const WeeklyOrdersStatusGraph = ({ orders, loading }: Props) => {
-  console.log(orders);
-
   const organizeData = (inputData: any) => {
     const dataMap = new Map();
 
@@ -56,7 +54,6 @@ const WeeklyOrdersStatusGraph = ({ orders, loading }: Props) => {
   };
 
   const newData = organizeData(orders);
-  console.log(newData);
 
   return (
     <GraphContainer width="100%" height="300px">

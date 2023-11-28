@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import { useRegisteredUsersStore } from "~/hooks/stores/registeredUsers";
-
 import Loading from "~/shared/components/Loading";
+import { useAppDispatch, useAppSelector } from "~/store/hooks";
+import { fetchRegisteredUserById } from "~/store/services/registeredUsers";
 
 import View from "./components/View";
 
@@ -14,12 +14,12 @@ const UserDetails = () => {
     return null;
   }
 
-  const order = useRegisteredUsersStore((state) => state.registeredUser);
-  const getUser = useRegisteredUsersStore((state) => state.fetchRegisteredUserById);
-  const loadingUser = useRegisteredUsersStore((state) => state.isLoadingById);
+  const dispatch = useAppDispatch();
+  const order = useAppSelector((state) => state.registeredUsers.registeredUser);
+  const loadingUser = useAppSelector((state) => state.registeredUsers.isLoadingById);
 
   useEffect(() => {
-    getUser(id);
+    dispatch(fetchRegisteredUserById(id));
   }, []);
 
   if (loadingUser || !order) {

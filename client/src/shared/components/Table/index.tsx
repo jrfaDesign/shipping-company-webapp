@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import { Orders, RegistedShipper, RegisteredUser } from "~/types/app";
+import { Orders, RegisteredShipper, RegisteredUser } from "~/types/app";
 
 import { Paginate } from "~/hooks/globalHooks";
 
@@ -15,12 +15,12 @@ import TableFilters from "./TableFilters";
 
 interface Props {
   tableType: "orders" | "users" | "shippers";
-  data: (Orders | RegisteredUser | RegistedShipper)[];
+  data: (Orders | RegisteredUser | RegisteredShipper)[];
   tableForAdmin?: boolean;
 }
 
 const Table = ({ tableType, data, tableForAdmin }: Props) => {
-  const [selectedData, setSelectedData] = useState<(Orders | RegisteredUser | RegistedShipper)[]>(
+  const [selectedData, setSelectedData] = useState<(Orders | RegisteredUser | RegisteredShipper)[]>(
     []
   );
 

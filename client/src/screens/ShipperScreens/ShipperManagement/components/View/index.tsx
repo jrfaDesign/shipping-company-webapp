@@ -1,9 +1,9 @@
 import React from "react";
 import Table from "~/shared/components/Table";
-import { RegistedShipper } from "~/types/app";
+import { RegisteredShipper } from "~/types/app";
 
 interface Props {
-  data: RegistedShipper[];
+  data: RegisteredShipper[];
 }
 
 const View = ({ data }: Props) => {

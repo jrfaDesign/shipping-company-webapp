@@ -7,7 +7,7 @@ export interface User {
   email: string;
 }
 
-export interface Orders {
+export interface Order {
   _id: string;
   shipper: {
     _id: string;
@@ -37,7 +37,7 @@ export interface RegisteredUser {
   company: string;
 }
 
-export interface RegistedShipper {
+export interface RegisteredShipper {
   _id: string;
   name: string;
   email: string;

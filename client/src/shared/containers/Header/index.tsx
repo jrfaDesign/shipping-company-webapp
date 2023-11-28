@@ -2,13 +2,12 @@ import Logo from "shared/components/Logo";
 
 import Toast from "~/shared/components/Toast";
 
-import useToastStore from "~/hooks/stores/toast";
-
 import { Wrapper } from "./styles";
 import HeaderInteractionsButtons from "./components/HeaderInteractionsButtons";
+import { useAppSelector } from "~/store/hooks";
 
 const Header = () => {
-  const toast = useToastStore((state) => state.toast);
+  const toast = useAppSelector((state) => state.toast.toast);
 
   return (
     <Wrapper>

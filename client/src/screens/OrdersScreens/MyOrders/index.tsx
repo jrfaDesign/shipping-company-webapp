@@ -1,21 +1,20 @@
 import React, { useEffect } from "react";
-import useDatePickerStore from "~/hooks/stores/datePicker";
-
-import { useOrdersStore } from "~/hooks/stores/orders";
 
 import Loading from "~/shared/components/Loading";
+import { useAppDispatch, useAppSelector } from "~/store/hooks";
+import { fetchOrders } from "~/store/services/orders";
 
 import View from "./components/View";
 
 const MyOrders = () => {
-  const orders = useOrdersStore((state) => state.orders);
-  const getOrders = useOrdersStore((state) => state.fetchOrders);
-  const loadingOrders = useOrdersStore((state) => state.isLoading);
+  const dispatch = useAppDispatch();
+  const orders = useAppSelector((state) => state.orders.orders);
+  const loadingOrders = useAppSelector((state) => state.orders.isLoading);
 
-  const dateRange = useDatePickerStore((state) => state.dateRange);
+  const dateRange = useAppSelector((state) => state.datePicker.dateRange);
 
   useEffect(() => {
-    getOrders();
+    dispatch(fetchOrders());
   }, [dateRange]);
 
   if (loadingOrders) {

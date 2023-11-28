@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import { useOrdersStore } from "~/hooks/stores/orders";
-
 import Loading from "~/shared/components/Loading";
+import { useAppDispatch, useAppSelector } from "~/store/hooks";
+import { fetchOrderById } from "~/store/services/orders";
 
 import View from "./components/View";
 
@@ -14,12 +14,12 @@ const OrdersDetails = () => {
     return null;
   }
 
-  const order = useOrdersStore((state) => state.order);
-  const getOrder = useOrdersStore((state) => state.fetchOrderById);
-  const loadingOrder = useOrdersStore((state) => state.isLoadingById);
+  const dispatch = useAppDispatch();
+  const order = useAppSelector((state) => state.orders.order);
+  const loadingOrder = useAppSelector((state) => state.orders.isLoadingOrder);
 
   useEffect(() => {
-    getOrder(id);
+    dispatch(fetchOrderById(id));
   }, []);
 
   if (loadingOrder || !order) {

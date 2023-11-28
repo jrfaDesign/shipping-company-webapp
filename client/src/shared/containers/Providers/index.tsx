@@ -1,18 +1,18 @@
 import { BrowserRouter } from "react-router-dom";
 
+import { Provider } from "react-redux";
 import GlobalStyles from "styles/globalStyles";
 import { ThemeProvider } from "styled-components";
 import { theme } from "styles/theme";
-import { QueryClient, QueryClientProvider } from "react-query";
 
-const queryClient = new QueryClient();
+import { store } from "~/store/store";
 
 const Providers = ({ children }: any) => (
   <ThemeProvider theme={theme}>
-    <QueryClientProvider client={queryClient}>
-      <GlobalStyles />
+    <GlobalStyles />
+    <Provider store={store}>
       <BrowserRouter>{children}</BrowserRouter>
-    </QueryClientProvider>
+    </Provider>
   </ThemeProvider>
 );
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Orders, RegistedShipper, RegisteredUser } from "~/types/app";
+import { Order, RegisteredShipper, RegisteredUser } from "~/types/app";
 
 export const useScreenWidth = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -24,7 +24,7 @@ export const toUrlString = (str: string): string => {
 };
 
 export const Paginate = (
-  items: (Orders | RegisteredUser | RegistedShipper)[],
+  items: (Order | RegisteredUser | RegisteredShipper)[],
   currentPage: number,
   itemsPerPage: number
 ) => {

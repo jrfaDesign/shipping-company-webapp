@@ -1,27 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { useScreenWidth } from "~/hooks/globalHooks";
-import useDrawerStore from "~/hooks/stores/drawer";
 
 import DrawerMenu from "~/shared/containers/DrawerMenu";
 
 import { BlackSceen, ButtonsContainer } from "./styles";
 import CustomDatePicker from "../CustomDatePicker";
+import { useAppDispatch, useAppSelector } from "~/store/hooks";
+import { toggleDrawer } from "~/store/features/drawer/module";
 
 const HeaderInteractionsButtons = () => {
+  const dispatch = useAppDispatch();
   const screenWidth = useScreenWidth();
 
-  const drawerIsOpen = useDrawerStore((state) => state.drawerIsOpen);
-  const toggleDrawer = useDrawerStore((state) => state.toggleDrawer);
-
-  const [calendarIsOpen, setCalendarIsOpen] = useState(false);
+  const drawerIsOpen = useAppSelector((state) => state.drawer.isOpen);
 
   return (
     <ButtonsContainer>
       <CustomDatePicker />
 
       {screenWidth <= 769 && <DrawerMenu />}
-      {screenWidth <= 769 && drawerIsOpen && <BlackSceen onClick={toggleDrawer} />}
+      {screenWidth <= 769 && drawerIsOpen && (
+        <BlackSceen onClick={() => dispatch(toggleDrawer())} />
+      )}
     </ButtonsContainer>
   );
 };

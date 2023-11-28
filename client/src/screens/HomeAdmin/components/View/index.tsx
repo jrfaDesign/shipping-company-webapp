@@ -12,7 +12,6 @@ interface Props {
 }
 
 const View = ({ orders, loading }: Props) => {
-  console.log(orders);
   return (
     <Container>
       <TotalNumberCard orders={orders} loading={loading} />

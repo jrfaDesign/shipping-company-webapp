@@ -1,16 +1,17 @@
 import { useEffect } from "react";
 
-import { useRegisteredUsersStore } from "~/hooks/stores/registeredUsers";
 import Loading from "~/shared/components/Loading";
+import { useAppDispatch, useAppSelector } from "~/store/hooks";
+import { fetchRegisteredUsers } from "~/store/services/registeredUsers";
 import View from "./components/View";
 
 const UserManagement = () => {
-  const registeredUsers = useRegisteredUsersStore((state) => state.registeredUsers);
-  const fetchRegisteredUsers = useRegisteredUsersStore((state) => state.fetchRegisteredUsers);
-  const isLoading = useRegisteredUsersStore((state) => state.isLoading);
+  const dispatch = useAppDispatch();
+  const registeredUsers = useAppSelector((state) => state.registeredUsers.registeredUsers);
+  const isLoading = useAppSelector((state) => state.registeredUsers.isLoading);
 
   useEffect(() => {
-    fetchRegisteredUsers();
+    dispatch(fetchRegisteredUsers());
   }, []);
 
   if (isLoading) {

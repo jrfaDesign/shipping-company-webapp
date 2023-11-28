@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 
-import { Orders, RegisteredUser, RegistedShipper } from "~/types/app";
+import { Orders, RegisteredUser, RegisteredShipper } from "~/types/app";
 
 import { useNavigate } from "react-router-dom";
 
@@ -16,7 +16,7 @@ import { KEY_TO_LABEL, SORT_EXCEPTIONS, STATUS_CLASS, STATUS_LABEL, TABLE_HEADER
 interface Props {
   tableType: "orders" | "users" | "shippers";
   tableForAdmin?: boolean;
-  data: (Orders | RegisteredUser | RegistedShipper)[];
+  data: (Orders | RegisteredUser | RegisteredShipper)[];
 }
 
 const TableData = ({ tableType, tableForAdmin, data }: Props) => {
@@ -97,7 +97,7 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
     } else return <ArrowRightIcon />;
   };
 
-  const handleRowSelection = (data: Orders | RegisteredUser | RegistedShipper) => {
+  const handleRowSelection = (data: Orders | RegisteredUser | RegisteredShipper) => {
     const { _id } = data;
     navigate(_id);
   };
