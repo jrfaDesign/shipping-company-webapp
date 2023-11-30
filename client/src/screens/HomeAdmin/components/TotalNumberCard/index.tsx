@@ -1,5 +1,5 @@
 import React from "react";
-import { Orders } from "~/types/app";
+import { Order } from "~/types/app";
 
 import dayjs from "dayjs";
 
@@ -20,12 +20,13 @@ import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import BlockIcon from "@mui/icons-material/Block";
 
 interface Props {
-  orders: Orders[];
-  loading: boolean;
+  orders: Order[] | null;
 }
 
-const TotalNumberCard = ({ orders, loading }: Props) => {
+const TotalNumberCard = ({ orders }: Props) => {
   const navigate = useNavigate();
+
+  const loading = useAppSelector((state) => state.orders.isLoading);
   const dateRange = useAppSelector((state) => state.datePicker.dateRange);
 
   const [startDate, endDate] = dateRange;
@@ -53,9 +54,8 @@ const TotalNumberCard = ({ orders, loading }: Props) => {
 
   return (
     <GraphContainer width="100%">
-      {loading || !startDate || !endDate ? (
-        <Loading />
-      ) : (
+      {loading && <Loading />}
+      {!loading && orders && (
         <Wrapper>
           <Container>
             <Title>
@@ -67,7 +67,7 @@ const TotalNumberCard = ({ orders, loading }: Props) => {
 
             <InfoWrapper>
               {CARD_DATA.map((card) => (
-                <InfoCard data={card}></InfoCard>
+                <InfoCard data={card as any}></InfoCard>
               ))}
             </InfoWrapper>
             <ButtonContainer>
@@ -76,6 +76,7 @@ const TotalNumberCard = ({ orders, loading }: Props) => {
           </Container>
         </Wrapper>
       )}
+      {!loading && orders?.length === 0 && <div>no orders</div>}
     </GraphContainer>
   );
 };

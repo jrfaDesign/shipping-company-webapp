@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import Loading from "~/shared/components/Loading";
+import { changeCalendarType, toggleDatePicker } from "~/store/features/datePicker/module";
 import { useAppDispatch, useAppSelector } from "~/store/hooks";
 import { fetchOrders } from "~/store/services/orders";
 
@@ -12,8 +13,11 @@ const MyOrders = () => {
   const loadingOrders = useAppSelector((state) => state.orders.isLoading);
 
   const dateRange = useAppSelector((state) => state.datePicker.dateRange);
+  const isDatePickerVisible = useAppSelector((state) => state.datePicker.isVisible);
 
   useEffect(() => {
+    dispatch(changeCalendarType("week"));
+    !isDatePickerVisible && dispatch(toggleDatePicker());
     dispatch(fetchOrders());
   }, [dateRange]);
 

@@ -7,7 +7,9 @@ import pt from "date-fns/locale/pt";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "~/store/hooks";
 
-import { setDateRange } from "~/store/features/datePicker/module";
+import { setDateRange, setWeekRange } from "~/store/features/datePicker/module";
+
+import { DatePickerWrapperStyles, StyledDatePicker } from "./styles";
 
 const CustomDatePicker = () => {
   const dispatch = useAppDispatch();
@@ -15,27 +17,60 @@ const CustomDatePicker = () => {
   const location = useLocation();
 
   const dateRange = useAppSelector((state) => state.datePicker.dateRange);
+  const weekRange = useAppSelector((state) => state.datePicker.weekRange);
+  const dateType = useAppSelector((state) => state.datePicker.dateType);
+  const isVisible = useAppSelector((state) => state.datePicker.isVisible);
 
-  const [startDate, endDate] = dateRange;
+  const [dateRangeStartDate, dateRangeEndDate] = dateRange;
+  const [weekRangeStartDate, weekRangeEndDate] = weekRange;
 
-  const handleDateChange = (update: any) => {
+  const handleDateChange = (update: Date[]) => {
     const startDateISO = new Date(update[0]).toISOString();
     const endDateISO = new Date(update[1]).toISOString();
     dispatch(setDateRange({ startDate: update[0], endDate: update[1] }));
     navigate(`${location.pathname}?startDate=${startDateISO}&endDate=${endDateISO}`);
   };
 
+  const handleWeekPicker = (update: any) => {
+    const inputDate = new Date(update);
+    const dayOfWeek = inputDate.getDay();
+    const difference = dayOfWeek - 1;
+    const startOfWeek = new Date(inputDate);
+    startOfWeek.setDate(inputDate.getDate() - difference);
+    const endOfWeek = new Date(inputDate);
+    endOfWeek.setDate(inputDate.getDate() + (6 - difference));
+    dispatch(setWeekRange({ startDate: startOfWeek, endDate: endOfWeek }));
+    navigate(`${location.pathname}?startDate=${startOfWeek}&endDate=${endOfWeek}`);
+  };
+
   return (
-    <DatePicker
-      dateFormat="dd/MM/yyyy"
-      locale={pt}
-      className="header-date-picker"
-      selectsRange={true}
-      startDate={startDate}
-      endDate={endDate}
-      maxDate={new Date()}
-      onChange={(update: any) => handleDateChange(update)}
-    />
+    <>
+      {isVisible && dateType === "week" && (
+        <StyledDatePicker
+          wrapperClassName="date-picker"
+          dateFormat="dd/MM/yyyy"
+          locale={pt}
+          selectsRange={true}
+          startDate={dateRangeStartDate}
+          endDate={dateRangeEndDate}
+          maxDate={new Date()}
+          onChange={(update) => handleDateChange(update as Date[])}
+        />
+      )}
+      {isVisible && dateType === "days" && (
+        <StyledDatePicker
+          locale={pt}
+          dateFormat="dd/MM/yyyy"
+          wrapperClassName="date-picker"
+          startDate={weekRangeStartDate}
+          endDate={weekRangeEndDate}
+          maxDate={new Date()}
+          onChange={(date) => handleWeekPicker(date)}
+          selectsRange
+        />
+      )}
+      <DatePickerWrapperStyles />
+    </>
   );
 };
 

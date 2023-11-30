@@ -15,6 +15,7 @@ export interface Order {
   };
   deliveryStatus: "Completed" | "Cancelled" | "On the road";
   requestedDate: Date | string;
+  lastStatusChangeDate: Date | string;
   deliveryDate: Date | string;
   weight: number;
   client: {

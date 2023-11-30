@@ -15,7 +15,7 @@ import TableFilters from "./TableFilters";
 
 interface Props {
   tableType: "orders" | "users" | "shippers";
-  data: (Orders | RegisteredUser | RegisteredShipper)[];
+  data: (Orders | RegisteredUser | RegisteredShipper)[] | null;
   tableForAdmin?: boolean;
 }
 
@@ -48,7 +48,7 @@ const Table = ({ tableType, data, tableForAdmin }: Props) => {
     setCurrentPage(1);
   }, [selectedData]);
 
-  if (data.length === 0) {
+  if (data?.length === 0) {
     return (
       <FullPageWhiteContainer>
         <span className="no-data">

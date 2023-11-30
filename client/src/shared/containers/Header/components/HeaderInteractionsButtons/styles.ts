@@ -17,25 +17,9 @@ export const ButtonsContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  .react-datepicker-popper{
-    ${laptop}{
+  .react-datepicker-popper {
+    ${laptop} {
       right: 150px;
-
     }
   }
-
-  .header-date-picker{
-    font-size: 9.5px;
-    border: 2px solid ${({ theme }) => theme.colors.lightBlue};
-    border-radius: 4px;
-    padding: 5px 10px;
-    height: 22px;
-    width: 120px;
-    
-    ${laptop} {
-      font-size: 14px;
-      width: 175px;
-    }
-
-
 `;

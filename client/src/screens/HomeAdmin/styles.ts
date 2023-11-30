@@ -9,8 +9,8 @@ interface GraphContainerProps {
 
 export const GraphContainer = styled.div<GraphContainerProps>`
   width: ${(props) => (props.width ? props.width : "300px")};
-  height: ${(props) => props.height};
-  max-height: 310px;
+
+  padding: 40px 0;
 
   display: flex;
   align-items: center;

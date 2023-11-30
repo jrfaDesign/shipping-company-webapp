@@ -1,1882 +1,4034 @@
 [
   {
-    "_id": "64d0b47098067d112aab44a8",
+    "_id": "6565cbf601e86dcd78ae0c40",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Tanner Faulkner",
+      "email": "tanner_faulkner@gmail.com",
+      "contact": "923007644",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-09T17:07:27.619Z",
+    "deliveryDate": "2023-11-13T17:07:27.619Z",
+    "lastStatusChangeDate": "2023-11-11T17:07:27.619Z",
+    "weight": 6.56
+  },
+  {
+    "_id": "6565cbf6b2f0cab040ae5e0a",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b896",
       "name": "COMTRACT"
     },
     "client": {
-      "name": "Sanders Thompson",
-      "contact": "+351 (874) 585-2456",
-      "email": "sandersthompson@soprano.com",
-      "deliveryAddress": "382 Vista Place, 73",
-      "state": "Delaware",
-      "region": "Dana",
-      "zip": "5906-702"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-011-26T19:19:59.065Z",
-    "deliveryDate": "2023-011-28T05:37:31.557Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4705e086ab6563ce1db",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Faulkner Walsh",
-      "contact": "+351 (974) 546-3685",
-      "email": "faulknerwalsh@hotcakes.com",
-      "deliveryAddress": "431 Alice Court, 14",
-      "state": "New York",
-      "region": "Washington",
-      "zip": "7613-940"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-04-16T10:04:48.046Z",
-    "deliveryDate": "2023-04-18T17:34:38.256Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4705fb6c1fbc730cdd3",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Elvia Russell",
-      "contact": "+351 (999) 427-3340",
-      "email": "elviarussell@pharmacon.com",
-      "deliveryAddress": "855 Miami Court, 57",
-      "state": "Maryland",
-      "region": "Gardners",
-      "zip": "5925-964"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-05-19T01:22:26.421Z",
-    "deliveryDate": "2023-05-23T01:53:24.200Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b47005cc4d900056e419",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Rene Craig",
-      "contact": "+351 (963) 406-2468",
-      "email": "renecraig@plutorque.com",
-      "deliveryAddress": "531 Barlow Drive, 15",
-      "state": "North Carolina",
-      "region": "Madaket",
-      "zip": "6528-156"
+      "name": "Dionne Nguyen",
+      "email": "dionne_nguyen@gmail.com",
+      "contact": "968228502",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
     },
     "deliveryStatus": "Completed",
-    "requestedDate": "2023-05-18T21:57:50.701Z",
-    "deliveryDate": "2023-05-22T09:00:45.980Z",
-    "weight": 10
+    "requestedDate": "2023-10-15T23:10:58.700Z",
+    "deliveryDate": "2023-10-18T23:10:58.700Z",
+    "lastStatusChangeDate": "2023-10-16T23:10:58.700Z",
+    "weight": 10.96
   },
   {
-    "_id": "64d0b470ea81064ddbcdf9a2",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Cecelia Figueroa",
-      "contact": "+351 (995) 583-2903",
-      "email": "ceceliafigueroa@gink.com",
-      "deliveryAddress": "324 Elliott Walk, 31",
-      "state": "Nevada",
-      "region": "Kapowsin",
-      "zip": "3612-736"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-011-04T23:55:46.502Z",
-    "deliveryDate": "2023-011-09T04:54:39.642Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470df0069d0ecf85c0d",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Lane Wright",
-      "contact": "+351 (933) 434-2441",
-      "email": "lanewright@roboid.com",
-      "deliveryAddress": "632 Ashford Street, 31",
-      "state": "Northern Mariana Islands",
-      "region": "Calpine",
-      "zip": "6325-113"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-011-29T07:52:09.661Z",
-    "deliveryDate": "2023-07-03T07:34:20.569Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b47006eddfa7dba0d3d6",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Roberta Sanford",
-      "contact": "+351 (917) 454-2653",
-      "email": "robertasanford@bitendrex.com",
-      "deliveryAddress": "343 Cook Street, 43",
-      "state": "Colorado",
-      "region": "Islandia",
-      "zip": "5469-787"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-011-05T23:05:38.439Z",
-    "deliveryDate": "2023-011-08T11:23:17.926Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b47086ee1b3afb006361",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Barron Brewer",
-      "contact": "+351 (860) 562-3404",
-      "email": "barronbrewer@euron.com",
-      "deliveryAddress": "667 Kermit Place, 81",
-      "state": "Missouri",
-      "region": "Rosewood",
-      "zip": "5975-920"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-011-13T04:31:16.862Z",
-    "deliveryDate": "2023-011-15T02:32:46.642Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4705075f73a39ca8295",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Cleo Travis",
-      "contact": "+351 (889) 441-3333",
-      "email": "cleotravis@geeketron.com",
-      "deliveryAddress": "756 Conway Street, 31",
-      "state": "New Mexico",
-      "region": "Farmington",
-      "zip": "9609-843"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-04-15T12:01:05.146Z",
-    "deliveryDate": "2023-04-19T10:12:57.074Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4706b3a797e02aefac9",
+    "_id": "6565cbf62764c0bf8ee2b31f",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b896",
       "name": "COMTRACT"
     },
     "client": {
-      "name": "Bryant Downs",
-      "contact": "+351 (999) 510-3013",
-      "email": "bryantdowns@xeronk.com",
-      "deliveryAddress": "780 Sutter Avenue, 30",
-      "state": "Utah",
-      "region": "Siglerville",
-      "zip": "5742-204"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-011-20T12:32:25.684Z",
-    "deliveryDate": "2023-011-25T02:57:06.335Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4703f60da0527e671ac",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Alston Velez",
-      "contact": "+351 (916) 414-2781",
-      "email": "alstonvelez@vantage.com",
-      "deliveryAddress": "371 Sharon Street, 16",
-      "state": "Washington",
-      "region": "Kohatk",
-      "zip": "6950-223"
+      "name": "Villarreal Everett",
+      "email": "villarreal_everett@gmail.com",
+      "contact": "963424375",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-05-04T05:26:10.149Z",
-    "deliveryDate": "2023-05-04T09:16:01.818Z",
-    "weight": 10
+    "requestedDate": "2023-11-17T10:12:25.750Z",
+    "deliveryDate": "2023-11-22T10:12:25.750Z",
+    "lastStatusChangeDate": "2023-11-19T10:12:25.750Z",
+    "weight": 14.09
   },
   {
-    "_id": "64d0b470ff7c4582afec2453",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Francis Pacheco",
-      "contact": "+351 (853) 479-3859",
-      "email": "francispacheco@medesign.com",
-      "deliveryAddress": "440 Lorraine Street, 77",
-      "state": "Minnesota",
-      "region": "Felt",
-      "zip": "7549-121"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-05-09T20:28:35.089Z",
-    "deliveryDate": "2023-05-10T15:16:39.527Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4701b9d85b4ad55c96c",
+    "_id": "6565cbf66005c632a4490521",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b896",
       "name": "COMTRACT"
     },
     "client": {
-      "name": "Sharlene Calderon",
-      "contact": "+351 (923) 463-2408",
-      "email": "sharlenecalderon@voratak.com",
-      "deliveryAddress": "405 Clarkson Avenue, 92",
-      "state": "Tennessee",
-      "region": "Savannah",
-      "zip": "6572-201"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-07-18T22:14:13.417Z",
-    "deliveryDate": "2023-07-21T01:12:19.921Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470335e0854dbe6e252",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Allison Morin",
-      "contact": "+351 (855) 510-2759",
-      "email": "allisonmorin@pathways.com",
-      "deliveryAddress": "262 Irwin Street, 42",
-      "state": "Virginia",
-      "region": "Iola",
-      "zip": "6508-411"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-011-02T09:19:17.726Z",
-    "deliveryDate": "2023-011-04T16:38:48.682Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b47003bfbb10dd9d36e8",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Patsy Love",
-      "contact": "+351 (837) 445-2400",
-      "email": "patsylove@tsunamia.com",
-      "deliveryAddress": "776 Ide Court, 38",
-      "state": "Indiana",
-      "region": "Rowe",
-      "zip": "4352-892"
+      "name": "Tammy Mccoy",
+      "email": "tammy_mccoy@gmail.com",
+      "contact": "928176566",
+      "deliveryAddress": "R Regato 81",
+      "state": "Castelo Branco",
+      "region": "Benquerença",
+      "zip": "6090-332"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-05-31T19:22:19.095Z",
-    "deliveryDate": "2023-011-03T22:37:59.230Z",
-    "weight": 10
+    "requestedDate": "2023-10-18T07:18:02.262Z",
+    "deliveryDate": "2023-10-23T07:18:02.262Z",
+    "lastStatusChangeDate": "2023-10-19T07:18:02.262Z",
+    "weight": 10.22
   },
   {
-    "_id": "64d0b4709d9bf4f667d3ef2e",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Haley Duran",
-      "contact": "+351 (922) 556-2896",
-      "email": "haleyduran@motovate.com",
-      "deliveryAddress": "941 Columbia Street, 37",
-      "state": "Arkansas",
-      "region": "Deercroft",
-      "zip": "3315-398"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-05-27T02:39:23.077Z",
-    "deliveryDate": "2023-05-29T16:54:44.803Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4708a78229db60c832f",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Hopkins Webb",
-      "contact": "+351 (976) 479-2030",
-      "email": "hopkinswebb@eclipsent.com",
-      "deliveryAddress": "634 Lawrence Avenue, 91",
-      "state": "Alabama",
-      "region": "Mappsville",
-      "zip": "9648-961"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-04-15T12:04:03.915Z",
-    "deliveryDate": "2023-04-20T04:44:32.006Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b47015d210611a767680",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Manning Weaver",
-      "contact": "+351 (843) 515-3928",
-      "email": "manningweaver@spherix.com",
-      "deliveryAddress": "248 Tilden Avenue, 38",
-      "state": "South Carolina",
-      "region": "Winesburg",
-      "zip": "7635-425"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-03-30T12:32:25.574Z",
-    "deliveryDate": "2023-04-03T15:20:11.389Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470c77b241ed7e654d9",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Hahn Rowe",
-      "contact": "+351 (927) 563-3588",
-      "email": "hahnrowe@comstruct.com",
-      "deliveryAddress": "963 Abbey Court, 38",
-      "state": "Florida",
-      "region": "Deltaville",
-      "zip": "9351-731"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-011-12T01:04:48.367Z",
-    "deliveryDate": "2023-011-14T21:04:56.671Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470937b86fa23eddba7",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Tammi Wilkerson",
-      "contact": "+351 (980) 535-3720",
-      "email": "tammiwilkerson@exospace.com",
-      "deliveryAddress": "519 Kensington Street, 33",
-      "state": "New Jersey",
-      "region": "Nile",
-      "zip": "2983-167"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-07-12T17:32:42.296Z",
-    "deliveryDate": "2023-07-12T20:54:26.500Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470fe83370ea913a601",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Vickie Todd",
-      "contact": "+351 (920) 501-2823",
-      "email": "vickietodd@uplinx.com",
-      "deliveryAddress": "891 Balfour Place, 94",
-      "state": "Marshall Islands",
-      "region": "Mulino",
-      "zip": "8244-411"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-04-13T10:16:05.676Z",
-    "deliveryDate": "2023-04-16T21:35:53.132Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470fc7305dc7cac6adb",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Jami Cooke",
-      "contact": "+351 (852) 561-2341",
-      "email": "jamicooke@gaptec.com",
-      "deliveryAddress": "355 Franklin Avenue, 18",
-      "state": "District Of Columbia",
-      "region": "Epworth",
-      "zip": "8323-535"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-011-17T16:09:18.847Z",
-    "deliveryDate": "2023-011-19T15:04:32.933Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470800519ced23b3a4a",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Henry Michael",
-      "contact": "+351 (903) 473-2148",
-      "email": "henrymichael@acumentor.com",
-      "deliveryAddress": "329 Erasmus Street, 31",
-      "state": "West Virginia",
-      "region": "Sedley",
-      "zip": "7041-857"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-011-04T08:57:21.845Z",
-    "deliveryDate": "2023-011-07T19:44:06.973Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470031ade60cb6c4ff2",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Barnett Clarke",
-      "contact": "+351 (882) 540-3718",
-      "email": "barnettclarke@pigzart.com",
-      "deliveryAddress": "105 Concord Street, 66",
-      "state": "Arizona",
-      "region": "Eggertsville",
-      "zip": "6277-974"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-07-07T05:43:13.965Z",
-    "deliveryDate": "2023-07-10T22:58:27.999Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470d2ecea1f4e5878b4",
+    "_id": "6565cbf65a742cf660ff7ad2",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b896",
       "name": "COMTRACT"
     },
     "client": {
-      "name": "Leanne Wall",
-      "contact": "+351 (963) 428-3640",
-      "email": "leannewall@letpro.com",
-      "deliveryAddress": "786 Riverdale Avenue, 85",
-      "state": "Alaska",
-      "region": "Oley",
-      "zip": "9678-632"
+      "name": "Amie Hood",
+      "email": "amie_hood@gmail.com",
+      "contact": "936317791",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
     },
     "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-04-08T16:00:52.493Z",
-    "deliveryDate": "2023-04-09T12:13:51.930Z",
-    "weight": 10
+    "requestedDate": "2023-11-19T18:37:06.887Z",
+    "deliveryDate": "2023-11-22T18:37:06.887Z",
+    "lastStatusChangeDate": "2023-11-21T18:37:06.887Z",
+    "weight": 6.69
   },
   {
-    "_id": "64d0b4702377bc356b217b78",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Annmarie Zimmerman",
-      "contact": "+351 (867) 530-2832",
-      "email": "annmariezimmerman@paragonia.com",
-      "deliveryAddress": "824 Frank Court, 78",
-      "state": "North Dakota",
-      "region": "Outlook",
-      "zip": "8836-582"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-07-23T18:22:38.893Z",
-    "deliveryDate": "2023-07-23T20:51:23.154Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470709e7851a156914f",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Patterson Bailey",
-      "contact": "+351 (889) 552-3493",
-      "email": "pattersonbailey@flexigen.com",
-      "deliveryAddress": "669 Noel Avenue, 91",
-      "state": "Ohio",
-      "region": "Gracey",
-      "zip": "9770-578"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-011-09T03:06:28.791Z",
-    "deliveryDate": "2023-011-12T07:05:06.912Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b47014bb4ab267e7208d",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Thomas Nichols",
-      "contact": "+351 (932) 460-3825",
-      "email": "thomasnichols@vidto.com",
-      "deliveryAddress": "142 Polar Street, 40",
-      "state": "Massachusetts",
-      "region": "Dale",
-      "zip": "7406-999"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-04-30T04:35:48.405Z",
-    "deliveryDate": "2023-04-30T09:05:15.486Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4701fca61664c951927",
+    "_id": "6565cbf63f35e6dcd0d64f2d",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b896",
       "name": "COMTRACT"
     },
     "client": {
-      "name": "Olive Landry",
-      "contact": "+351 (840) 544-2394",
-      "email": "olivelandry@darwinium.com",
-      "deliveryAddress": "117 Roosevelt Place, 93",
-      "state": "Rhode Island",
-      "region": "Fidelis",
-      "zip": "4565-527"
+      "name": "Sophia Bentley",
+      "email": "sophia_bentley@gmail.com",
+      "contact": "936973010",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
     },
     "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-07-17T10:30:37.237Z",
-    "deliveryDate": "2023-07-21T18:04:03.679Z",
-    "weight": 10
+    "requestedDate": "2023-11-19T20:16:14.454Z",
+    "deliveryDate": "2023-11-21T20:16:14.454Z",
+    "lastStatusChangeDate": "2023-11-21T20:16:14.454Z",
+    "weight": 4.72
   },
   {
-    "_id": "64d0b470716907632466b545",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Abigail Hawkins",
-      "contact": "+351 (921) 442-3504",
-      "email": "abigailhawkins@podunk.com",
-      "deliveryAddress": "685 Carroll Street, 53",
-      "state": "Nebraska",
-      "region": "Richford",
-      "zip": "5838-844"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-05-27T04:40:07.086Z",
-    "deliveryDate": "2023-05-28T03:43:53.266Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470cb0ef3d1f4908254",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Henson Copeland",
-      "contact": "+351 (890) 573-2071",
-      "email": "hensoncopeland@comtract.com",
-      "deliveryAddress": "972 Garden Place, 75",
-      "state": "Oklahoma",
-      "region": "Belfair",
-      "zip": "2989-129"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-011-03T08:40:19.818Z",
-    "deliveryDate": "2023-011-03T19:17:24.894Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4700be74c387d693e91",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Quinn Shepherd",
-      "contact": "+351 (995) 406-3223",
-      "email": "quinnshepherd@niquent.com",
-      "deliveryAddress": "768 Kingsway Place, 42",
-      "state": "Louisiana",
-      "region": "Axis",
-      "zip": "5388-984"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-03-30T06:25:27.749Z",
-    "deliveryDate": "2023-04-01T01:02:14.583Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470022ab24219b53a9f",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Virgie Richmond",
-      "contact": "+351 (943) 425-3155",
-      "email": "virgierichmond@digiprint.com",
-      "deliveryAddress": "469 Troy Avenue, 60",
-      "state": "American Samoa",
-      "region": "Blende",
-      "zip": "9431-284"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-04-27T21:08:38.735Z",
-    "deliveryDate": "2023-04-28T18:33:29.248Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470911cf91fabdfec7b",
+    "_id": "6565cbf6ff8554481d384001",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b896",
       "name": "COMTRACT"
     },
     "client": {
-      "name": "Courtney Brady",
-      "contact": "+351 (976) 477-2267",
-      "email": "courtneybrady@velity.com",
-      "deliveryAddress": "358 Sullivan Place, 13",
-      "state": "Virgin Islands",
-      "region": "Garnet",
-      "zip": "3723-162"
+      "name": "Gabrielle Cline",
+      "email": "gabrielle_cline@gmail.com",
+      "contact": "939783181",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-02T07:53:54.849Z",
+    "deliveryDate": "2023-11-04T07:53:54.849Z",
+    "lastStatusChangeDate": "2023-11-04T07:53:54.849Z",
+    "weight": 8.16
+  },
+  {
+    "_id": "6565cbf6206e42dd0951bdd1",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Gomez Brennan",
+      "email": "gomez_brennan@gmail.com",
+      "contact": "923599659",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-15T07:23:21.137Z",
+    "deliveryDate": "2023-10-18T07:23:21.137Z",
+    "lastStatusChangeDate": "2023-10-17T07:23:21.137Z",
+    "weight": 18.03
+  },
+  {
+    "_id": "6565cbf6333e78dd8c13f545",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Ray Butler",
+      "email": "ray_butler@gmail.com",
+      "contact": "968370569",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-05-04T15:16:42.038Z",
-    "deliveryDate": "2023-05-05T09:32:11.435Z",
-    "weight": 10
+    "requestedDate": "2023-10-16T19:03:04.147Z",
+    "deliveryDate": "2023-10-21T19:03:04.147Z",
+    "lastStatusChangeDate": "2023-10-18T19:03:04.147Z",
+    "weight": 4.82
   },
   {
-    "_id": "64d0b470257d730882485441",
+    "_id": "6565cbf67d08a6d7efc987f9",
     "shipper": {
       "_id": "64d0b470d56f04a2c6af9d85",
       "name": "DIGIPRINT"
     },
     "client": {
-      "name": "Lorraine Bowers",
-      "contact": "+351 (863) 558-2099",
-      "email": "lorrainebowers@plasmos.com",
-      "deliveryAddress": "894 Verona Place, 55",
-      "state": "Illinois",
-      "region": "Vivian",
-      "zip": "7932-423"
+      "name": "Terrie Boyd",
+      "email": "terrie_boyd@gmail.com",
+      "contact": "938926744",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-21T14:44:52.525Z",
+    "deliveryDate": "2023-11-24T14:44:52.525Z",
+    "lastStatusChangeDate": "2023-11-22T14:44:52.525Z",
+    "weight": 7.31
+  },
+  {
+    "_id": "6565cbf683a77decd92e972b",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Evelyn Guerrero",
+      "email": "evelyn_guerrero@gmail.com",
+      "contact": "923104101",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-04-25T23:04:30.684Z",
-    "deliveryDate": "2023-04-29T13:09:20.255Z",
-    "weight": 10
+    "requestedDate": "2023-10-31T09:11:54.981Z",
+    "deliveryDate": "2023-11-03T09:11:54.981Z",
+    "lastStatusChangeDate": "2023-11-02T09:11:54.981Z",
+    "weight": 5.12
   },
   {
-    "_id": "64d0b47031fde9418a482ad7",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Morrison Holloway",
-      "contact": "+351 (809) 528-3901",
-      "email": "morrisonholloway@zappix.com",
-      "deliveryAddress": "600 Stewart Street, 46",
-      "state": "Kansas",
-      "region": "Cutter",
-      "zip": "8367-219"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-04-14T07:17:35.022Z",
-    "deliveryDate": "2023-04-18T08:22:45.451Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470da6363856f5939f1",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Alyssa Guerra",
-      "contact": "+351 (856) 475-2194",
-      "email": "alyssaguerra@geekology.com",
-      "deliveryAddress": "195 Wolf Place, 88",
-      "state": "California",
-      "region": "Jeff",
-      "zip": "2138-437"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-011-27T15:14:28.234Z",
-    "deliveryDate": "2023-011-28T19:11:01.122Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470709e8e2138c5fe75",
+    "_id": "6565cbf6c985fe22342a76c9",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b896",
       "name": "COMTRACT"
     },
     "client": {
-      "name": "Nadia Mcmahon",
-      "contact": "+351 (908) 472-3619",
-      "email": "nadiamcmahon@senmei.com",
-      "deliveryAddress": "698 Brighton Avenue, 54",
-      "state": "Pennsylvania",
-      "region": "Gratton",
-      "zip": "1312-491"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-03-29T12:29:53.233Z",
-    "deliveryDate": "2023-04-01T07:53:11.067Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4700c088a963bfbc90b",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Higgins Lancaster",
-      "contact": "+351 (816) 513-3280",
-      "email": "higginslancaster@genekom.com",
-      "deliveryAddress": "804 Folsom Place, 46",
-      "state": "Maine",
-      "region": "Tioga",
-      "zip": "7425-829"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-05-12T21:26:43.144Z",
-    "deliveryDate": "2023-05-15T15:18:20.206Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470e043544029b4d8bf",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Kane Haley",
-      "contact": "+351 (986) 563-3580",
-      "email": "kanehaley@ersum.com",
-      "deliveryAddress": "223 Mill Avenue, 49",
-      "state": "Palau",
-      "region": "Chapin",
-      "zip": "1469-540"
+      "name": "Price Meyer",
+      "email": "price_meyer@gmail.com",
+      "contact": "916599134",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-05-12T17:08:28.870Z",
-    "deliveryDate": "2023-05-15T03:37:43.769Z",
-    "weight": 10
+    "requestedDate": "2023-10-03T16:14:54.954Z",
+    "deliveryDate": "2023-10-06T16:14:54.954Z",
+    "lastStatusChangeDate": "2023-10-04T16:14:54.954Z",
+    "weight": 11.18
   },
   {
-    "_id": "64d0b47062cbc48a7cdc07a4",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b896",
-      "name": "COMTRACT"
-    },
-    "client": {
-      "name": "Justine Ferguson",
-      "contact": "+351 (983) 578-2052",
-      "email": "justineferguson@quinex.com",
-      "deliveryAddress": "791 Calyer Street, 41",
-      "state": "Wisconsin",
-      "region": "Thomasville",
-      "zip": "7845-602"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-08-07T20:47:11.573Z",
-    "deliveryDate": "2023-08-11T11:44:38.798Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470e476c0c92d009a11",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b896",
-      "name": "COMTRACT"
-    },
-    "client": {
-      "name": "Hood Bishop",
-      "contact": "+351 (854) 422-3530",
-      "email": "hoodbishop@quilk.com",
-      "deliveryAddress": "895 Clarendon Road, 46",
-      "state": "Mississippi",
-      "region": "Downsville",
-      "zip": "7735-790"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-011-03T05:39:42.156Z",
-    "deliveryDate": "2023-011-07T15:11:43.311Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4704361dbfaeeed8c6c",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b896",
-      "name": "COMTRACT"
-    },
-    "client": {
-      "name": "Christy French",
-      "contact": "+351 (816) 556-3917",
-      "email": "christyfrench@terrago.com",
-      "deliveryAddress": "104 Georgia Avenue, 24",
-      "state": "Puerto Rico",
-      "region": "Hemlock",
-      "zip": "4887-934"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-05-08T18:38:30.156Z",
-    "deliveryDate": "2023-05-09T15:51:44.009Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b47077f43ae5ee15da15",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Leona Frederick",
-      "contact": "+351 (822) 536-2261",
-      "email": "leonafrederick@skybold.com",
-      "deliveryAddress": "238 Jaffray Street, 30",
-      "state": "Texas",
-      "region": "Columbus",
-      "zip": "2962-489"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-05-15T17:16:18.635Z",
-    "deliveryDate": "2023-05-19T16:33:54.219Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470b4f77b80caae2983",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b896",
-      "name": "COMTRACT"
-    },
-    "client": {
-      "name": "Pruitt Parsons",
-      "contact": "+351 (992) 575-2897",
-      "email": "pruittparsons@equicom.com",
-      "deliveryAddress": "695 Emerald Street, 46",
-      "state": "Iowa",
-      "region": "Sattley",
-      "zip": "7287-502"
-    },
-    "deliveryStatus": "On the road",
-    "requestedDate": "2023-04-20T02:18:08.740Z",
-    "deliveryDate": "2023-04-20T15:50:24.674Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4702c19b8a5c81da2f8",
+    "_id": "6565cbf60e238500195f6a6c",
     "shipper": {
       "_id": "64d0b470d56f04a2c6af9d85",
       "name": "DIGIPRINT"
     },
     "client": {
-      "name": "Franklin Robbins",
-      "contact": "+351 (844) 434-3120",
-      "email": "franklinrobbins@rubadub.com",
-      "deliveryAddress": "564 Montague Street, 68",
-      "state": "Hawaii",
-      "region": "Allendale",
-      "zip": "8553-358"
+      "name": "Franklin Briggs",
+      "email": "franklin_briggs@gmail.com",
+      "contact": "937537995",
+      "deliveryAddress": "Estrada Laranjeiras 105",
+      "state": "Lisboa",
+      "region": "Lisboa",
+      "zip": "1100-412"
     },
     "deliveryStatus": "Completed",
-    "requestedDate": "2023-05-18T11:02:17.919Z",
-    "deliveryDate": "2023-05-20T18:23:20.327Z",
-    "weight": 10
+    "requestedDate": "2023-10-10T10:51:18.183Z",
+    "deliveryDate": "2023-10-12T10:51:18.183Z",
+    "lastStatusChangeDate": "2023-10-11T10:51:18.183Z",
+    "weight": 13.39
   },
   {
-    "_id": "64d0b470431f1a5746542c74",
+    "_id": "6565cbf65bb1e60edeb17bc1",
     "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
     },
     "client": {
-      "name": "Hebert Blackwell",
-      "contact": "+351 (883) 597-2933",
-      "email": "hebertblackwell@xleen.com",
-      "deliveryAddress": "838 Brooklyn Avenue, 73",
-      "state": "Connecticut",
-      "region": "Berlin",
-      "zip": "9146-849"
+      "name": "Lynette Glass",
+      "email": "lynette_glass@gmail.com",
+      "contact": "936112478",
+      "deliveryAddress": "R Regato 81",
+      "state": "Castelo Branco",
+      "region": "Benquerença",
+      "zip": "6090-332"
     },
     "deliveryStatus": "Completed",
-    "requestedDate": "2023-04-09T10:37:47.629Z",
-    "deliveryDate": "2023-04-09T23:00:19.909Z",
-    "weight": 10
+    "requestedDate": "2023-11-23T21:59:15.155Z",
+    "deliveryDate": "2023-11-25T21:59:15.155Z",
+    "lastStatusChangeDate": "2023-11-24T21:59:15.155Z",
+    "weight": 3.83
   },
   {
-    "_id": "64d0b470cc5e7f70400bf6e7",
+    "_id": "6565cbf680ff77719713cfb4",
     "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
     },
     "client": {
-      "name": "Richmond Lawson",
-      "contact": "+351 (863) 533-2825",
-      "email": "richmondlawson@netplax.com",
-      "deliveryAddress": "583 Falmouth Street, 29",
-      "state": "Vermont",
-      "region": "Clara",
-      "zip": "1526-974"
+      "name": "Yang Weiss",
+      "email": "yang_weiss@gmail.com",
+      "contact": "963832007",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-24T10:16:25.506Z",
+    "deliveryDate": "2023-10-27T10:16:25.506Z",
+    "lastStatusChangeDate": "2023-10-25T10:16:25.506Z",
+    "weight": 4.69
+  },
+  {
+    "_id": "6565cbf6933ea9941f1e4c3f",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Bryan Camacho",
+      "email": "bryan_camacho@gmail.com",
+      "contact": "912742138",
+      "deliveryAddress": "R Doutor Paulo Quintela 12",
+      "state": "Coimbra",
+      "region": "Castanheira Do Campo",
+      "zip": "3025-509"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-16T14:55:19.709Z",
+    "deliveryDate": "2023-11-19T14:55:19.709Z",
+    "lastStatusChangeDate": "2023-11-18T14:55:19.709Z",
+    "weight": 6.41
+  },
+  {
+    "_id": "6565cbf61167568a3dff5a61",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Levine Hatfield",
+      "email": "levine_hatfield@gmail.com",
+      "contact": "923792110",
+      "deliveryAddress": "Rua Igreja 97",
+      "state": "Braga",
+      "region": "Antas",
+      "zip": "4760-052"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-26T19:32:54.270Z",
+    "deliveryDate": "2023-11-30T19:32:54.270Z",
+    "lastStatusChangeDate": "2023-11-28T19:32:54.270Z",
+    "weight": 10.82
+  },
+  {
+    "_id": "6565cbf6395955153a561199",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Stacy Sanchez",
+      "email": "stacy_sanchez@gmail.com",
+      "contact": "917975909",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-21T20:20:28.253Z",
+    "deliveryDate": "2023-11-23T20:20:28.253Z",
+    "lastStatusChangeDate": "2023-11-23T20:20:28.253Z",
+    "weight": 9.32
+  },
+  {
+    "_id": "6565cbf6790e9f237e092abe",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Imelda Franks",
+      "email": "imelda_franks@gmail.com",
+      "contact": "962059542",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-31T08:10:53.835Z",
+    "deliveryDate": "2023-11-03T08:10:53.835Z",
+    "lastStatusChangeDate": "2023-11-02T08:10:53.835Z",
+    "weight": 6.44
+  },
+  {
+    "_id": "6565cbf694a25b9dec3fb1ea",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Trudy Simpson",
+      "email": "trudy_simpson@gmail.com",
+      "contact": "964179189",
+      "deliveryAddress": "R Cerdeira Ervas 75",
+      "state": "Braga",
+      "region": "Braga",
+      "zip": "4715-092"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-12T12:34:29.361Z",
+    "deliveryDate": "2023-10-15T12:34:29.361Z",
+    "lastStatusChangeDate": "2023-10-14T12:34:29.361Z",
+    "weight": 10.91
+  },
+  {
+    "_id": "6565cbf64ed96d701d5c09ad",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Patrice Robbins",
+      "email": "patrice_robbins@gmail.com",
+      "contact": "936011136",
+      "deliveryAddress": "R Doutor Paulo Quintela 12",
+      "state": "Coimbra",
+      "region": "Castanheira Do Campo",
+      "zip": "3025-509"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-07T17:45:25.725Z",
+    "deliveryDate": "2023-11-10T17:45:25.725Z",
+    "lastStatusChangeDate": "2023-11-08T17:45:25.725Z",
+    "weight": 7.21
+  },
+  {
+    "_id": "6565cbf678274aa742f38c5f",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Vargas Harding",
+      "email": "vargas_harding@gmail.com",
+      "contact": "926277083",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-09T01:51:07.247Z",
+    "deliveryDate": "2023-11-13T01:51:07.247Z",
+    "lastStatusChangeDate": "2023-11-10T01:51:07.247Z",
+    "weight": 18.52
+  },
+  {
+    "_id": "6565cbf6483e34b88b413525",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Brady Foley",
+      "email": "brady_foley@gmail.com",
+      "contact": "914859824",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-04-02T02:16:56.090Z",
-    "deliveryDate": "2023-04-02T08:49:31.109Z",
-    "weight": 10
+    "requestedDate": "2023-10-19T19:56:52.281Z",
+    "deliveryDate": "2023-10-21T19:56:52.281Z",
+    "lastStatusChangeDate": "2023-10-21T19:56:52.281Z",
+    "weight": 7.16
   },
   {
-    "_id": "64d0b470a9c6fb99d1e6eeab",
+    "_id": "6565cbf65fde1ece497b80b0",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Lauren Gonzales",
+      "email": "lauren_gonzales@gmail.com",
+      "contact": "969443774",
+      "deliveryAddress": "R Cerdeira Ervas 75",
+      "state": "Braga",
+      "region": "Braga",
+      "zip": "4715-092"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-03T03:04:03.661Z",
+    "deliveryDate": "2023-11-06T03:04:03.661Z",
+    "lastStatusChangeDate": "2023-11-05T03:04:03.661Z",
+    "weight": 13.63
+  },
+  {
+    "_id": "6565cbf6da9bbb065a1ad52b",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Flynn Park",
+      "email": "flynn_park@gmail.com",
+      "contact": "937153074",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-20T15:35:58.601Z",
+    "deliveryDate": "2023-11-23T15:35:58.601Z",
+    "lastStatusChangeDate": "2023-11-21T15:35:58.601Z",
+    "weight": 4.74
+  },
+  {
+    "_id": "6565cbf60188d4d5bb6efe10",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Matthews Newman",
+      "email": "matthews_newman@gmail.com",
+      "contact": "923964102",
+      "deliveryAddress": "R Cerdeira Ervas 75",
+      "state": "Braga",
+      "region": "Braga",
+      "zip": "4715-092"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-04T05:20:55.202Z",
+    "deliveryDate": "2023-11-06T05:20:55.202Z",
+    "lastStatusChangeDate": "2023-11-05T05:20:55.202Z",
+    "weight": 13.76
+  },
+  {
+    "_id": "6565cbf63077d2f81e1f03a2",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Barnett Daniel",
+      "email": "barnett_daniel@gmail.com",
+      "contact": "965229410",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-13T21:13:14.029Z",
+    "deliveryDate": "2023-10-18T21:13:14.029Z",
+    "lastStatusChangeDate": "2023-10-15T21:13:14.029Z",
+    "weight": 17.07
+  },
+  {
+    "_id": "6565cbf6eb5011f1120d90e4",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Ashlee Tucker",
+      "email": "ashlee_tucker@gmail.com",
+      "contact": "937992826",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-18T23:31:32.960Z",
+    "deliveryDate": "2023-10-20T23:31:32.960Z",
+    "lastStatusChangeDate": "2023-10-20T23:31:32.960Z",
+    "weight": 3.88
+  },
+  {
+    "_id": "6565cbf615adc75bc9571334",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b895",
       "name": "NIQUENT"
     },
     "client": {
-      "name": "Kayla Barr",
-      "contact": "+351 (866) 585-3428",
-      "email": "kaylabarr@eyeris.com",
-      "deliveryAddress": "810 Applegate Court, 33",
-      "state": "Georgia",
-      "region": "Iberia",
-      "zip": "5610-797"
+      "name": "Ida Mcclure",
+      "email": "ida_mcclure@gmail.com",
+      "contact": "967476377",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-12T16:30:58.204Z",
+    "deliveryDate": "2023-11-16T16:30:58.204Z",
+    "lastStatusChangeDate": "2023-11-13T16:30:58.204Z",
+    "weight": 10.77
+  },
+  {
+    "_id": "6565cbf698566ec369fa0da9",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Kimberley Perez",
+      "email": "kimberley_perez@gmail.com",
+      "contact": "916448614",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-01T22:08:52.701Z",
+    "deliveryDate": "2023-10-05T22:08:52.701Z",
+    "lastStatusChangeDate": "2023-10-02T22:08:52.701Z",
+    "weight": 3.47
+  },
+  {
+    "_id": "6565cbf649d48675cede3bb4",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Terri Leon",
+      "email": "terri_leon@gmail.com",
+      "contact": "969863105",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-04-27T06:10:26.801Z",
-    "deliveryDate": "2023-04-28T03:47:39.034Z",
-    "weight": 10
+    "requestedDate": "2023-10-28T23:28:36.769Z",
+    "deliveryDate": "2023-10-31T23:28:36.769Z",
+    "lastStatusChangeDate": "2023-10-31T00:28:36.769Z",
+    "weight": 19.95
   },
   {
-    "_id": "64d0b47026be3e87cd9e866a",
+    "_id": "6565cbf6fcfb57f18f4cdfec",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b895",
       "name": "NIQUENT"
     },
     "client": {
-      "name": "Casey Buck",
-      "contact": "+351 (810) 507-2706",
-      "email": "caseybuck@calcu.com",
-      "deliveryAddress": "867 Morgan Avenue, 80",
-      "state": "Kentucky",
-      "region": "Naomi",
-      "zip": "8394-624"
+      "name": "Kris Hooper",
+      "email": "kris_hooper@gmail.com",
+      "contact": "917935603",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-011-17T22:49:45.172Z",
-    "deliveryDate": "2023-011-21T19:15:58.518Z",
-    "weight": 10
+    "requestedDate": "2023-10-05T06:05:44.340Z",
+    "deliveryDate": "2023-10-09T06:05:44.340Z",
+    "lastStatusChangeDate": "2023-10-06T06:05:44.340Z",
+    "weight": 3.51
   },
   {
-    "_id": "64d0b470e4224570750de5f4",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Shawna Greene",
-      "contact": "+351 (912) 585-2422",
-      "email": "shawnagreene@roughies.com",
-      "deliveryAddress": "827 Jefferson Avenue, 20",
-      "state": "Idaho",
-      "region": "Tuttle",
-      "zip": "6294-413"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-05-21T05:45:06.855Z",
-    "deliveryDate": "2023-05-25T12:22:21.149Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470a09f0023869375be",
+    "_id": "6565cbf65e9d1ff779769c88",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b896",
       "name": "COMTRACT"
     },
     "client": {
-      "name": "Erika Spears",
-      "contact": "+351 (986) 429-3575",
-      "email": "erikaspears@waretel.com",
-      "deliveryAddress": "548 Bedell Lane, 86",
-      "state": "New Hampshire",
-      "region": "Watchtower",
-      "zip": "1516-496"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-04-28T06:02:40.577Z",
-    "deliveryDate": "2023-05-01T16:38:52.463Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470333d5d18da2da69d",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Dianna Hodge",
-      "contact": "+351 (904) 491-3404",
-      "email": "diannahodge@orbin.com",
-      "deliveryAddress": "822 Coleman Street, 40",
-      "state": "South Dakota",
-      "region": "Greenbackville",
-      "zip": "5793-883"
+      "name": "Parker Chen",
+      "email": "parker_chen@gmail.com",
+      "contact": "939206305",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-07-18T17:18:55.562Z",
-    "deliveryDate": "2023-07-22T16:57:47.943Z",
-    "weight": 10
+    "requestedDate": "2023-11-07T21:24:16.938Z",
+    "deliveryDate": "2023-11-12T21:24:16.938Z",
+    "lastStatusChangeDate": "2023-11-08T21:24:16.938Z",
+    "weight": 8.62
   },
   {
-    "_id": "64d0b47043ffa08da6700323",
+    "_id": "6565cbf6375b7149cb625e54",
     "shipper": {
       "_id": "64d0b470d56f04a2c6af9d85",
       "name": "DIGIPRINT"
     },
     "client": {
-      "name": "Delgado Sutton",
-      "contact": "+351 (921) 546-2888",
-      "email": "delgadosutton@norali.com",
-      "deliveryAddress": "626 Boerum Place, 67",
-      "state": "Oregon",
-      "region": "Winston",
-      "zip": "6694-658"
+      "name": "Bette Jennings",
+      "email": "bette_jennings@gmail.com",
+      "contact": "961599101",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-26T15:24:02.062Z",
+    "deliveryDate": "2023-10-30T15:24:02.062Z",
+    "lastStatusChangeDate": "2023-10-28T15:24:02.062Z",
+    "weight": 8.28
+  },
+  {
+    "_id": "6565cbf684fd8d5a0377e890",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Helena Cantu",
+      "email": "helena_cantu@gmail.com",
+      "contact": "934582743",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-05-25T11:59:20.545Z",
-    "deliveryDate": "2023-05-29T16:09:52.882Z",
-    "weight": 10
+    "requestedDate": "2023-11-20T17:00:52.765Z",
+    "deliveryDate": "2023-11-23T17:00:52.765Z",
+    "lastStatusChangeDate": "2023-11-22T17:00:52.765Z",
+    "weight": 7.69
   },
   {
-    "_id": "64d0b4703aa6e3b3456e8d69",
+    "_id": "6565cbf64324b73b14e0326b",
     "shipper": {
       "_id": "64d0b470d56f04a2c6af9d85",
       "name": "DIGIPRINT"
     },
     "client": {
-      "name": "Alta Fischer",
-      "contact": "+351 (943) 471-2667",
-      "email": "altafischer@callflex.com",
-      "deliveryAddress": "719 Adelphi Street, 59",
-      "state": "Federated States Of Micronesia",
-      "region": "Succasunna",
-      "zip": "1585-216"
+      "name": "Erickson Dean",
+      "email": "erickson_dean@gmail.com",
+      "contact": "917410639",
+      "deliveryAddress": "R Regato 81",
+      "state": "Castelo Branco",
+      "region": "Benquerença",
+      "zip": "6090-332"
     },
     "deliveryStatus": "Completed",
-    "requestedDate": "2023-07-17T03:50:52.408Z",
-    "deliveryDate": "2023-07-17T23:48:43.397Z",
-    "weight": 10
+    "requestedDate": "2023-11-25T10:29:13.714Z",
+    "deliveryDate": "2023-11-29T10:29:13.714Z",
+    "lastStatusChangeDate": "2023-11-26T10:29:13.714Z",
+    "weight": 15.62
   },
   {
-    "_id": "64d0b470d01b88a1dfc4971b",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b896",
-      "name": "COMTRACT"
-    },
-    "client": {
-      "name": "Terry Blake",
-      "contact": "+351 (814) 400-2233",
-      "email": "terryblake@pyramia.com",
-      "deliveryAddress": "287 Prince Street, 54",
-      "state": "Michigan",
-      "region": "Wauhillau",
-      "zip": "3891-328"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-05-22T03:17:08.286Z",
-    "deliveryDate": "2023-05-25T03:27:51.142Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470b13dcb1b0ea29442",
+    "_id": "6565cbf666c5d9d9c45a2a4f",
     "shipper": {
       "_id": "64d0b470d56f04a2c6af9d85",
       "name": "DIGIPRINT"
     },
     "client": {
-      "name": "Duran Levy",
-      "contact": "+351 (862) 533-3810",
-      "email": "duranlevy@senmao.com",
-      "deliveryAddress": "180 Taylor Street, 79",
-      "state": "Montana",
-      "region": "Shindler",
-      "zip": "9237-553"
+      "name": "Foster Herrera",
+      "email": "foster_herrera@gmail.com",
+      "contact": "969017140",
+      "deliveryAddress": "Travessa Choupelo 86",
+      "state": "Porto",
+      "region": "Leça Do Balio",
+      "zip": "4465-757"
     },
     "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-07-02T06:22:50.292Z",
-    "deliveryDate": "2023-07-03T18:11:18.616Z",
-    "weight": 10
+    "requestedDate": "2023-11-02T22:32:26.916Z",
+    "deliveryDate": "2023-11-06T22:32:26.916Z",
+    "lastStatusChangeDate": "2023-11-04T22:32:26.916Z",
+    "weight": 15.84
   },
   {
-    "_id": "64d0b470956a668f9ecf076b",
+    "_id": "6565cbf61a17415b27748788",
     "shipper": {
-      "_id": "64d0b470ef785ee93aa8b896",
-      "name": "COMTRACT"
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
     },
     "client": {
-      "name": "Ana Duffy",
-      "contact": "+351 (999) 476-3807",
-      "email": "anaduffy@zillatide.com",
-      "deliveryAddress": "800 Nevins Street, 40",
-      "state": "Guam",
-      "region": "Brazos",
-      "zip": "7266-432"
+      "name": "Selena Powers",
+      "email": "selena_powers@gmail.com",
+      "contact": "962356511",
+      "deliveryAddress": "R Cerdeira Ervas 75",
+      "state": "Braga",
+      "region": "Braga",
+      "zip": "4715-092"
     },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-08-12T13:27:46.890Z",
-    "deliveryDate": "2023-08-13T22:12:36.127Z",
-    "weight": 10
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-29T03:12:09.577Z",
+    "deliveryDate": "2023-11-01T03:12:09.577Z",
+    "lastStatusChangeDate": "2023-10-30T03:12:09.577Z",
+    "weight": 17.79
   },
   {
-    "_id": "64d0b47027055468a09e9c27",
+    "_id": "6565cbf629eb8b47472bd4a8",
     "shipper": {
-      "_id": "64d0b470ef785ee93aa8b896",
-      "name": "COMTRACT"
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
     },
     "client": {
-      "name": "Joseph Stanley",
-      "contact": "+351 (871) 590-3663",
-      "email": "josephstanley@comverges.com",
-      "deliveryAddress": "917 Strong Place, 21",
-      "state": "Delaware",
-      "region": "Gibbsville",
-      "zip": "8905-456"
+      "name": "Ruby Hale",
+      "email": "ruby_hale@gmail.com",
+      "contact": "966468912",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-04-10T05:21:10.984Z",
-    "deliveryDate": "2023-04-11T20:50:05.936Z",
-    "weight": 10
+    "requestedDate": "2023-10-07T19:38:56.114Z",
+    "deliveryDate": "2023-10-10T19:38:56.114Z",
+    "lastStatusChangeDate": "2023-10-09T19:38:56.114Z",
+    "weight": 14.25
   },
   {
-    "_id": "64d0b4701e30bb04db79af45",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Wolf Barrett",
-      "contact": "+351 (925) 440-3573",
-      "email": "wolfbarrett@pivitol.com",
-      "deliveryAddress": "250 Stratford Road, 18",
-      "state": "New York",
-      "region": "Choctaw",
-      "zip": "2982-661"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-05-14T01:23:14.298Z",
-    "deliveryDate": "2023-05-17T23:42:42.978Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4700b01451819af5ca3",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Ayers Phelps",
-      "contact": "+351 (892) 427-2110",
-      "email": "ayersphelps@limage.com",
-      "deliveryAddress": "528 Rock Street, 23",
-      "state": "Maryland",
-      "region": "Chesapeake",
-      "zip": "1716-487"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-04-08T20:14:37.338Z",
-    "deliveryDate": "2023-04-09T00:38:33.452Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470d8f1fa7395a26f14",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Herminia Riggs",
-      "contact": "+351 (967) 441-2034",
-      "email": "herminiariggs@zilch.com",
-      "deliveryAddress": "682 Indiana Place, 70",
-      "state": "North Carolina",
-      "region": "Salvo",
-      "zip": "5798-801"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-04-14T16:10:19.750Z",
-    "deliveryDate": "2023-04-14T18:12:11.658Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4706d6aa31aeead2de8",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Ginger Gay",
-      "contact": "+351 (847) 529-2883",
-      "email": "gingergay@konnect.com",
-      "deliveryAddress": "239 Cortelyou Road, 49",
-      "state": "Nevada",
-      "region": "Healy",
-      "zip": "9803-377"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-04-08T04:07:57.051Z",
-    "deliveryDate": "2023-04-08T06:39:33.065Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4708a9a434a3a24fed0",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Marsha Huff",
-      "contact": "+351 (856) 589-3622",
-      "email": "marshahuff@talendula.com",
-      "deliveryAddress": "845 McKinley Avenue, 20",
-      "state": "Northern Mariana Islands",
-      "region": "Dola",
-      "zip": "6340-880"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-07-05T10:09:17.055Z",
-    "deliveryDate": "2023-07-09T09:22:06.655Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470b33e1e98cd1d3707",
+    "_id": "6565cbf6e930a081e63bad1b",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b896",
       "name": "COMTRACT"
     },
     "client": {
-      "name": "Evans Case",
-      "contact": "+351 (998) 543-3488",
-      "email": "evanscase@twiist.com",
-      "deliveryAddress": "966 Gerald Court, 64",
-      "state": "Colorado",
-      "region": "Sanders",
-      "zip": "8747-418"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-04-24T05:04:21.411Z",
-    "deliveryDate": "2023-04-27T13:18:09.762Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470d69933a6a1689067",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b896",
-      "name": "COMTRACT"
-    },
-    "client": {
-      "name": "Saunders Rosa",
-      "contact": "+351 (974) 595-3893",
-      "email": "saundersrosa@maineland.com",
-      "deliveryAddress": "540 Joval Court, 21",
-      "state": "Missouri",
-      "region": "Manchester",
-      "zip": "7657-594"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-07-16T06:15:46.681Z",
-    "deliveryDate": "2023-07-20T04:56:44.875Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470b076aeb760fe961c",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Estella Osborn",
-      "contact": "+351 (924) 431-3006",
-      "email": "estellaosborn@deviltoe.com",
-      "deliveryAddress": "279 Schenck Avenue, 82",
-      "state": "New Mexico",
-      "region": "Tampico",
-      "zip": "9534-190"
+      "name": "Carey Fitzgerald",
+      "email": "carey_fitzgerald@gmail.com",
+      "contact": "935273345",
+      "deliveryAddress": "Travessa Choupelo 86",
+      "state": "Porto",
+      "region": "Leça Do Balio",
+      "zip": "4465-757"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-05-10T10:48:47.436Z",
-    "deliveryDate": "2023-05-14T09:18:33.815Z",
-    "weight": 10
+    "requestedDate": "2023-10-15T01:14:53.354Z",
+    "deliveryDate": "2023-10-18T01:14:53.354Z",
+    "lastStatusChangeDate": "2023-10-16T01:14:53.354Z",
+    "weight": 7.63
   },
   {
-    "_id": "64d0b4700f3544e89215bbc8",
+    "_id": "6565cbf67789944963bb6fb6",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Maribel Barrera",
+      "email": "maribel_barrera@gmail.com",
+      "contact": "915373018",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-18T10:41:42.229Z",
+    "deliveryDate": "2023-10-23T10:41:42.229Z",
+    "lastStatusChangeDate": "2023-10-19T10:41:42.229Z",
+    "weight": 3.52
+  },
+  {
+    "_id": "6565cbf6a1cb05e4556b476e",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Amber Riddle",
+      "email": "amber_riddle@gmail.com",
+      "contact": "937724577",
+      "deliveryAddress": "Travessa Choupelo 86",
+      "state": "Porto",
+      "region": "Leça Do Balio",
+      "zip": "4465-757"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-21T12:36:12.370Z",
+    "deliveryDate": "2023-11-24T12:36:12.370Z",
+    "lastStatusChangeDate": "2023-11-23T12:36:12.370Z",
+    "weight": 13.99
+  },
+  {
+    "_id": "6565cbf68e9123030e0ae273",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Wilson Rose",
+      "email": "wilson_rose@gmail.com",
+      "contact": "939196407",
+      "deliveryAddress": "Rua Igreja 97",
+      "state": "Braga",
+      "region": "Antas",
+      "zip": "4760-052"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-28T01:27:18.702Z",
+    "deliveryDate": "2023-10-31T01:27:18.702Z",
+    "lastStatusChangeDate": "2023-10-29T02:27:18.702Z",
+    "weight": 19.41
+  },
+  {
+    "_id": "6565cbf6dabe215b72d55b19",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b896",
       "name": "COMTRACT"
     },
     "client": {
-      "name": "Jo Mclean",
-      "contact": "+351 (934) 484-2976",
-      "email": "jomclean@handshake.com",
-      "deliveryAddress": "278 Perry Place, 20",
-      "state": "Utah",
-      "region": "Bowden",
-      "zip": "9359-484"
+      "name": "Mcdaniel Middleton",
+      "email": "mcdaniel_middleton@gmail.com",
+      "contact": "929991045",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-04-09T23:18:37.524Z",
-    "deliveryDate": "2023-04-14T20:10:09.252Z",
-    "weight": 10
+    "requestedDate": "2023-10-01T10:37:16.908Z",
+    "deliveryDate": "2023-10-04T10:37:16.908Z",
+    "lastStatusChangeDate": "2023-10-03T10:37:16.908Z",
+    "weight": 6.21
   },
   {
-    "_id": "64d0b47082a3a268f518f91c",
+    "_id": "6565cbf6112959dbfe37d0ce",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Helga Aguilar",
+      "email": "helga_aguilar@gmail.com",
+      "contact": "933333597",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-01T21:39:01.172Z",
+    "deliveryDate": "2023-10-06T21:39:01.172Z",
+    "lastStatusChangeDate": "2023-10-03T21:39:01.172Z",
+    "weight": 9.29
+  },
+  {
+    "_id": "6565cbf6b5f30004250f654c",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b895",
       "name": "NIQUENT"
     },
     "client": {
-      "name": "Maxine Chavez",
-      "contact": "+351 (981) 453-2109",
-      "email": "maxinechavez@terrasys.com",
-      "deliveryAddress": "860 Conklin Avenue, 85",
-      "state": "Washington",
-      "region": "Bendon",
-      "zip": "2543-811"
+      "name": "Bush Hernandez",
+      "email": "bush_hernandez@gmail.com",
+      "contact": "918174534",
+      "deliveryAddress": "Estrada Laranjeiras 105",
+      "state": "Lisboa",
+      "region": "Lisboa",
+      "zip": "1100-412"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-15T04:53:59.439Z",
+    "deliveryDate": "2023-11-19T04:53:59.439Z",
+    "lastStatusChangeDate": "2023-11-17T04:53:59.439Z",
+    "weight": 9.49
+  },
+  {
+    "_id": "6565cbf616f7fb1b71e5df81",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Pitts Dodson",
+      "email": "pitts_dodson@gmail.com",
+      "contact": "921844053",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-12T22:31:30.350Z",
+    "deliveryDate": "2023-10-14T22:31:30.350Z",
+    "lastStatusChangeDate": "2023-10-14T22:31:30.350Z",
+    "weight": 12.41
+  },
+  {
+    "_id": "6565cbf63f6acd46bb53bae2",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Parks Terrell",
+      "email": "parks_terrell@gmail.com",
+      "contact": "913979925",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-22T12:30:03.575Z",
+    "deliveryDate": "2023-10-27T12:30:03.575Z",
+    "lastStatusChangeDate": "2023-10-24T12:30:03.575Z",
+    "weight": 14.44
+  },
+  {
+    "_id": "6565cbf61dd8ee1271819c56",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Wagner Lindsay",
+      "email": "wagner_lindsay@gmail.com",
+      "contact": "927672193",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-28T06:59:43.148Z",
+    "deliveryDate": "2023-11-02T06:59:43.148Z",
+    "lastStatusChangeDate": "2023-10-29T07:59:43.148Z",
+    "weight": 10.69
+  },
+  {
+    "_id": "6565cbf6ab99e975f8114ed5",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Dolores Kline",
+      "email": "dolores_kline@gmail.com",
+      "contact": "965028161",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-05-16T15:19:31.965Z",
-    "deliveryDate": "2023-05-18T20:00:49.453Z",
-    "weight": 10
+    "requestedDate": "2023-10-07T18:00:41.751Z",
+    "deliveryDate": "2023-10-12T18:00:41.751Z",
+    "lastStatusChangeDate": "2023-10-08T18:00:41.751Z",
+    "weight": 3.72
   },
   {
-    "_id": "64d0b4706b9a2502c8accbc6",
+    "_id": "6565cbf6d1678878b9fac95a",
     "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
     },
     "client": {
-      "name": "Alisa Aguirre",
-      "contact": "+351 (971) 553-3256",
-      "email": "alisaaguirre@petigems.com",
-      "deliveryAddress": "705 Ross Street, 43",
-      "state": "Minnesota",
-      "region": "Kenwood",
-      "zip": "2133-731"
+      "name": "Adriana Andrews",
+      "email": "adriana_andrews@gmail.com",
+      "contact": "932807273",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
     },
     "deliveryStatus": "Completed",
-    "requestedDate": "2023-011-16T19:45:42.785Z",
-    "deliveryDate": "2023-011-20T07:44:02.760Z",
-    "weight": 10
+    "requestedDate": "2023-11-06T17:02:24.338Z",
+    "deliveryDate": "2023-11-09T17:02:24.338Z",
+    "lastStatusChangeDate": "2023-11-07T17:02:24.338Z",
+    "weight": 16.94
   },
   {
-    "_id": "64d0b4707b9d05984b78d01c",
+    "_id": "6565cbf6b9d0d66175459dc4",
     "shipper": {
       "_id": "64d0b470d56f04a2c6af9d85",
       "name": "DIGIPRINT"
     },
     "client": {
-      "name": "Silva Sampson",
-      "contact": "+351 (871) 511-2627",
-      "email": "silvasampson@enersol.com",
-      "deliveryAddress": "276 Radde Place, 26",
-      "state": "Tennessee",
-      "region": "Hall",
-      "zip": "5515-102"
+      "name": "Fulton Arnold",
+      "email": "fulton_arnold@gmail.com",
+      "contact": "965421549",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-02T08:55:53.441Z",
+    "deliveryDate": "2023-11-04T08:55:53.441Z",
+    "lastStatusChangeDate": "2023-11-03T08:55:53.441Z",
+    "weight": 3.21
+  },
+  {
+    "_id": "6565cbf63adbaa7f821fc73c",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Jewell Pruitt",
+      "email": "jewell_pruitt@gmail.com",
+      "contact": "968338607",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-10T07:27:17.395Z",
+    "deliveryDate": "2023-10-15T07:27:17.395Z",
+    "lastStatusChangeDate": "2023-10-11T07:27:17.395Z",
+    "weight": 18.43
+  },
+  {
+    "_id": "6565cbf698db2e5cd262068a",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Dominguez Jensen",
+      "email": "dominguez_jensen@gmail.com",
+      "contact": "966959472",
+      "deliveryAddress": "Estrada Laranjeiras 105",
+      "state": "Lisboa",
+      "region": "Lisboa",
+      "zip": "1100-412"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-21T11:56:53.050Z",
+    "deliveryDate": "2023-10-26T11:56:53.050Z",
+    "lastStatusChangeDate": "2023-10-22T11:56:53.050Z",
+    "weight": 16.86
+  },
+  {
+    "_id": "6565cbf6470270c50f0034aa",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Santos Sutton",
+      "email": "santos_sutton@gmail.com",
+      "contact": "925664448",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-15T04:53:30.234Z",
+    "deliveryDate": "2023-10-17T04:53:30.234Z",
+    "lastStatusChangeDate": "2023-10-17T04:53:30.234Z",
+    "weight": 19.07
+  },
+  {
+    "_id": "6565cbf63b77c49e417eaead",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Marcy Dunlap",
+      "email": "marcy_dunlap@gmail.com",
+      "contact": "916788445",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-18T23:07:19.658Z",
+    "deliveryDate": "2023-11-23T23:07:19.658Z",
+    "lastStatusChangeDate": "2023-11-20T23:07:19.658Z",
+    "weight": 12.26
+  },
+  {
+    "_id": "6565cbf62b8a803561c2d3ab",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Ernestine Goff",
+      "email": "ernestine_goff@gmail.com",
+      "contact": "936317849",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-08-08T14:43:33.829Z",
-    "deliveryDate": "2023-08-11T13:45:25.636Z",
-    "weight": 10
+    "requestedDate": "2023-10-27T21:45:50.710Z",
+    "deliveryDate": "2023-10-29T21:45:50.710Z",
+    "lastStatusChangeDate": "2023-10-28T21:45:50.710Z",
+    "weight": 16.53
   },
   {
-    "_id": "64d0b47006c36fab1b83bbc2",
+    "_id": "6565cbf6390aee26025a3099",
     "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
     },
     "client": {
-      "name": "Luella Humphrey",
-      "contact": "+351 (909) 463-3781",
-      "email": "luellahumphrey@quiltigen.com",
-      "deliveryAddress": "913 Bank Street, 38",
-      "state": "Virginia",
-      "region": "Beechmont",
-      "zip": "1639-733"
+      "name": "Ellison Yates",
+      "email": "ellison_yates@gmail.com",
+      "contact": "923539189",
+      "deliveryAddress": "Estrada Laranjeiras 105",
+      "state": "Lisboa",
+      "region": "Lisboa",
+      "zip": "1100-412"
     },
     "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-011-18T12:25:40.153Z",
-    "deliveryDate": "2023-011-22T12:18:47.620Z",
-    "weight": 10
+    "requestedDate": "2023-10-19T00:44:13.320Z",
+    "deliveryDate": "2023-10-23T00:44:13.320Z",
+    "lastStatusChangeDate": "2023-10-21T00:44:13.320Z",
+    "weight": 13.06
   },
   {
-    "_id": "64d0b470ef8559b4a7f2dda9",
+    "_id": "6565cbf6a32f421e37830837",
     "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
     },
     "client": {
-      "name": "Washington Cameron",
-      "contact": "+351 (988) 481-2706",
-      "email": "washingtoncameron@zaya.com",
-      "deliveryAddress": "251 Borinquen Pl, 78",
-      "state": "Indiana",
-      "region": "Dixonville",
-      "zip": "6939-197"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-011-24T19:27:02.306Z",
-    "deliveryDate": "2023-011-25T20:49:52.044Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b47038e46b75e4ac80c0",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
-    },
-    "client": {
-      "name": "Norris Kerr",
-      "contact": "+351 (975) 429-2179",
-      "email": "norriskerr@ecratic.com",
-      "deliveryAddress": "455 Bragg Court, 39",
-      "state": "Arkansas",
-      "region": "Murillo",
-      "zip": "2337-857"
+      "name": "Frances Stevens",
+      "email": "frances_stevens@gmail.com",
+      "contact": "932281178",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
     },
     "deliveryStatus": "Completed",
-    "requestedDate": "2023-04-18T22:26:11.913Z",
-    "deliveryDate": "2023-04-19T10:19:31.267Z",
-    "weight": 10
+    "requestedDate": "2023-11-20T06:19:22.948Z",
+    "deliveryDate": "2023-11-23T06:19:22.948Z",
+    "lastStatusChangeDate": "2023-11-22T06:19:22.948Z",
+    "weight": 11.22
   },
   {
-    "_id": "64d0b470584359669e38cb1c",
+    "_id": "6565cbf6951e7ae680a87580",
     "shipper": {
-      "_id": "64d0b470ef785ee93aa8b895",
-      "name": "NIQUENT"
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
     },
     "client": {
-      "name": "Elizabeth Herman",
-      "contact": "+351 (831) 538-2185",
-      "email": "elizabethherman@combogene.com",
-      "deliveryAddress": "708 Varick Street, 79",
-      "state": "Alabama",
-      "region": "Robinette",
-      "zip": "7437-447"
+      "name": "Georgette Cotton",
+      "email": "georgette_cotton@gmail.com",
+      "contact": "969601832",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-011-16T09:52:47.778Z",
-    "deliveryDate": "2023-011-19T09:43:30.373Z",
-    "weight": 10
+    "requestedDate": "2023-10-02T15:56:53.079Z",
+    "deliveryDate": "2023-10-04T15:56:53.079Z",
+    "lastStatusChangeDate": "2023-10-03T15:56:53.079Z",
+    "weight": 12.79
   },
   {
-    "_id": "64d0b470c1a8e1133c81a8b9",
+    "_id": "6565cbf62614252247cc17a1",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b896",
       "name": "COMTRACT"
     },
     "client": {
-      "name": "Vilma Pugh",
-      "contact": "+351 (965) 434-3277",
-      "email": "vilmapugh@kengen.com",
-      "deliveryAddress": "340 Knickerbocker Avenue, 92",
-      "state": "South Carolina",
-      "region": "Allamuchy",
-      "zip": "7737-400"
+      "name": "Deloris Townsend",
+      "email": "deloris_townsend@gmail.com",
+      "contact": "919471904",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
     },
     "deliveryStatus": "On the road",
-    "requestedDate": "2023-07-03T22:33:13.277Z",
-    "deliveryDate": "2023-07-05T16:07:45.146Z",
-    "weight": 10
+    "requestedDate": "2023-11-24T06:50:40.361Z",
+    "deliveryDate": "2023-11-27T06:50:40.361Z",
+    "lastStatusChangeDate": "2023-11-25T06:50:40.361Z",
+    "weight": 18.94
   },
   {
-    "_id": "64d0b4706b0f7440c46de898",
+    "_id": "6565cbf65d806384c8b008c3",
     "shipper": {
-      "_id": "64d0b470ef785ee93aa8b896",
-      "name": "COMTRACT"
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
     },
     "client": {
-      "name": "Alba Cook",
-      "contact": "+351 (879) 510-3645",
-      "email": "albacook@tribalog.com",
-      "deliveryAddress": "811 Blake Avenue, 19",
-      "state": "Florida",
-      "region": "Clay",
-      "zip": "2883-730"
+      "name": "Christie Wheeler",
+      "email": "christie_wheeler@gmail.com",
+      "contact": "964130105",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
     },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-04-15T11:04:49.503Z",
-    "deliveryDate": "2023-04-20T01:39:14.241Z",
-    "weight": 10
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-13T10:10:49.623Z",
+    "deliveryDate": "2023-11-18T10:10:49.623Z",
+    "lastStatusChangeDate": "2023-11-14T10:10:49.623Z",
+    "weight": 11.72
   },
   {
-    "_id": "64d0b4708fa308c377433dbb",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b896",
-      "name": "COMTRACT"
-    },
-    "client": {
-      "name": "Brandi Campos",
-      "contact": "+351 (839) 539-2006",
-      "email": "brandicampos@kindaloo.com",
-      "deliveryAddress": "843 Campus Place, 89",
-      "state": "New Jersey",
-      "region": "Bend",
-      "zip": "5502-936"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-07-09T05:24:10.137Z",
-    "deliveryDate": "2023-07-09T20:19:22.790Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4701d5a131f36f6eece",
+    "_id": "6565cbf6449ddaa731ee0e69",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b895",
       "name": "NIQUENT"
     },
     "client": {
-      "name": "Berg Torres",
-      "contact": "+351 (866) 423-2867",
-      "email": "bergtorres@ozean.com",
-      "deliveryAddress": "745 Huron Street, 96",
-      "state": "Marshall Islands",
-      "region": "Cataract",
-      "zip": "9161-782"
+      "name": "Tara Avery",
+      "email": "tara_avery@gmail.com",
+      "contact": "912583835",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
     },
     "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-04-23T17:07:12.402Z",
-    "deliveryDate": "2023-04-28T14:19:41.242Z",
-    "weight": 10
+    "requestedDate": "2023-11-14T01:11:17.236Z",
+    "deliveryDate": "2023-11-17T01:11:17.236Z",
+    "lastStatusChangeDate": "2023-11-16T01:11:17.236Z",
+    "weight": 9.68
   },
   {
-    "_id": "64d0b470cd4750edeccc5188",
+    "_id": "6565cbf61fe85c50e2c61cc5",
     "shipper": {
-      "_id": "64d0b470ef785ee93aa8b896",
-      "name": "COMTRACT"
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
     },
     "client": {
-      "name": "Fleming Lara",
-      "contact": "+351 (960) 413-3973",
-      "email": "fleminglara@tubalum.com",
-      "deliveryAddress": "397 Minna Street, 53",
-      "state": "District Of Columbia",
-      "region": "Tilleda",
-      "zip": "3016-967"
+      "name": "Lucia Matthews",
+      "email": "lucia_matthews@gmail.com",
+      "contact": "938935627",
+      "deliveryAddress": "Estrada Laranjeiras 105",
+      "state": "Lisboa",
+      "region": "Lisboa",
+      "zip": "1100-412"
     },
     "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-07-30T23:15:05.863Z",
-    "deliveryDate": "2023-07-31T21:36:14.872Z",
-    "weight": 10
+    "requestedDate": "2023-11-23T16:15:47.520Z",
+    "deliveryDate": "2023-11-27T16:15:47.520Z",
+    "lastStatusChangeDate": "2023-11-24T16:15:47.520Z",
+    "weight": 6.35
   },
   {
-    "_id": "64d0b4706e43b9e4a165b6f3",
+    "_id": "6565cbf61c6e6034d36e0225",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b895",
       "name": "NIQUENT"
     },
     "client": {
-      "name": "Koch Jacobson",
-      "contact": "+351 (960) 562-3334",
-      "email": "kochjacobson@fangold.com",
-      "deliveryAddress": "581 Vanderbilt Avenue, 80",
-      "state": "West Virginia",
-      "region": "Williams",
-      "zip": "5962-525"
+      "name": "Park Battle",
+      "email": "park_battle@gmail.com",
+      "contact": "914452993",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
     },
     "deliveryStatus": "Completed",
-    "requestedDate": "2023-07-29T09:49:15.094Z",
-    "deliveryDate": "2023-08-01T05:16:05.490Z",
-    "weight": 10
+    "requestedDate": "2023-10-12T03:16:37.929Z",
+    "deliveryDate": "2023-10-16T03:16:37.929Z",
+    "lastStatusChangeDate": "2023-10-13T03:16:37.929Z",
+    "weight": 5.08
   },
   {
-    "_id": "64d0b47024b48699fb0274c7",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Baxter Juarez",
-      "contact": "+351 (986) 454-2057",
-      "email": "baxterjuarez@geekwagon.com",
-      "deliveryAddress": "769 Hawthorne Street, 39",
-      "state": "Arizona",
-      "region": "Edneyville",
-      "zip": "4198-485"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-011-04T08:08:23.897Z",
-    "deliveryDate": "2023-011-07T07:39:04.743Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470fd43d862cbdf4c59",
+    "_id": "6565cbf611c2c9fe370e03bd",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b895",
       "name": "NIQUENT"
     },
     "client": {
-      "name": "Peggy Delgado",
-      "contact": "+351 (924) 427-3637",
-      "email": "peggydelgado@gushkool.com",
-      "deliveryAddress": "487 Lester Court, 55",
-      "state": "Alaska",
-      "region": "Coral",
-      "zip": "4297-692"
+      "name": "Misty Carr",
+      "email": "misty_carr@gmail.com",
+      "contact": "929756614",
+      "deliveryAddress": "R Cerdeira Ervas 75",
+      "state": "Braga",
+      "region": "Braga",
+      "zip": "4715-092"
     },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-04-29T19:50:05.252Z",
-    "deliveryDate": "2023-05-02T11:39:07.612Z",
-    "weight": 10
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-31T15:18:56.119Z",
+    "deliveryDate": "2023-11-04T15:18:56.119Z",
+    "lastStatusChangeDate": "2023-11-01T15:18:56.119Z",
+    "weight": 5.02
   },
   {
-    "_id": "64d0b470058723e66aa91bde",
+    "_id": "6565cbf617044029f9b878a9",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Ward Savage",
+      "email": "ward_savage@gmail.com",
+      "contact": "964858745",
+      "deliveryAddress": "Travessa Choupelo 86",
+      "state": "Porto",
+      "region": "Leça Do Balio",
+      "zip": "4465-757"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-06T12:43:39.194Z",
+    "deliveryDate": "2023-11-11T12:43:39.194Z",
+    "lastStatusChangeDate": "2023-11-08T12:43:39.194Z",
+    "weight": 18.54
+  },
+  {
+    "_id": "6565cbf6c29d60ff57cb3527",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Patton Smith",
+      "email": "patton_smith@gmail.com",
+      "contact": "923628478",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-02T12:21:35.350Z",
+    "deliveryDate": "2023-11-06T12:21:35.350Z",
+    "lastStatusChangeDate": "2023-11-04T12:21:35.350Z",
+    "weight": 8.78
+  },
+  {
+    "_id": "6565cbf6c2d8dc7a75afd8ba",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Lawanda Stone",
+      "email": "lawanda_stone@gmail.com",
+      "contact": "914596664",
+      "deliveryAddress": "R Cerdeira Ervas 75",
+      "state": "Braga",
+      "region": "Braga",
+      "zip": "4715-092"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-08T11:45:08.294Z",
+    "deliveryDate": "2023-10-12T11:45:08.294Z",
+    "lastStatusChangeDate": "2023-10-09T11:45:08.294Z",
+    "weight": 11.21
+  },
+  {
+    "_id": "6565cbf669c5b84f53e144ac",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Althea Mack",
+      "email": "althea_mack@gmail.com",
+      "contact": "965998244",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-22T07:30:05.562Z",
+    "deliveryDate": "2023-11-25T07:30:05.562Z",
+    "lastStatusChangeDate": "2023-11-24T07:30:05.562Z",
+    "weight": 6.49
+  },
+  {
+    "_id": "6565cbf688ef321cdd094600",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b895",
       "name": "NIQUENT"
     },
     "client": {
-      "name": "Mckinney Finley",
-      "contact": "+351 (855) 491-2931",
-      "email": "mckinneyfinley@tropolis.com",
-      "deliveryAddress": "423 Matthews Court, 17",
-      "state": "North Dakota",
-      "region": "Moraida",
-      "zip": "6876-170"
+      "name": "Jamie Lynn",
+      "email": "jamie_lynn@gmail.com",
+      "contact": "939217845",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
     },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-05-18T13:44:28.965Z",
-    "deliveryDate": "2023-05-20T20:14:02.829Z",
-    "weight": 10
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-12T00:15:36.549Z",
+    "deliveryDate": "2023-10-17T00:15:36.549Z",
+    "lastStatusChangeDate": "2023-10-14T00:15:36.549Z",
+    "weight": 17.05
   },
   {
-    "_id": "64d0b470db692f0fe60c0ade",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Jennifer Acevedo",
-      "contact": "+351 (946) 473-3035",
-      "email": "jenniferacevedo@zensor.com",
-      "deliveryAddress": "692 Jerome Avenue, 64",
-      "state": "Ohio",
-      "region": "Bison",
-      "zip": "2975-927"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-011-24T14:24:26.012Z",
-    "deliveryDate": "2023-011-27T00:23:16.325Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4703e494f446db8c744",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b896",
-      "name": "COMTRACT"
-    },
-    "client": {
-      "name": "Sheryl Montgomery",
-      "contact": "+351 (895) 575-3914",
-      "email": "sherylmontgomery@xplor.com",
-      "deliveryAddress": "876 Blake Court, 60",
-      "state": "Massachusetts",
-      "region": "Vandiver",
-      "zip": "7024-500"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-07-12T15:52:03.755Z",
-    "deliveryDate": "2023-07-17T01:38:39.003Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470c64fec9b895cfcb7",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b896",
-      "name": "COMTRACT"
-    },
-    "client": {
-      "name": "Clara Allison",
-      "contact": "+351 (920) 511-2051",
-      "email": "claraallison@eternis.com",
-      "deliveryAddress": "556 Seagate Avenue, 80",
-      "state": "Rhode Island",
-      "region": "Hoagland",
-      "zip": "8041-955"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-05-22T09:37:42.751Z",
-    "deliveryDate": "2023-05-24T06:34:24.938Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b470e884ab8a1daf0e7e",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Ramsey Kelley",
-      "contact": "+351 (894) 579-3887",
-      "email": "ramseykelley@zillan.com",
-      "deliveryAddress": "564 Colonial Road, 93",
-      "state": "Nebraska",
-      "region": "Ona",
-      "zip": "2312-655"
-    },
-    "deliveryStatus": "Completed",
-    "requestedDate": "2023-011-27T15:29:45.532Z",
-    "deliveryDate": "2023-011-29T07:08:15.497Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4705e4727bcaf1ead50",
-    "shipper": {
-      "_id": "64d0b470ef785ee93aa8b896",
-      "name": "COMTRACT"
-    },
-    "client": {
-      "name": "Beverley Hamilton",
-      "contact": "+351 (904) 548-3660",
-      "email": "beverleyhamilton@pyramax.com",
-      "deliveryAddress": "857 Cypress Avenue, 90",
-      "state": "Oklahoma",
-      "region": "Gorham",
-      "zip": "4287-495"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-07-25T13:19:54.571Z",
-    "deliveryDate": "2023-07-29T11:41:50.356Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4700c1d72da3f938f32",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Alexander Farmer",
-      "contact": "+351 (956) 497-3564",
-      "email": "alexanderfarmer@flyboyz.com",
-      "deliveryAddress": "107 High Street, 50",
-      "state": "Louisiana",
-      "region": "Jacksonwald",
-      "zip": "2045-463"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-05-31T01:09:40.478Z",
-    "deliveryDate": "2023-011-01T10:48:50.854Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b4701f4b5ef45e13c068",
-    "shipper": {
-      "_id": "64d0b470d56f04a2c6af9d85",
-      "name": "DIGIPRINT"
-    },
-    "client": {
-      "name": "Harper Lynn",
-      "contact": "+351 (916) 506-3359",
-      "email": "harperlynn@nebulean.com",
-      "deliveryAddress": "365 Newport Street, 31",
-      "state": "American Samoa",
-      "region": "Nanafalia",
-      "zip": "1368-451"
-    },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-05-29T13:42:05.379Z",
-    "deliveryDate": "2023-05-31T03:56:29.515Z",
-    "weight": 10
-  },
-  {
-    "_id": "64d0b47050d4363187513c82",
+    "_id": "6565cbf6ad2a6e0f94690855",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b895",
       "name": "NIQUENT"
     },
     "client": {
-      "name": "Dorothy Mcintyre",
-      "contact": "+351 (938) 421-3664",
-      "email": "dorothymcintyre@sequitur.com",
-      "deliveryAddress": "299 Monroe Place, 13",
-      "state": "Virgin Islands",
-      "region": "Fruitdale",
-      "zip": "9521-204"
+      "name": "Briana Bartlett",
+      "email": "briana_bartlett@gmail.com",
+      "contact": "937600809",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
     },
     "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-08-06T04:59:36.073Z",
-    "deliveryDate": "2023-08-06T18:10:07.946Z",
-    "weight": 10
+    "requestedDate": "2023-10-15T11:27:32.599Z",
+    "deliveryDate": "2023-10-18T11:27:32.599Z",
+    "lastStatusChangeDate": "2023-10-17T11:27:32.599Z",
+    "weight": 16.51
   },
   {
-    "_id": "64d0b470cf911e99da5d11a8",
+    "_id": "6565cbf65ee57ec85d1dcde5",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Edwards Grimes",
+      "email": "edwards_grimes@gmail.com",
+      "contact": "965726316",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-06T20:56:14.855Z",
+    "deliveryDate": "2023-10-10T20:56:14.855Z",
+    "lastStatusChangeDate": "2023-10-07T20:56:14.855Z",
+    "weight": 12.11
+  },
+  {
+    "_id": "6565cbf69ab9a56048ace846",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Cruz Compton",
+      "email": "cruz_compton@gmail.com",
+      "contact": "938162578",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-04T12:42:18.052Z",
+    "deliveryDate": "2023-11-07T12:42:18.052Z",
+    "lastStatusChangeDate": "2023-11-06T12:42:18.052Z",
+    "weight": 9.29
+  },
+  {
+    "_id": "6565cbf6fd13d79b5999aef1",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Juanita Howard",
+      "email": "juanita_howard@gmail.com",
+      "contact": "968983524",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-15T19:54:55.097Z",
+    "deliveryDate": "2023-11-18T19:54:55.097Z",
+    "lastStatusChangeDate": "2023-11-16T19:54:55.097Z",
+    "weight": 12.33
+  },
+  {
+    "_id": "6565cbf66c4070ce6c92436b",
     "shipper": {
       "_id": "64d0b470ef785ee93aa8b896",
       "name": "COMTRACT"
     },
     "client": {
-      "name": "Schneider Goodwin",
-      "contact": "+351 (835) 520-2816",
-      "email": "schneidergoodwin@futurity.com",
-      "deliveryAddress": "817 Willmohr Street, 58",
-      "state": "Illinois",
-      "region": "Ogema",
-      "zip": "5920-143"
+      "name": "Baldwin Gallegos",
+      "email": "baldwin_gallegos@gmail.com",
+      "contact": "963667359",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
     },
-    "deliveryStatus": "Cancelled",
-    "requestedDate": "2023-011-08T13:06:51.368Z",
-    "deliveryDate": "2023-011-08T16:03:49.960Z",
-    "weight": 10
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-25T22:55:59.789Z",
+    "deliveryDate": "2023-11-30T22:55:59.789Z",
+    "lastStatusChangeDate": "2023-11-27T22:55:59.789Z",
+    "weight": 14.22
   },
   {
-    "_id": "64d0b4701b494d04270aafb8",
+    "_id": "6565cbf6f8526ca205ed331b",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Ware Nguyen",
+      "email": "ware_nguyen@gmail.com",
+      "contact": "938963986",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-12T04:52:32.776Z",
+    "deliveryDate": "2023-10-16T04:52:32.776Z",
+    "lastStatusChangeDate": "2023-10-13T04:52:32.776Z",
+    "weight": 16.98
+  },
+  {
+    "_id": "6565cbf6560dc2c41fc0c033",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Gallegos Wilson",
+      "email": "gallegos_wilson@gmail.com",
+      "contact": "967368317",
+      "deliveryAddress": "R Doutor Paulo Quintela 12",
+      "state": "Coimbra",
+      "region": "Castanheira Do Campo",
+      "zip": "3025-509"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-19T15:02:57.729Z",
+    "deliveryDate": "2023-10-22T15:02:57.729Z",
+    "lastStatusChangeDate": "2023-10-20T15:02:57.729Z",
+    "weight": 4.84
+  },
+  {
+    "_id": "6565cbf6af56dac2db245f4d",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Oconnor Meyers",
+      "email": "oconnor_meyers@gmail.com",
+      "contact": "925217283",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-19T11:26:45.442Z",
+    "deliveryDate": "2023-11-22T11:26:45.442Z",
+    "lastStatusChangeDate": "2023-11-20T11:26:45.442Z",
+    "weight": 6.38
+  },
+  {
+    "_id": "6565cbf643c00215984bf42e",
     "shipper": {
       "_id": "64d0b470d56f04a2c6af9d85",
       "name": "DIGIPRINT"
     },
     "client": {
-      "name": "Petra Hobbs",
-      "contact": "+351 (926) 461-3201",
-      "email": "petrahobbs@dreamia.com",
-      "deliveryAddress": "171 Sumner Place, 61",
-      "state": "Kansas",
-      "region": "Baker",
-      "zip": "1729-680"
+      "name": "Rosanne Gilmore",
+      "email": "rosanne_gilmore@gmail.com",
+      "contact": "968796784",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-10T20:50:40.839Z",
+    "deliveryDate": "2023-10-13T20:50:40.839Z",
+    "lastStatusChangeDate": "2023-10-11T20:50:40.839Z",
+    "weight": 12.81
+  },
+  {
+    "_id": "6565cbf6723cc718f5ec2b64",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Aguirre Gilliam",
+      "email": "aguirre_gilliam@gmail.com",
+      "contact": "935112333",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
     },
     "deliveryStatus": "Completed",
-    "requestedDate": "2023-04-15T09:26:54.756Z",
-    "deliveryDate": "2023-04-15T22:58:36.662Z",
-    "weight": 10
+    "requestedDate": "2023-10-13T13:52:34.755Z",
+    "deliveryDate": "2023-10-17T13:52:34.755Z",
+    "lastStatusChangeDate": "2023-10-15T13:52:34.755Z",
+    "weight": 13.51
+  },
+  {
+    "_id": "6565cbf6a034f28ecdb3793f",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Tyson Waters",
+      "email": "tyson_waters@gmail.com",
+      "contact": "962673953",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-13T22:09:03.371Z",
+    "deliveryDate": "2023-11-15T22:09:03.371Z",
+    "lastStatusChangeDate": "2023-11-15T22:09:03.371Z",
+    "weight": 7.44
+  },
+  {
+    "_id": "6565cbf6f5157d577d4b9ddd",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Stuart Barnes",
+      "email": "stuart_barnes@gmail.com",
+      "contact": "915726791",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-01T06:46:28.863Z",
+    "deliveryDate": "2023-10-03T06:46:28.863Z",
+    "lastStatusChangeDate": "2023-10-03T06:46:28.863Z",
+    "weight": 13.28
+  },
+  {
+    "_id": "6565cbf67626cfca6646fa7c",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Hartman Ware",
+      "email": "hartman_ware@gmail.com",
+      "contact": "962530501",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-08T09:12:05.448Z",
+    "deliveryDate": "2023-10-12T09:12:05.448Z",
+    "lastStatusChangeDate": "2023-10-09T09:12:05.448Z",
+    "weight": 13.05
+  },
+  {
+    "_id": "6565cbf64bc8630bd34a242a",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Beatrice Briggs",
+      "email": "beatrice_briggs@gmail.com",
+      "contact": "925381872",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-14T00:01:30.263Z",
+    "deliveryDate": "2023-10-19T00:01:30.263Z",
+    "lastStatusChangeDate": "2023-10-15T00:01:30.263Z",
+    "weight": 7.44
+  },
+  {
+    "_id": "6565cbf62d0ba1bbdf57131c",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Lois Ashley",
+      "email": "lois_ashley@gmail.com",
+      "contact": "919673856",
+      "deliveryAddress": "R Cerdeira Ervas 75",
+      "state": "Braga",
+      "region": "Braga",
+      "zip": "4715-092"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-22T13:17:17.919Z",
+    "deliveryDate": "2023-11-26T13:17:17.919Z",
+    "lastStatusChangeDate": "2023-11-23T13:17:17.919Z",
+    "weight": 15.35
+  },
+  {
+    "_id": "6565cbf61e0f526c2a36e4ac",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Alexandra Jarvis",
+      "email": "alexandra_jarvis@gmail.com",
+      "contact": "921985470",
+      "deliveryAddress": "R Cerdeira Ervas 75",
+      "state": "Braga",
+      "region": "Braga",
+      "zip": "4715-092"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-24T23:07:40.839Z",
+    "deliveryDate": "2023-10-28T23:07:40.839Z",
+    "lastStatusChangeDate": "2023-10-25T23:07:40.839Z",
+    "weight": 3.34
+  },
+  {
+    "_id": "6565cbf650d9b3379581f50b",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Holden Weiss",
+      "email": "holden_weiss@gmail.com",
+      "contact": "914897113",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-12T01:43:09.266Z",
+    "deliveryDate": "2023-11-15T01:43:09.266Z",
+    "lastStatusChangeDate": "2023-11-13T01:43:09.266Z",
+    "weight": 10.42
+  },
+  {
+    "_id": "6565cbf64815d575d0af47d6",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Gregory Hoover",
+      "email": "gregory_hoover@gmail.com",
+      "contact": "968891928",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-26T02:59:46.791Z",
+    "deliveryDate": "2023-11-29T02:59:46.791Z",
+    "lastStatusChangeDate": "2023-11-28T02:59:46.791Z",
+    "weight": 16.64
+  },
+  {
+    "_id": "6565cbf61fba86c05307cb70",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Monica Casey",
+      "email": "monica_casey@gmail.com",
+      "contact": "962840936",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-14T16:01:51.486Z",
+    "deliveryDate": "2023-11-17T16:01:51.486Z",
+    "lastStatusChangeDate": "2023-11-16T16:01:51.486Z",
+    "weight": 12.64
+  },
+  {
+    "_id": "6565cbf6b19e2a6526aae0ef",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Stokes Steele",
+      "email": "stokes_steele@gmail.com",
+      "contact": "913206504",
+      "deliveryAddress": "Rua Igreja 97",
+      "state": "Braga",
+      "region": "Antas",
+      "zip": "4760-052"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-05T01:17:27.836Z",
+    "deliveryDate": "2023-11-10T01:17:27.836Z",
+    "lastStatusChangeDate": "2023-11-06T01:17:27.836Z",
+    "weight": 7.39
+  },
+  {
+    "_id": "6565cbf65504b7046671448c",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Jenifer Solis",
+      "email": "jenifer_solis@gmail.com",
+      "contact": "967106951",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-04T00:59:32.015Z",
+    "deliveryDate": "2023-11-07T00:59:32.015Z",
+    "lastStatusChangeDate": "2023-11-06T00:59:32.015Z",
+    "weight": 19.57
+  },
+  {
+    "_id": "6565cbf6f158f656b540fced",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Lindsey Hensley",
+      "email": "lindsey_hensley@gmail.com",
+      "contact": "938648491",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-26T10:01:12.247Z",
+    "deliveryDate": "2023-10-30T10:01:12.247Z",
+    "lastStatusChangeDate": "2023-10-28T10:01:12.247Z",
+    "weight": 15.51
+  },
+  {
+    "_id": "6565cbf60da6d88a9204fb57",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Aguilar Zamora",
+      "email": "aguilar_zamora@gmail.com",
+      "contact": "928371685",
+      "deliveryAddress": "Rua Igreja 97",
+      "state": "Braga",
+      "region": "Antas",
+      "zip": "4760-052"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-24T20:25:11.562Z",
+    "deliveryDate": "2023-10-27T20:25:11.562Z",
+    "lastStatusChangeDate": "2023-10-26T20:25:11.562Z",
+    "weight": 13.91
+  },
+  {
+    "_id": "6565cbf6c79b876c24bd9b55",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Spence King",
+      "email": "spence_king@gmail.com",
+      "contact": "922786391",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-12T13:05:35.998Z",
+    "deliveryDate": "2023-10-16T13:05:35.998Z",
+    "lastStatusChangeDate": "2023-10-14T13:05:35.998Z",
+    "weight": 12.02
+  },
+  {
+    "_id": "6565cbf64f1b7755c3e40359",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Tracie Lawrence",
+      "email": "tracie_lawrence@gmail.com",
+      "contact": "929523422",
+      "deliveryAddress": "Estrada Laranjeiras 105",
+      "state": "Lisboa",
+      "region": "Lisboa",
+      "zip": "1100-412"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-03T03:53:15.930Z",
+    "deliveryDate": "2023-11-05T03:53:15.930Z",
+    "lastStatusChangeDate": "2023-11-05T03:53:15.930Z",
+    "weight": 8.22
+  },
+  {
+    "_id": "6565cbf6ebd87ca6856194f4",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Koch Bernard",
+      "email": "koch_bernard@gmail.com",
+      "contact": "914299142",
+      "deliveryAddress": "Travessa Choupelo 86",
+      "state": "Porto",
+      "region": "Leça Do Balio",
+      "zip": "4465-757"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-27T19:24:49.763Z",
+    "deliveryDate": "2023-12-02T19:24:49.763Z",
+    "lastStatusChangeDate": "2023-11-28T19:24:49.763Z",
+    "weight": 17.42
+  },
+  {
+    "_id": "6565cbf68ca7c2a8a8878232",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Erika Lara",
+      "email": "erika_lara@gmail.com",
+      "contact": "924117954",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-29T09:30:13.244Z",
+    "deliveryDate": "2023-11-01T09:30:13.244Z",
+    "lastStatusChangeDate": "2023-10-31T09:30:13.244Z",
+    "weight": 7.97
+  },
+  {
+    "_id": "6565cbf6df3a43beaf3d9dbb",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Renee Daniel",
+      "email": "renee_daniel@gmail.com",
+      "contact": "965726426",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-27T02:26:26.804Z",
+    "deliveryDate": "2023-10-31T02:26:26.804Z",
+    "lastStatusChangeDate": "2023-10-29T03:26:26.804Z",
+    "weight": 12.15
+  },
+  {
+    "_id": "6565cbf68e0926dffb07f5ee",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Dale Summers",
+      "email": "dale_summers@gmail.com",
+      "contact": "965093302",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-22T02:13:08.714Z",
+    "deliveryDate": "2023-11-27T02:13:08.714Z",
+    "lastStatusChangeDate": "2023-11-23T02:13:08.714Z",
+    "weight": 19.92
+  },
+  {
+    "_id": "6565cbf6cb1d0a74a868dd8f",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Rush Shannon",
+      "email": "rush_shannon@gmail.com",
+      "contact": "916722270",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-02T02:34:02.887Z",
+    "deliveryDate": "2023-11-06T02:34:02.887Z",
+    "lastStatusChangeDate": "2023-11-04T02:34:02.887Z",
+    "weight": 8.78
+  },
+  {
+    "_id": "6565cbf63b2b0ebf9e655b85",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Emerson Perez",
+      "email": "emerson_perez@gmail.com",
+      "contact": "919170714",
+      "deliveryAddress": "R Regato 81",
+      "state": "Castelo Branco",
+      "region": "Benquerença",
+      "zip": "6090-332"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-22T13:40:13.384Z",
+    "deliveryDate": "2023-11-25T13:40:13.384Z",
+    "lastStatusChangeDate": "2023-11-24T13:40:13.384Z",
+    "weight": 9.06
+  },
+  {
+    "_id": "6565cbf6c1cfe86fd883eb03",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Brianna Nolan",
+      "email": "brianna_nolan@gmail.com",
+      "contact": "967311574",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-12T08:25:38.599Z",
+    "deliveryDate": "2023-11-17T08:25:38.599Z",
+    "lastStatusChangeDate": "2023-11-14T08:25:38.599Z",
+    "weight": 12.96
+  },
+  {
+    "_id": "6565cbf66b5dd02d42be116e",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Kendra French",
+      "email": "kendra_french@gmail.com",
+      "contact": "933968475",
+      "deliveryAddress": "Travessa Choupelo 86",
+      "state": "Porto",
+      "region": "Leça Do Balio",
+      "zip": "4465-757"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-16T10:29:57.720Z",
+    "deliveryDate": "2023-11-20T10:29:57.720Z",
+    "lastStatusChangeDate": "2023-11-17T10:29:57.720Z",
+    "weight": 3.54
+  },
+  {
+    "_id": "6565cbf61ebd9208e51b113e",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Riddle Carney",
+      "email": "riddle_carney@gmail.com",
+      "contact": "925928745",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-18T03:21:09.610Z",
+    "deliveryDate": "2023-10-21T03:21:09.610Z",
+    "lastStatusChangeDate": "2023-10-19T03:21:09.610Z",
+    "weight": 5.98
+  },
+  {
+    "_id": "6565cbf6dae458f27ff7ddc1",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Francis Carrillo",
+      "email": "francis_carrillo@gmail.com",
+      "contact": "964612021",
+      "deliveryAddress": "R Doutor Paulo Quintela 12",
+      "state": "Coimbra",
+      "region": "Castanheira Do Campo",
+      "zip": "3025-509"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-06T18:58:19.825Z",
+    "deliveryDate": "2023-10-10T18:58:19.825Z",
+    "lastStatusChangeDate": "2023-10-07T18:58:19.825Z",
+    "weight": 17.85
+  },
+  {
+    "_id": "6565cbf604e9187caaad864f",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Beulah Maldonado",
+      "email": "beulah_maldonado@gmail.com",
+      "contact": "967000914",
+      "deliveryAddress": "R Doutor Paulo Quintela 12",
+      "state": "Coimbra",
+      "region": "Castanheira Do Campo",
+      "zip": "3025-509"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-15T18:01:22.124Z",
+    "deliveryDate": "2023-10-19T18:01:22.124Z",
+    "lastStatusChangeDate": "2023-10-16T18:01:22.124Z",
+    "weight": 7.26
+  },
+  {
+    "_id": "6565cbf6f4ed6f2a050af536",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Slater Gamble",
+      "email": "slater_gamble@gmail.com",
+      "contact": "965893731",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-15T07:07:14.311Z",
+    "deliveryDate": "2023-10-17T07:07:14.311Z",
+    "lastStatusChangeDate": "2023-10-17T07:07:14.311Z",
+    "weight": 11.63
+  },
+  {
+    "_id": "6565cbf68379105ba90ee114",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Rodgers Hayden",
+      "email": "rodgers_hayden@gmail.com",
+      "contact": "961602746",
+      "deliveryAddress": "R Doutor Paulo Quintela 12",
+      "state": "Coimbra",
+      "region": "Castanheira Do Campo",
+      "zip": "3025-509"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-24T19:50:39.185Z",
+    "deliveryDate": "2023-10-27T19:50:39.185Z",
+    "lastStatusChangeDate": "2023-10-25T19:50:39.185Z",
+    "weight": 17.09
+  },
+  {
+    "_id": "6565cbf66d8d9bee3b5bd1f3",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Raymond Sparks",
+      "email": "raymond_sparks@gmail.com",
+      "contact": "964725524",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-02T03:00:36.438Z",
+    "deliveryDate": "2023-11-06T03:00:36.438Z",
+    "lastStatusChangeDate": "2023-11-03T03:00:36.438Z",
+    "weight": 6.88
+  },
+  {
+    "_id": "6565cbf67308199222fa312b",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Hattie Moore",
+      "email": "hattie_moore@gmail.com",
+      "contact": "929022980",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-03T23:19:33.946Z",
+    "deliveryDate": "2023-10-06T23:19:33.946Z",
+    "lastStatusChangeDate": "2023-10-05T23:19:33.946Z",
+    "weight": 5.51
+  },
+  {
+    "_id": "6565cbf6b359486fc2e7e824",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Mcdonald Holloway",
+      "email": "mcdonald_holloway@gmail.com",
+      "contact": "962885607",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-10T01:33:57.634Z",
+    "deliveryDate": "2023-11-13T01:33:57.634Z",
+    "lastStatusChangeDate": "2023-11-12T01:33:57.634Z",
+    "weight": 6.52
+  },
+  {
+    "_id": "6565cbf6ad2cb7e26cd0ebbb",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Johns Riddle",
+      "email": "johns_riddle@gmail.com",
+      "contact": "968333959",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-25T14:54:21.274Z",
+    "deliveryDate": "2023-11-27T14:54:21.274Z",
+    "lastStatusChangeDate": "2023-11-26T14:54:21.274Z",
+    "weight": 19.28
+  },
+  {
+    "_id": "6565cbf62e890dd08b5d0a4e",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Haynes Wall",
+      "email": "haynes_wall@gmail.com",
+      "contact": "935647295",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-04T17:22:43.208Z",
+    "deliveryDate": "2023-11-08T17:22:43.208Z",
+    "lastStatusChangeDate": "2023-11-06T17:22:43.208Z",
+    "weight": 19.71
+  },
+  {
+    "_id": "6565cbf62e3f6346c424a950",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Alexandria Munoz",
+      "email": "alexandria_munoz@gmail.com",
+      "contact": "968295998",
+      "deliveryAddress": "Travessa Choupelo 86",
+      "state": "Porto",
+      "region": "Leça Do Balio",
+      "zip": "4465-757"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-19T14:55:42.145Z",
+    "deliveryDate": "2023-11-23T14:55:42.145Z",
+    "lastStatusChangeDate": "2023-11-21T14:55:42.145Z",
+    "weight": 14.42
+  },
+  {
+    "_id": "6565cbf680448b4f96393635",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Julia Bender",
+      "email": "julia_bender@gmail.com",
+      "contact": "969060329",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-23T13:58:37.645Z",
+    "deliveryDate": "2023-11-26T13:58:37.645Z",
+    "lastStatusChangeDate": "2023-11-24T13:58:37.645Z",
+    "weight": 10.06
+  },
+  {
+    "_id": "6565cbf60e3269a12a3d2af3",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Mason Patel",
+      "email": "mason_patel@gmail.com",
+      "contact": "969154832",
+      "deliveryAddress": "Estrada Laranjeiras 105",
+      "state": "Lisboa",
+      "region": "Lisboa",
+      "zip": "1100-412"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-06T11:22:32.982Z",
+    "deliveryDate": "2023-11-09T11:22:32.982Z",
+    "lastStatusChangeDate": "2023-11-08T11:22:32.982Z",
+    "weight": 12.92
+  },
+  {
+    "_id": "6565cbf65c032e3e9bd9b261",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Rosario Flores",
+      "email": "rosario_flores@gmail.com",
+      "contact": "931292438",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-13T12:55:05.517Z",
+    "deliveryDate": "2023-11-17T12:55:05.517Z",
+    "lastStatusChangeDate": "2023-11-15T12:55:05.517Z",
+    "weight": 5.62
+  },
+  {
+    "_id": "6565cbf697642a68b59793e2",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Myrna Obrien",
+      "email": "myrna_obrien@gmail.com",
+      "contact": "938050659",
+      "deliveryAddress": "Rua Igreja 97",
+      "state": "Braga",
+      "region": "Antas",
+      "zip": "4760-052"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-18T01:37:05.400Z",
+    "deliveryDate": "2023-11-21T01:37:05.400Z",
+    "lastStatusChangeDate": "2023-11-20T01:37:05.400Z",
+    "weight": 12.86
+  },
+  {
+    "_id": "6565cbf63ef60b27592827c6",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Anderson Acevedo",
+      "email": "anderson_acevedo@gmail.com",
+      "contact": "967068599",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-24T03:12:26.140Z",
+    "deliveryDate": "2023-10-27T03:12:26.140Z",
+    "lastStatusChangeDate": "2023-10-26T03:12:26.140Z",
+    "weight": 7.27
+  },
+  {
+    "_id": "6565cbf6bf58a3b05d36da1b",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Eve Owen",
+      "email": "eve_owen@gmail.com",
+      "contact": "965599311",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-15T21:01:36.286Z",
+    "deliveryDate": "2023-10-20T21:01:36.286Z",
+    "lastStatusChangeDate": "2023-10-17T21:01:36.286Z",
+    "weight": 8.38
+  },
+  {
+    "_id": "6565cbf60b7c7f5a996cc123",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Howell Schneider",
+      "email": "howell_schneider@gmail.com",
+      "contact": "927664881",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-24T06:31:25.453Z",
+    "deliveryDate": "2023-10-26T06:31:25.453Z",
+    "lastStatusChangeDate": "2023-10-25T06:31:25.453Z",
+    "weight": 8.52
+  },
+  {
+    "_id": "6565cbf678bf0e356b0928c7",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Woods Kent",
+      "email": "woods_kent@gmail.com",
+      "contact": "933422670",
+      "deliveryAddress": "R Doutor Paulo Quintela 12",
+      "state": "Coimbra",
+      "region": "Castanheira Do Campo",
+      "zip": "3025-509"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-05T05:17:54.897Z",
+    "deliveryDate": "2023-10-08T05:17:54.897Z",
+    "lastStatusChangeDate": "2023-10-07T05:17:54.897Z",
+    "weight": 4.59
+  },
+  {
+    "_id": "6565cbf687b8cbe5c9123b98",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Marks Snider",
+      "email": "marks_snider@gmail.com",
+      "contact": "918902383",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-01T21:36:11.917Z",
+    "deliveryDate": "2023-11-04T21:36:11.917Z",
+    "lastStatusChangeDate": "2023-11-02T21:36:11.917Z",
+    "weight": 15.33
+  },
+  {
+    "_id": "6565cbf629c9aa654f53c9ef",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Dina Ward",
+      "email": "dina_ward@gmail.com",
+      "contact": "933052526",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-15T09:21:36.245Z",
+    "deliveryDate": "2023-11-18T09:21:36.245Z",
+    "lastStatusChangeDate": "2023-11-16T09:21:36.245Z",
+    "weight": 3.81
+  },
+  {
+    "_id": "6565cbf6e11d4be80864e6be",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Wilma Wright",
+      "email": "wilma_wright@gmail.com",
+      "contact": "927405744",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-15T22:20:19.060Z",
+    "deliveryDate": "2023-11-19T22:20:19.060Z",
+    "lastStatusChangeDate": "2023-11-16T22:20:19.060Z",
+    "weight": 19.94
+  },
+  {
+    "_id": "6565cbf622a63b766e6b61f8",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Shirley Dillard",
+      "email": "shirley_dillard@gmail.com",
+      "contact": "964540876",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-05T05:05:46.347Z",
+    "deliveryDate": "2023-10-09T05:05:46.347Z",
+    "lastStatusChangeDate": "2023-10-07T05:05:46.347Z",
+    "weight": 4.04
+  },
+  {
+    "_id": "6565cbf6f2a13fc7edd9a20c",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Harrell Santos",
+      "email": "harrell_santos@gmail.com",
+      "contact": "927916338",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-27T19:36:57.258Z",
+    "deliveryDate": "2023-11-30T19:36:57.258Z",
+    "lastStatusChangeDate": "2023-11-29T19:36:57.258Z",
+    "weight": 10.96
+  },
+  {
+    "_id": "6565cbf63e90ddf55a07d68c",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Leila Ewing",
+      "email": "leila_ewing@gmail.com",
+      "contact": "931291098",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-19T03:09:43.857Z",
+    "deliveryDate": "2023-11-22T03:09:43.857Z",
+    "lastStatusChangeDate": "2023-11-21T03:09:43.857Z",
+    "weight": 14.21
+  },
+  {
+    "_id": "6565cbf66b812191f554c229",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Dudley Case",
+      "email": "dudley_case@gmail.com",
+      "contact": "925614302",
+      "deliveryAddress": "Rua Igreja 97",
+      "state": "Braga",
+      "region": "Antas",
+      "zip": "4760-052"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-05T23:24:32.784Z",
+    "deliveryDate": "2023-10-08T23:24:32.784Z",
+    "lastStatusChangeDate": "2023-10-07T23:24:32.784Z",
+    "weight": 14.37
+  },
+  {
+    "_id": "6565cbf6402a3d1e270c4e6e",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Luisa Mercer",
+      "email": "luisa_mercer@gmail.com",
+      "contact": "913398502",
+      "deliveryAddress": "R Regato 81",
+      "state": "Castelo Branco",
+      "region": "Benquerença",
+      "zip": "6090-332"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-06T19:05:21.349Z",
+    "deliveryDate": "2023-11-09T19:05:21.349Z",
+    "lastStatusChangeDate": "2023-11-08T19:05:21.349Z",
+    "weight": 3.86
+  },
+  {
+    "_id": "6565cbf687a5293465f616a9",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Betty Santiago",
+      "email": "betty_santiago@gmail.com",
+      "contact": "962785519",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-23T19:13:27.665Z",
+    "deliveryDate": "2023-10-26T19:13:27.665Z",
+    "lastStatusChangeDate": "2023-10-24T19:13:27.665Z",
+    "weight": 3.88
+  },
+  {
+    "_id": "6565cbf6dbdb59fdab0889f7",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Rodriguez Barker",
+      "email": "rodriguez_barker@gmail.com",
+      "contact": "921220646",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-28T18:17:43.914Z",
+    "deliveryDate": "2023-11-02T18:17:43.914Z",
+    "lastStatusChangeDate": "2023-10-29T19:17:43.914Z",
+    "weight": 6.92
+  },
+  {
+    "_id": "6565cbf6961cbbdd964dba8e",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Jennie Austin",
+      "email": "jennie_austin@gmail.com",
+      "contact": "913614369",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-19T12:14:58.889Z",
+    "deliveryDate": "2023-10-23T12:14:58.889Z",
+    "lastStatusChangeDate": "2023-10-20T12:14:58.889Z",
+    "weight": 13.63
+  },
+  {
+    "_id": "6565cbf6a157f0f750680498",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Ava Pace",
+      "email": "ava_pace@gmail.com",
+      "contact": "934040486",
+      "deliveryAddress": "Travessa Choupelo 86",
+      "state": "Porto",
+      "region": "Leça Do Balio",
+      "zip": "4465-757"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-11T22:55:15.694Z",
+    "deliveryDate": "2023-10-14T22:55:15.694Z",
+    "lastStatusChangeDate": "2023-10-12T22:55:15.694Z",
+    "weight": 8.25
+  },
+  {
+    "_id": "6565cbf6be1e1aa470679998",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Rose Walter",
+      "email": "rose_walter@gmail.com",
+      "contact": "924209506",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-22T00:29:36.441Z",
+    "deliveryDate": "2023-11-26T00:29:36.441Z",
+    "lastStatusChangeDate": "2023-11-24T00:29:36.441Z",
+    "weight": 4.41
+  },
+  {
+    "_id": "6565cbf614bf1530837a024b",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Silvia Griffin",
+      "email": "silvia_griffin@gmail.com",
+      "contact": "967947062",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-19T01:51:23.997Z",
+    "deliveryDate": "2023-10-22T01:51:23.997Z",
+    "lastStatusChangeDate": "2023-10-20T01:51:23.997Z",
+    "weight": 17.41
+  },
+  {
+    "_id": "6565cbf60fb66a74dcea4087",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Amalia Giles",
+      "email": "amalia_giles@gmail.com",
+      "contact": "917040968",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-01T08:59:45.180Z",
+    "deliveryDate": "2023-10-05T08:59:45.180Z",
+    "lastStatusChangeDate": "2023-10-03T08:59:45.180Z",
+    "weight": 16.39
+  },
+  {
+    "_id": "6565cbf616e693335b14e87f",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Sallie Decker",
+      "email": "sallie_decker@gmail.com",
+      "contact": "923529355",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-23T23:01:54.662Z",
+    "deliveryDate": "2023-10-27T23:01:54.662Z",
+    "lastStatusChangeDate": "2023-10-24T23:01:54.662Z",
+    "weight": 12.02
+  },
+  {
+    "_id": "6565cbf60cc4a04027eeb009",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Jolene Blevins",
+      "email": "jolene_blevins@gmail.com",
+      "contact": "965163579",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-27T06:53:49.169Z",
+    "deliveryDate": "2023-12-01T06:53:49.169Z",
+    "lastStatusChangeDate": "2023-11-29T06:53:49.169Z",
+    "weight": 8.07
+  },
+  {
+    "_id": "6565cbf653a6447d182b5e04",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Velasquez Mcpherson",
+      "email": "velasquez_mcpherson@gmail.com",
+      "contact": "935645711",
+      "deliveryAddress": "Rua Igreja 97",
+      "state": "Braga",
+      "region": "Antas",
+      "zip": "4760-052"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-02T14:08:35.188Z",
+    "deliveryDate": "2023-10-06T14:08:35.188Z",
+    "lastStatusChangeDate": "2023-10-04T14:08:35.188Z",
+    "weight": 10.59
+  },
+  {
+    "_id": "6565cbf640ef1dc2b8220ee0",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Pickett Silva",
+      "email": "pickett_silva@gmail.com",
+      "contact": "928659487",
+      "deliveryAddress": "R Regato 81",
+      "state": "Castelo Branco",
+      "region": "Benquerença",
+      "zip": "6090-332"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-29T22:34:48.863Z",
+    "deliveryDate": "2023-11-01T22:34:48.863Z",
+    "lastStatusChangeDate": "2023-10-30T22:34:48.863Z",
+    "weight": 4.66
+  },
+  {
+    "_id": "6565cbf68c078f22505e5f6b",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Latisha Sykes",
+      "email": "latisha_sykes@gmail.com",
+      "contact": "915703009",
+      "deliveryAddress": "Rua Igreja 97",
+      "state": "Braga",
+      "region": "Antas",
+      "zip": "4760-052"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-16T01:04:17.499Z",
+    "deliveryDate": "2023-10-20T01:04:17.499Z",
+    "lastStatusChangeDate": "2023-10-17T01:04:17.499Z",
+    "weight": 8.53
+  },
+  {
+    "_id": "6565cbf669d8b9d7a6d90e41",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Shana Kerr",
+      "email": "shana_kerr@gmail.com",
+      "contact": "936200631",
+      "deliveryAddress": "Estrada Laranjeiras 105",
+      "state": "Lisboa",
+      "region": "Lisboa",
+      "zip": "1100-412"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-07T10:28:09.117Z",
+    "deliveryDate": "2023-10-12T10:28:09.117Z",
+    "lastStatusChangeDate": "2023-10-09T10:28:09.117Z",
+    "weight": 9.43
+  },
+  {
+    "_id": "6565cbf6ed361ee4647114d3",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Melton Sweeney",
+      "email": "melton_sweeney@gmail.com",
+      "contact": "922245376",
+      "deliveryAddress": "Travessa Choupelo 86",
+      "state": "Porto",
+      "region": "Leça Do Balio",
+      "zip": "4465-757"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-04T14:46:29.177Z",
+    "deliveryDate": "2023-11-06T14:46:29.177Z",
+    "lastStatusChangeDate": "2023-11-06T14:46:29.177Z",
+    "weight": 11.99
+  },
+  {
+    "_id": "6565cbf6604f4185b8f97487",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Morgan Boyer",
+      "email": "morgan_boyer@gmail.com",
+      "contact": "926187462",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-14T06:11:21.180Z",
+    "deliveryDate": "2023-10-17T06:11:21.180Z",
+    "lastStatusChangeDate": "2023-10-16T06:11:21.180Z",
+    "weight": 12.94
+  },
+  {
+    "_id": "6565cbf662d11cc7b52b7488",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Cleo Hardin",
+      "email": "cleo_hardin@gmail.com",
+      "contact": "939995263",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-26T14:48:49.987Z",
+    "deliveryDate": "2023-11-29T14:48:49.987Z",
+    "lastStatusChangeDate": "2023-11-27T14:48:49.987Z",
+    "weight": 18.41
+  },
+  {
+    "_id": "6565cbf64689326f9b09f06d",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Rocha Nguyen",
+      "email": "rocha_nguyen@gmail.com",
+      "contact": "931615817",
+      "deliveryAddress": "R Doutor Paulo Quintela 12",
+      "state": "Coimbra",
+      "region": "Castanheira Do Campo",
+      "zip": "3025-509"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-13T08:55:14.077Z",
+    "deliveryDate": "2023-10-17T08:55:14.077Z",
+    "lastStatusChangeDate": "2023-10-15T08:55:14.077Z",
+    "weight": 16.12
+  },
+  {
+    "_id": "6565cbf696b2f01c546e58e3",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Gomez Everett",
+      "email": "gomez_everett@gmail.com",
+      "contact": "931680380",
+      "deliveryAddress": "Rua Igreja 97",
+      "state": "Braga",
+      "region": "Antas",
+      "zip": "4760-052"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-11T01:38:43.379Z",
+    "deliveryDate": "2023-11-15T01:38:43.379Z",
+    "lastStatusChangeDate": "2023-11-12T01:38:43.379Z",
+    "weight": 4.39
+  },
+  {
+    "_id": "6565cbf697ee8d784034a138",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Weber Manning",
+      "email": "weber_manning@gmail.com",
+      "contact": "922463406",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-17T06:04:28.183Z",
+    "deliveryDate": "2023-11-19T06:04:28.183Z",
+    "lastStatusChangeDate": "2023-11-18T06:04:28.183Z",
+    "weight": 4.77
+  },
+  {
+    "_id": "6565cbf6e317954b5143e517",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Kasey Buckner",
+      "email": "kasey_buckner@gmail.com",
+      "contact": "911241475",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-06T20:27:34.929Z",
+    "deliveryDate": "2023-10-10T20:27:34.929Z",
+    "lastStatusChangeDate": "2023-10-07T20:27:34.929Z",
+    "weight": 3.82
+  },
+  {
+    "_id": "6565cbf6e662f9430eeb6640",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Sweet Conway",
+      "email": "sweet_conway@gmail.com",
+      "contact": "933702578",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-07T05:20:14.869Z",
+    "deliveryDate": "2023-10-10T05:20:14.869Z",
+    "lastStatusChangeDate": "2023-10-09T05:20:14.869Z",
+    "weight": 3.49
+  },
+  {
+    "_id": "6565cbf604e10d94c3db3374",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Rosalie Rosales",
+      "email": "rosalie_rosales@gmail.com",
+      "contact": "964372084",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-04T03:27:31.303Z",
+    "deliveryDate": "2023-10-08T03:27:31.303Z",
+    "lastStatusChangeDate": "2023-10-05T03:27:31.303Z",
+    "weight": 17.11
+  },
+  {
+    "_id": "6565cbf6e78532131f8b4762",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Cristina English",
+      "email": "cristina_english@gmail.com",
+      "contact": "918823458",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-23T13:20:53.040Z",
+    "deliveryDate": "2023-11-26T13:20:53.040Z",
+    "lastStatusChangeDate": "2023-11-25T13:20:53.040Z",
+    "weight": 6.72
+  },
+  {
+    "_id": "6565cbf6c64889bcda877509",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Allison Butler",
+      "email": "allison_butler@gmail.com",
+      "contact": "931948463",
+      "deliveryAddress": "Travessa Choupelo 86",
+      "state": "Porto",
+      "region": "Leça Do Balio",
+      "zip": "4465-757"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-26T22:36:07.383Z",
+    "deliveryDate": "2023-12-01T22:36:07.383Z",
+    "lastStatusChangeDate": "2023-11-28T22:36:07.383Z",
+    "weight": 7.03
+  },
+  {
+    "_id": "6565cbf6f0b4de26f2d033ae",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Deanna Noel",
+      "email": "deanna_noel@gmail.com",
+      "contact": "964510381",
+      "deliveryAddress": "R Regato 81",
+      "state": "Castelo Branco",
+      "region": "Benquerença",
+      "zip": "6090-332"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-01T21:48:18.245Z",
+    "deliveryDate": "2023-10-05T21:48:18.245Z",
+    "lastStatusChangeDate": "2023-10-02T21:48:18.245Z",
+    "weight": 11.97
+  },
+  {
+    "_id": "6565cbf6df1e57bcd46424a8",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Bryan Hebert",
+      "email": "bryan_hebert@gmail.com",
+      "contact": "931500429",
+      "deliveryAddress": "R Doutor Paulo Quintela 12",
+      "state": "Coimbra",
+      "region": "Castanheira Do Campo",
+      "zip": "3025-509"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-25T16:54:34.710Z",
+    "deliveryDate": "2023-11-28T16:54:34.710Z",
+    "lastStatusChangeDate": "2023-11-26T16:54:34.710Z",
+    "weight": 13.51
+  },
+  {
+    "_id": "6565cbf6d5762faa52343f90",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Kristy Willis",
+      "email": "kristy_willis@gmail.com",
+      "contact": "962418978",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-02T09:33:40.128Z",
+    "deliveryDate": "2023-11-05T09:33:40.128Z",
+    "lastStatusChangeDate": "2023-11-04T09:33:40.128Z",
+    "weight": 14.48
+  },
+  {
+    "_id": "6565cbf6cadeae889c3372e4",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Maude Cook",
+      "email": "maude_cook@gmail.com",
+      "contact": "916561202",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-21T12:35:36.326Z",
+    "deliveryDate": "2023-10-23T12:35:36.326Z",
+    "lastStatusChangeDate": "2023-10-23T12:35:36.326Z",
+    "weight": 13.06
+  },
+  {
+    "_id": "6565cbf6b5d4c16100945634",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Tucker Jarvis",
+      "email": "tucker_jarvis@gmail.com",
+      "contact": "936389905",
+      "deliveryAddress": "Rua Igreja 97",
+      "state": "Braga",
+      "region": "Antas",
+      "zip": "4760-052"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-23T05:39:01.016Z",
+    "deliveryDate": "2023-11-27T05:39:01.016Z",
+    "lastStatusChangeDate": "2023-11-24T05:39:01.016Z",
+    "weight": 16.95
+  },
+  {
+    "_id": "6565cbf6396022ec4f6ff44b",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Greta Ortiz",
+      "email": "greta_ortiz@gmail.com",
+      "contact": "961674169",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-10T15:06:28.180Z",
+    "deliveryDate": "2023-10-12T15:06:28.180Z",
+    "lastStatusChangeDate": "2023-10-12T15:06:28.180Z",
+    "weight": 16.14
+  },
+  {
+    "_id": "6565cbf6808408fd3bda4d7a",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Ilene Blair",
+      "email": "ilene_blair@gmail.com",
+      "contact": "918249277",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-22T12:36:16.195Z",
+    "deliveryDate": "2023-11-27T12:36:16.195Z",
+    "lastStatusChangeDate": "2023-11-24T12:36:16.195Z",
+    "weight": 4.72
+  },
+  {
+    "_id": "6565cbf668d0abd3d2555cd0",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Schwartz Bryan",
+      "email": "schwartz_bryan@gmail.com",
+      "contact": "939675625",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-18T08:39:33.854Z",
+    "deliveryDate": "2023-10-21T08:39:33.854Z",
+    "lastStatusChangeDate": "2023-10-19T08:39:33.854Z",
+    "weight": 13.23
+  },
+  {
+    "_id": "6565cbf64e43d90bd2d3c319",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Harrison Diaz",
+      "email": "harrison_diaz@gmail.com",
+      "contact": "933853863",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-04T21:54:37.180Z",
+    "deliveryDate": "2023-11-08T21:54:37.180Z",
+    "lastStatusChangeDate": "2023-11-06T21:54:37.180Z",
+    "weight": 16.83
+  },
+  {
+    "_id": "6565cbf6d0e59d189f870db8",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Chambers Shelton",
+      "email": "chambers_shelton@gmail.com",
+      "contact": "938451719",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-02T07:43:08.866Z",
+    "deliveryDate": "2023-11-05T07:43:08.866Z",
+    "lastStatusChangeDate": "2023-11-04T07:43:08.866Z",
+    "weight": 4.58
+  },
+  {
+    "_id": "6565cbf65c00f81a960154f6",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Alma Huber",
+      "email": "alma_huber@gmail.com",
+      "contact": "931565267",
+      "deliveryAddress": "R Doutor Paulo Quintela 12",
+      "state": "Coimbra",
+      "region": "Castanheira Do Campo",
+      "zip": "3025-509"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-21T02:58:45.734Z",
+    "deliveryDate": "2023-11-25T02:58:45.734Z",
+    "lastStatusChangeDate": "2023-11-23T02:58:45.734Z",
+    "weight": 4.55
+  },
+  {
+    "_id": "6565cbf63d188589659bc7f4",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Sally Wood",
+      "email": "sally_wood@gmail.com",
+      "contact": "935239105",
+      "deliveryAddress": "R Cerdeira Ervas 75",
+      "state": "Braga",
+      "region": "Braga",
+      "zip": "4715-092"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-24T13:57:35.032Z",
+    "deliveryDate": "2023-10-28T13:57:35.032Z",
+    "lastStatusChangeDate": "2023-10-26T13:57:35.032Z",
+    "weight": 10.47
+  },
+  {
+    "_id": "6565cbf695578db8688212e1",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Wendi Sawyer",
+      "email": "wendi_sawyer@gmail.com",
+      "contact": "933202087",
+      "deliveryAddress": "Travessa Choupelo 86",
+      "state": "Porto",
+      "region": "Leça Do Balio",
+      "zip": "4465-757"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-13T08:45:27.219Z",
+    "deliveryDate": "2023-10-18T08:45:27.219Z",
+    "lastStatusChangeDate": "2023-10-15T08:45:27.219Z",
+    "weight": 7.13
+  },
+  {
+    "_id": "6565cbf694939df733ba2a48",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Delia Cunningham",
+      "email": "delia_cunningham@gmail.com",
+      "contact": "961986225",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-19T19:03:21.953Z",
+    "deliveryDate": "2023-11-22T19:03:21.953Z",
+    "lastStatusChangeDate": "2023-11-20T19:03:21.953Z",
+    "weight": 5.32
+  },
+  {
+    "_id": "6565cbf6af6737de8c732dae",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Merrill Mullen",
+      "email": "merrill_mullen@gmail.com",
+      "contact": "918018246",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-25T06:40:31.151Z",
+    "deliveryDate": "2023-10-29T06:40:31.151Z",
+    "lastStatusChangeDate": "2023-10-27T06:40:31.151Z",
+    "weight": 11.21
+  },
+  {
+    "_id": "6565cbf6342804cd734e7838",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Black Cooley",
+      "email": "black_cooley@gmail.com",
+      "contact": "915474559",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-27T00:08:32.952Z",
+    "deliveryDate": "2023-11-01T00:08:32.952Z",
+    "lastStatusChangeDate": "2023-10-28T00:08:32.952Z",
+    "weight": 18.69
+  },
+  {
+    "_id": "6565cbf6e3e58a7407141e09",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Alyce Newman",
+      "email": "alyce_newman@gmail.com",
+      "contact": "911319176",
+      "deliveryAddress": "R Bacelo 2",
+      "state": "Braga",
+      "region": "Fonte Coberta",
+      "zip": "4775-090"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-20T02:34:47.184Z",
+    "deliveryDate": "2023-10-24T02:34:47.184Z",
+    "lastStatusChangeDate": "2023-10-22T02:34:47.184Z",
+    "weight": 15.55
+  },
+  {
+    "_id": "6565cbf61b54e9f28324a3f4",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Traci Atkinson",
+      "email": "traci_atkinson@gmail.com",
+      "contact": "935720199",
+      "deliveryAddress": "R Doutor Paulo Quintela 12",
+      "state": "Coimbra",
+      "region": "Castanheira Do Campo",
+      "zip": "3025-509"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-10-22T13:51:01.528Z",
+    "deliveryDate": "2023-10-26T13:51:01.528Z",
+    "lastStatusChangeDate": "2023-10-23T13:51:01.528Z",
+    "weight": 10.57
+  },
+  {
+    "_id": "6565cbf6fbf9312b83d8c0ff",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Day Green",
+      "email": "day_green@gmail.com",
+      "contact": "938228396",
+      "deliveryAddress": "R Doutor Paulo Quintela 12",
+      "state": "Coimbra",
+      "region": "Castanheira Do Campo",
+      "zip": "3025-509"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-24T12:17:25.180Z",
+    "deliveryDate": "2023-10-27T12:17:25.180Z",
+    "lastStatusChangeDate": "2023-10-26T12:17:25.180Z",
+    "weight": 11.26
+  },
+  {
+    "_id": "6565cbf6c0230f52435fb5b1",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Pearlie Scott",
+      "email": "pearlie_scott@gmail.com",
+      "contact": "961811962",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-08T22:17:17.768Z",
+    "deliveryDate": "2023-11-12T22:17:17.768Z",
+    "lastStatusChangeDate": "2023-11-10T22:17:17.768Z",
+    "weight": 12.87
+  },
+  {
+    "_id": "6565cbf6f6f9ab68e9c92850",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Carey Byrd",
+      "email": "carey_byrd@gmail.com",
+      "contact": "938029173",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-23T11:19:11.819Z",
+    "deliveryDate": "2023-10-28T11:19:11.819Z",
+    "lastStatusChangeDate": "2023-10-25T11:19:11.819Z",
+    "weight": 8.68
+  },
+  {
+    "_id": "6565cbf6f4fc6504e470512a",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Graham Walls",
+      "email": "graham_walls@gmail.com",
+      "contact": "961553031",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-30T14:01:53.612Z",
+    "deliveryDate": "2023-11-03T14:01:53.612Z",
+    "lastStatusChangeDate": "2023-11-01T14:01:53.612Z",
+    "weight": 6.48
+  },
+  {
+    "_id": "6565cbf63e3d1c561b0e4b0d",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Wooten Myers",
+      "email": "wooten_myers@gmail.com",
+      "contact": "912045397",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-21T05:08:07.878Z",
+    "deliveryDate": "2023-10-24T05:08:07.878Z",
+    "lastStatusChangeDate": "2023-10-23T05:08:07.878Z",
+    "weight": 16.96
+  },
+  {
+    "_id": "6565cbf6f241092a6c7b66eb",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Elnora Marshall",
+      "email": "elnora_marshall@gmail.com",
+      "contact": "926313199",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-15T07:30:10.528Z",
+    "deliveryDate": "2023-11-20T07:30:10.528Z",
+    "lastStatusChangeDate": "2023-11-17T07:30:10.528Z",
+    "weight": 6.24
+  },
+  {
+    "_id": "6565cbf654bc82f59f21981d",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Roberson Bradford",
+      "email": "roberson_bradford@gmail.com",
+      "contact": "931705525",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-31T00:54:44.253Z",
+    "deliveryDate": "2023-11-04T00:54:44.253Z",
+    "lastStatusChangeDate": "2023-11-01T00:54:44.253Z",
+    "weight": 16.17
+  },
+  {
+    "_id": "6565cbf638f633902110a877",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Acevedo Ford",
+      "email": "acevedo_ford@gmail.com",
+      "contact": "923558133",
+      "deliveryAddress": "R Cerdeira Ervas 75",
+      "state": "Braga",
+      "region": "Braga",
+      "zip": "4715-092"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-19T03:41:17.804Z",
+    "deliveryDate": "2023-11-23T03:41:17.804Z",
+    "lastStatusChangeDate": "2023-11-20T03:41:17.804Z",
+    "weight": 18.41
+  },
+  {
+    "_id": "6565cbf6f5c0f434f447dfb0",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Flossie Martin",
+      "email": "flossie_martin@gmail.com",
+      "contact": "926685983",
+      "deliveryAddress": "R Pelourinho 48",
+      "state": "Viseu",
+      "region": "Viseu",
+      "zip": "3500-732"
+    },
+    "deliveryStatus": "Cancelled",
+    "requestedDate": "2023-11-12T18:14:09.516Z",
+    "deliveryDate": "2023-11-16T18:14:09.516Z",
+    "lastStatusChangeDate": "2023-11-14T18:14:09.516Z",
+    "weight": 5.12
+  },
+  {
+    "_id": "6565cbf698ad22a216652beb",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Araceli Merrill",
+      "email": "araceli_merrill@gmail.com",
+      "contact": "965689846",
+      "deliveryAddress": "Travessa Choupelo 86",
+      "state": "Porto",
+      "region": "Leça Do Balio",
+      "zip": "4465-757"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-07T00:42:14.946Z",
+    "deliveryDate": "2023-11-11T00:42:14.946Z",
+    "lastStatusChangeDate": "2023-11-09T00:42:14.946Z",
+    "weight": 14.62
+  },
+  {
+    "_id": "6565cbf6ce7c548125f948ae",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Autumn Pearson",
+      "email": "autumn_pearson@gmail.com",
+      "contact": "963573556",
+      "deliveryAddress": "Colónia Agrícola Casal 16",
+      "state": "Aveiro",
+      "region": "São Silvestre",
+      "zip": "3870-030"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-04T00:15:44.895Z",
+    "deliveryDate": "2023-10-07T00:15:44.895Z",
+    "lastStatusChangeDate": "2023-10-05T00:15:44.895Z",
+    "weight": 15.14
+  },
+  {
+    "_id": "6565cbf613920ca64dee5cfa",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Gentry Klein",
+      "email": "gentry_klein@gmail.com",
+      "contact": "931269373",
+      "deliveryAddress": "Estrada Laranjeiras 105",
+      "state": "Lisboa",
+      "region": "Lisboa",
+      "zip": "1100-412"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-10-10T06:49:07.626Z",
+    "deliveryDate": "2023-10-14T06:49:07.626Z",
+    "lastStatusChangeDate": "2023-10-11T06:49:07.626Z",
+    "weight": 11.28
+  },
+  {
+    "_id": "6565cbf642c265a5479a8cdb",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b895",
+      "name": "NIQUENT"
+    },
+    "client": {
+      "name": "Savage Guzman",
+      "email": "savage_guzman@gmail.com",
+      "contact": "929395294",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-11T06:41:02.112Z",
+    "deliveryDate": "2023-11-16T06:41:02.112Z",
+    "lastStatusChangeDate": "2023-11-13T06:41:02.112Z",
+    "weight": 14.59
+  },
+  {
+    "_id": "6565cbf6280305802062e933",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Miller Horn",
+      "email": "miller_horn@gmail.com",
+      "contact": "923527041",
+      "deliveryAddress": "Bairro St António 94",
+      "state": "Viana do Castelo",
+      "region": "Outeiro",
+      "zip": "4950-211"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-12T06:38:21.592Z",
+    "deliveryDate": "2023-11-15T06:38:21.592Z",
+    "lastStatusChangeDate": "2023-11-14T06:38:21.592Z",
+    "weight": 7.23
+  },
+  {
+    "_id": "6565cbf663deb5a082b2e2e7",
+    "shipper": {
+      "_id": "64d0b470d56f04a2c6af9d85",
+      "name": "DIGIPRINT"
+    },
+    "client": {
+      "name": "Jones Russell",
+      "email": "jones_russell@gmail.com",
+      "contact": "962617348",
+      "deliveryAddress": "Rua Igreja 97",
+      "state": "Braga",
+      "region": "Antas",
+      "zip": "4760-052"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-08T09:43:41.395Z",
+    "deliveryDate": "2023-10-13T09:43:41.395Z",
+    "lastStatusChangeDate": "2023-10-09T09:43:41.395Z",
+    "weight": 8.84
+  },
+  {
+    "_id": "6565cbf632f95fe1665bcb3b",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Graves Chan",
+      "email": "graves_chan@gmail.com",
+      "contact": "924749493",
+      "deliveryAddress": "Travessa Pombal 107",
+      "state": "Guarda",
+      "region": "Fornos De Algodres",
+      "zip": "6370-199"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-02T00:13:43.746Z",
+    "deliveryDate": "2023-11-07T00:13:43.746Z",
+    "lastStatusChangeDate": "2023-11-04T00:13:43.746Z",
+    "weight": 12.75
+  },
+  {
+    "_id": "6565cbf6c89ce30c6add5c8a",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Nikki Barber",
+      "email": "nikki_barber@gmail.com",
+      "contact": "928268906",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "On the road",
+    "requestedDate": "2023-11-06T02:51:09.148Z",
+    "deliveryDate": "2023-11-10T02:51:09.148Z",
+    "lastStatusChangeDate": "2023-11-07T02:51:09.148Z",
+    "weight": 17.34
+  },
+  {
+    "_id": "6565cbf6ec40acead7fd59cb",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Joyce Woodward",
+      "email": "joyce_woodward@gmail.com",
+      "contact": "968754518",
+      "deliveryAddress": "R Nossa Senhora Fátima 29",
+      "state": "Coimbra",
+      "region": "Oliveira Do Hospital",
+      "zip": "3400-122"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-10-16T11:20:46.486Z",
+    "deliveryDate": "2023-10-21T11:20:46.486Z",
+    "lastStatusChangeDate": "2023-10-18T11:20:46.486Z",
+    "weight": 12.08
+  },
+  {
+    "_id": "6565cbf651e019054e40a168",
+    "shipper": {
+      "_id": "64d0b470ef785ee93aa8b896",
+      "name": "COMTRACT"
+    },
+    "client": {
+      "name": "Lindsey Winters",
+      "email": "lindsey_winters@gmail.com",
+      "contact": "935216425",
+      "deliveryAddress": "Travessa Parque 12",
+      "state": "Coimbra",
+      "region": "Montemor o Velho",
+      "zip": "3140-255"
+    },
+    "deliveryStatus": "Completed",
+    "requestedDate": "2023-11-18T00:44:40.719Z",
+    "deliveryDate": "2023-11-22T00:44:40.719Z",
+    "lastStatusChangeDate": "2023-11-20T00:44:40.719Z",
+    "weight": 16.59
   }
 ]

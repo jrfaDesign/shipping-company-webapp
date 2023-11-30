@@ -12,7 +12,7 @@ import { Container, TextOptionsContainer, SearchInputContainer, TotalText } from
 import { getFilterOptions } from "./utils";
 interface Props {
   tableType: "orders" | "users" | "shippers";
-  originalData: (Order | RegisteredUser | RegisteredShipper)[];
+  originalData: (Order | RegisteredUser | RegisteredShipper)[] | null;
   selectedData: (Order | RegisteredUser | RegisteredShipper)[] | null;
   setSelectedData: Dispatch<SetStateAction<(Order | RegisteredUser | RegisteredShipper)[]>>;
   tableForAdmin?: boolean;
@@ -62,7 +62,7 @@ const Filters = ({
       "Estado de Entrega": "deliveryStatus"
     };
 
-    const filteredData = originalData.filter((data: any) => {
+    const filteredData = originalData?.filter((data: any) => {
       const lowerSearchField = searchField.toLowerCase();
       const { shipper, client } = data;
 
@@ -101,7 +101,7 @@ const Filters = ({
     let filteredDataWithFilters = filteredData;
 
     if (filterOptions) {
-      filteredDataWithFilters = filteredData.filter((data: any) =>
+      filteredDataWithFilters = filteredData?.filter((data: any) =>
         Object.keys(filterOptions).every((filterOption: string) => {
           const objectKey = (filterLabelToObjectKey as any)[filterOption];
 

@@ -13,8 +13,8 @@ import { User as UserProps } from "~/types/app";
 import DrawerMenu from "~/shared/containers/DrawerMenu";
 import Login from "~/screens/Login";
 
-import { useScreenWidth } from "~/hooks/globalHooks";
 import { useAppSelector } from "~/store/hooks";
+import { useScreenWidth } from "~/hooks/globalHooks";
 
 interface Props {
   user: UserProps | null;

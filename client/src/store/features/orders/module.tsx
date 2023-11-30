@@ -1,19 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { Order } from "~/types/app";
-import { fetchOrderById, fetchOrders } from "~/store/services/orders";
+import { fetchOrderById, fetchOrders, fetchOrdersForThisWeek } from "~/store/services/orders";
 
 interface OrdersProps {
-  orders: Order[];
+  orders: Order[] | null;
   order: Order | null;
+  ordersForThisWeek: Order[] | null;
   isLoading: boolean;
   isLoadingOrder: boolean;
+  isLoadingOrderForThisWeek: boolean;
 }
 
 const initialState: OrdersProps = {
-  orders: [],
+  orders: null,
+  ordersForThisWeek: null,
   order: null,
   isLoading: false,
-  isLoadingOrder: false
+  isLoadingOrder: false,
+  isLoadingOrderForThisWeek: false
 };
 
 const ordersSlice = createSlice({
@@ -44,6 +48,18 @@ const ordersSlice = createSlice({
         state.order = payload;
       })
       .addCase(fetchOrderById.rejected, (state) => {
+        state.isLoadingOrder = false;
+      });
+    // * fetchOrdersForThisWeek
+    builder
+      .addCase(fetchOrdersForThisWeek.pending, (state) => {
+        state.isLoadingOrder = true;
+      })
+      .addCase(fetchOrdersForThisWeek.fulfilled, (state, { payload }) => {
+        state.isLoadingOrder = false;
+        state.ordersForThisWeek = payload;
+      })
+      .addCase(fetchOrdersForThisWeek.rejected, (state) => {
         state.isLoadingOrder = false;
       });
   }

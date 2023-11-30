@@ -1,21 +1,21 @@
 import React from "react";
 
-import { Orders } from "~/types/app";
+import { Order } from "~/types/app";
+import OrdersForThisWeek from "../OrdersForThisWeek";
 import TotalNumberCard from "../TotalNumberCard";
 
-import WeeklyOrdersStatusGraph from "../WeeklyOrdersStatusGraph";
 import { Container } from "./styles";
 
 interface Props {
-  orders: Orders[];
-  loading: boolean;
+  orders: Order[] | null;
+  ordersForThisWeek: Order[] | null;
 }
 
-const View = ({ orders, loading }: Props) => {
+const View = ({ orders, ordersForThisWeek }: Props) => {
   return (
     <Container>
-      <TotalNumberCard orders={orders} loading={loading} />
-      <WeeklyOrdersStatusGraph orders={orders} loading={loading} />
+      <TotalNumberCard orders={orders} />
+      <OrdersForThisWeek orders={ordersForThisWeek as any} />
     </Container>
   );
 };
