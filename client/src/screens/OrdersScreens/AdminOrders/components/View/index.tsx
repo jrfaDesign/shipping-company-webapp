@@ -1,9 +1,9 @@
-import { Orders } from "~/types/app";
+import { Order } from "~/types/app";
 
 import Table from "~/shared/components/Table";
 
 interface Props {
-  orders: Orders[];
+  orders: Order[] | null;
 }
 
 const View = ({ orders }: Props) => {

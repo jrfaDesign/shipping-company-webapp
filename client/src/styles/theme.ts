@@ -14,11 +14,12 @@ export const theme = {
 
   data: {
     green: "#4caf50",
-    green01: "rgba(76, 175, 80,0.1)",
+    green01: "rgba(76, 175, 80,0.2)",
     red: "#F80A0A",
-    red01: "rgba(248, 10, 10,0.1)",
+    red01: "rgba(248, 10, 10,0.2)",
     yellow: "#f8c50a",
-    yellow01: "rgba(248, 197, 10,0.1)"
+    yellow01: "rgba(248, 197, 10,0.2)",
+    grey02: "rgba(154, 154, 154, 0.2)"
   },
 
   colors: {
@@ -45,6 +46,7 @@ export const theme = {
 //https://screensiz.es/
 export const mobile = "@media(max-width: 480px)";
 export const tablet = "@media(min-width: 481px)";
+export const tabletsecond = "@media(min-width: 586px)";
 export const laptop = "@media(min-width: 769px)";
 export const maxLaptop = "@media(max-width: 769px)";
 export const maxDesktop = "@media(max-width: 1025px)";

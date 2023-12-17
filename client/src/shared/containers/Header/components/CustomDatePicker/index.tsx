@@ -9,7 +9,7 @@ import { useAppDispatch, useAppSelector } from "~/store/hooks";
 
 import { setDateRange, setWeekRange } from "~/store/features/datePicker/module";
 
-import { DatePickerWrapperStyles, StyledDatePicker } from "./styles";
+import { DatePickerWrapperStyles, StyledDatePicker, Text } from "./styles";
 
 const CustomDatePicker = () => {
   const dispatch = useAppDispatch();
@@ -45,29 +45,35 @@ const CustomDatePicker = () => {
 
   return (
     <>
-      {isVisible && dateType === "week" && (
-        <StyledDatePicker
-          wrapperClassName="date-picker"
-          dateFormat="dd/MM/yyyy"
-          locale={pt}
-          selectsRange={true}
-          startDate={dateRangeStartDate}
-          endDate={dateRangeEndDate}
-          maxDate={new Date()}
-          onChange={(update) => handleDateChange(update as Date[])}
-        />
-      )}
       {isVisible && dateType === "days" && (
-        <StyledDatePicker
-          locale={pt}
-          dateFormat="dd/MM/yyyy"
-          wrapperClassName="date-picker"
-          startDate={weekRangeStartDate}
-          endDate={weekRangeEndDate}
-          maxDate={new Date()}
-          onChange={(date) => handleWeekPicker(date)}
-          selectsRange
-        />
+        <>
+          <Text>Encomendas entre:</Text>
+          <StyledDatePicker
+            wrapperClassName="date-picker"
+            dateFormat="dd/MM/yyyy"
+            locale={pt}
+            selectsRange={true}
+            startDate={dateRangeStartDate}
+            endDate={dateRangeEndDate}
+            maxDate={new Date()}
+            onChange={(update) => handleDateChange(update as Date[])}
+          />
+        </>
+      )}
+      {isVisible && dateType === "week" && (
+        <>
+          <Text>Encomendas entre:</Text>
+          <StyledDatePicker
+            locale={pt}
+            dateFormat="dd/MM/yyyy"
+            wrapperClassName="date-picker"
+            startDate={weekRangeStartDate}
+            endDate={weekRangeEndDate}
+            maxDate={new Date()}
+            onChange={(date) => handleWeekPicker(date)}
+            selectsRange
+          />
+        </>
       )}
       <DatePickerWrapperStyles />
     </>

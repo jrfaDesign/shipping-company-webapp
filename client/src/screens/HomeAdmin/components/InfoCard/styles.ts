@@ -7,13 +7,6 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100px;
-`;
-
-export const Container = styled.div`
-  height: 100%;
-  display: flex;
-  align-items: center;
 `;
 
 interface IconContainerProps {
@@ -28,7 +21,8 @@ export const IconContainer = styled.div<IconContainerProps>`
   height: 65px;
   background-color: ${(props) => props.color};
   border-radius: 50px;
-  margin-right: 15px;
+  margin-bottom: 10px;
+
   svg {
     path {
       color: white;
@@ -39,11 +33,9 @@ export const IconContainer = styled.div<IconContainerProps>`
 export const Label = styled.div`
   color: ${({ theme }) => theme.colors.grey};
   font-size: 12px;
-  font-weight: 30;
-  position: relative;
-  top: 10px;
-  right: -45px;
+  font-weight: 300;
 `;
+
 export const Amount = styled.div`
   color: ${({ theme }) => theme.colors.black};
   font-size: 40px;

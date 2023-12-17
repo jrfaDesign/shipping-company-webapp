@@ -16,13 +16,13 @@ const AdminOrders = () => {
   const isDatePickerVisible = useAppSelector((state) => state.datePicker.isVisible);
 
   useEffect(() => {
-    dispatch(changeCalendarType("week"));
+    dispatch(changeCalendarType("days"));
     !isDatePickerVisible && dispatch(toggleDatePicker());
     dispatch(fetchOrders());
   }, [dateRange]);
 
   if (loadingOrders) {
-    return <Loading />;
+    return <Loading height="70vh" />;
   } else {
     return <View orders={orders} />;
   }

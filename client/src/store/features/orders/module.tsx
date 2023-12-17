@@ -53,14 +53,14 @@ const ordersSlice = createSlice({
     // * fetchOrdersForThisWeek
     builder
       .addCase(fetchOrdersForThisWeek.pending, (state) => {
-        state.isLoadingOrder = true;
+        state.isLoadingOrderForThisWeek = true;
       })
       .addCase(fetchOrdersForThisWeek.fulfilled, (state, { payload }) => {
-        state.isLoadingOrder = false;
         state.ordersForThisWeek = payload;
+        state.isLoadingOrderForThisWeek = false;
       })
       .addCase(fetchOrdersForThisWeek.rejected, (state) => {
-        state.isLoadingOrder = false;
+        state.isLoadingOrderForThisWeek = false;
       });
   }
 });

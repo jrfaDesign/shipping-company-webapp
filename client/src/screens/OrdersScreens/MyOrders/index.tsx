@@ -22,7 +22,7 @@ const MyOrders = () => {
   }, [dateRange]);
 
   if (loadingOrders) {
-    return <Loading />;
+    return <Loading height="70vh" />;
   } else {
     return <View orders={orders} />;
   }

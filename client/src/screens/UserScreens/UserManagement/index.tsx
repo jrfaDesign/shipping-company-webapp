@@ -15,7 +15,7 @@ const UserManagement = () => {
   }, []);
 
   if (isLoading) {
-    return <Loading />;
+    return <Loading height="70vh" />;
   } else {
     return <View data={registeredUsers} />;
   }

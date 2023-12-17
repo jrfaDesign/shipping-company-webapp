@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 import DatePicker from "react-datepicker";
-import { laptop } from "~/styles/theme";
+import { laptop, mobile } from "~/styles/theme";
 
 export const DatePickerWrapperStyles = createGlobalStyle`
     .react-datepicker {
@@ -57,5 +57,15 @@ export const StyledDatePicker = styled(DatePicker)`
   ${laptop} {
     font-size: 14px;
     width: 175px;
+  }
+`;
+
+export const Text = styled.div`
+  margin-right: 8px;
+  color: ${({ theme }) => theme.colors.black};
+  font-size: 12px;
+  white-space: nowrap;
+  ${mobile} {
+    display: none;
   }
 `;

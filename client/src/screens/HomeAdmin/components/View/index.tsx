@@ -2,20 +2,25 @@ import React from "react";
 
 import { Order } from "~/types/app";
 import OrdersForThisWeek from "../OrdersForThisWeek";
+import PieChartData from "../PieChart";
+import ShippersNewRequest from "../ShippersNewRequest";
 import TotalNumberCard from "../TotalNumberCard";
 
-import { Container } from "./styles";
+import { Container, GridContainer } from "./styles";
 
 interface Props {
-  orders: Order[] | null;
   ordersForThisWeek: Order[] | null;
 }
 
-const View = ({ orders, ordersForThisWeek }: Props) => {
+const View = ({ ordersForThisWeek }: Props) => {
   return (
     <Container>
-      <TotalNumberCard orders={orders} />
-      <OrdersForThisWeek orders={ordersForThisWeek as any} />
+      <GridContainer>
+        <TotalNumberCard orders={ordersForThisWeek} />
+        <PieChartData orders={ordersForThisWeek} className={"graph4"} />
+        <OrdersForThisWeek orders={ordersForThisWeek} className={"graph5"} />
+        <ShippersNewRequest orders={ordersForThisWeek} className={"graph6"} />
+      </GridContainer>
     </Container>
   );
 };

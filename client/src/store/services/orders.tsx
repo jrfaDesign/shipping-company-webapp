@@ -32,8 +32,8 @@ export const fetchOrderById = createAsyncThunk(
   "orders/fetchOrdersById",
   async (id: string, { getState }) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    const state = getState() as RootState;
-    const allOrders = state.orders.orders;
+
+    const allOrders = MOCK_ORDERS;
     try {
       //const response = await axios.get(`${BASE_URL}/orders/${id}`);
       return allOrders?.find((order) => order._id === id) as Order;
@@ -49,13 +49,14 @@ export const fetchOrdersForThisWeek = createAsyncThunk(
     await new Promise((resolve) => setTimeout(resolve, 4000));
 
     const state = getState() as RootState;
-    const allOrders = state.orders.orders;
+    const allOrders = MOCK_ORDERS;
+    const weekRange = state.datePicker.weekRange;
 
-    const modifiedOrders = modifyOrderDatesForWeekly(allOrders);
+    const modifiedOrders = modifyOrderDatesForWeekly(allOrders as any, weekRange);
 
     try {
       //const response = await axios.get(`${BASE_URL}/orders/${id}`);
-      return [];
+      return modifiedOrders;
     } catch (error) {
       return [];
     }

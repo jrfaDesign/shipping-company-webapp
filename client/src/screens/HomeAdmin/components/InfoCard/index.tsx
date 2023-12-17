@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Wrapper, Container, IconContainer, Label, Amount } from "./styles";
+import { Wrapper, IconContainer, Label, Amount } from "./styles";
 
 interface Props {
   data: {
@@ -15,11 +15,9 @@ const InfoCard = ({ data }: Props) => {
   const { label, amount, icon, color } = data;
   return (
     <Wrapper>
+      <IconContainer color={color}>{icon}</IconContainer>
       <Label>{label}: </Label>
-      <Container>
-        <IconContainer color={color}>{icon}</IconContainer>
-        <Amount>{amount}</Amount>
-      </Container>
+      <Amount>{amount}</Amount>
     </Wrapper>
   );
 };

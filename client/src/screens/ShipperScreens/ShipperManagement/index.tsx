@@ -16,7 +16,7 @@ const ShipperManagement = () => {
   }, []);
 
   if (loadingShippers) {
-    return <Loading />;
+    return <Loading height="70vh" />;
   } else {
     return <View data={shippers} />;
   }

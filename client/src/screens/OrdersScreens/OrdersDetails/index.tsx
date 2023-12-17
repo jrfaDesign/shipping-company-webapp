@@ -23,7 +23,7 @@ const OrdersDetails = () => {
   }, []);
 
   if (loadingOrder || !order) {
-    return <Loading />;
+    return <Loading height="70vh" />;
   } else {
     return <View order={order} />;
   }

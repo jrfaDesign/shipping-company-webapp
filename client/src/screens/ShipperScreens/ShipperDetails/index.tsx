@@ -23,7 +23,7 @@ const ShipperDetails = () => {
   }, []);
 
   if (loadingOrder || !shipper) {
-    return <Loading />;
+    return <Loading height="70vh" />;
   } else {
     return <View shipper={shipper} />;
   }
