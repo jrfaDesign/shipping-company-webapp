@@ -1,22 +1,22 @@
 import React, { useEffect } from "react";
 
-import { useShippersStore } from "~/hooks/stores/shippers";
-
 import Loading from "~/shared/components/Loading";
+import { useAppDispatch, useAppSelector } from "~/store/hooks";
+import { fetchShippers } from "~/store/services/shippers";
 
 import View from "./components/View";
 
 const ShipperManagement = () => {
-  const shippers = useShippersStore((state) => state.shippers);
-  const getShippers = useShippersStore((state) => state.fetchRegisteredShippers);
-  const loadingShippers = useShippersStore((state) => state.isLoading);
+  const dispatch = useAppDispatch();
+  const shippers = useAppSelector((state) => state.shippers.shippers);
+  const loadingShippers = useAppSelector((state) => state.shippers.isLoading);
 
   useEffect(() => {
-    getShippers();
+    dispatch(fetchShippers());
   }, []);
 
   if (loadingShippers) {
-    return <Loading />;
+    return <Loading height="70vh" />;
   } else {
     return <View data={shippers} />;
   }

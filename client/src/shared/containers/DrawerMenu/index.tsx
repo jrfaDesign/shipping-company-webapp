@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 import { routes } from "~/routes";
 import { useNavigate } from "react-router-dom";
-import { useUserStore } from "~/hooks/stores/user";
-import useDrawerStore from "~/hooks/stores/drawer";
+
+import { useAppDispatch, useAppSelector } from "~/store/hooks";
+
+import { useScreenWidth } from "~/hooks/globalHooks";
+
+import { logout } from "~/store/features/auth/module";
 
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -14,33 +18,30 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Divider, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-
 import Logout from "@mui/icons-material/Logout";
 
-import { useScreenWidth } from "~/hooks/globalHooks";
-
 import { Container, DrawerHead, DrawerMenuContainer } from "./styles";
+import { toggleDrawer } from "~/store/features/drawer/module";
 
 const drawerWidth = "279px";
 
 const DrawerMenu = () => {
-  const user = useUserStore((state) => state.user);
-  const logout = useUserStore((state) => state.logout);
+  const dispatch = useAppDispatch();
   const navigate = useNavigate();
+
+  const user = useAppSelector((state) => state.auth.user);
+  const drawerIsOpen = useAppSelector((state) => state.drawer.isOpen);
 
   const screenWidth = useScreenWidth();
 
-  const drawerIsOpen = useDrawerStore((state) => state.drawerIsOpen);
-  const toggleDrawer = useDrawerStore((state) => state.toggleDrawer);
-
   const handleNavigation = (path: string) => {
-    toggleDrawer();
+    dispatch(toggleDrawer());
     navigate(path);
   };
 
   const handleLogout = () => {
-    logout();
-    toggleDrawer();
+    dispatch(logout());
+    dispatch(toggleDrawer());
     navigate("/login");
   };
 
@@ -64,7 +65,13 @@ const DrawerMenu = () => {
     <Container open={drawerIsOpen}>
       <Box>
         {!drawerIsOpen && (
-          <IconButton color="inherit" aria-label="open drawer" onClick={toggleDrawer} edge="start">
+          <IconButton
+            className="drawer-btn"
+            color="inherit"
+            aria-label="open drawer"
+            onClick={() => dispatch(toggleDrawer())}
+            edge="start"
+          >
             <MenuIcon />
           </IconButton>
         )}
@@ -83,7 +90,7 @@ const DrawerMenu = () => {
             }
           }}
         >
-          <DrawerHead onClick={toggleDrawer}>
+          <DrawerHead onClick={() => dispatch(toggleDrawer())}>
             {screenWidth <= 769 ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </DrawerHead>
           <DrawerMenuContainer>

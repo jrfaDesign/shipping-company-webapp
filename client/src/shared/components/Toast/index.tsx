@@ -1,6 +1,8 @@
 import { Alert, Snackbar } from "@mui/material";
-import React, { useEffect, useState } from "react";
-import useToastStore from "~/hooks/stores/toast";
+import React from "react";
+
+import { showToast } from "~/store/features/toast/module";
+import { useAppDispatch } from "~/store/hooks";
 
 interface Props {
   isVisible: boolean;
@@ -9,20 +11,16 @@ interface Props {
 }
 
 const Toast = ({ isVisible, message, severity }: Props) => {
+  const dispatch = useAppDispatch();
   if (!isVisible || !severity) {
     return null;
   }
-  const setToastOptions = useToastStore((state) => state.setToastOptions);
 
   const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
     if (reason === "clickaway") {
       return;
     }
-    setToastOptions({
-      isVisible: false,
-      message: "",
-      severity: "info"
-    });
+    dispatch(showToast(false));
   };
 
   return (
@@ -30,7 +28,7 @@ const Toast = ({ isVisible, message, severity }: Props) => {
       open={isVisible}
       autoHideDuration={3000}
       onClose={handleClose}
-      anchorOrigin={{ vertical: "top", horizontal: "right" }}
+      anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
     >
       <Alert onClose={handleClose} severity={severity} sx={{ width: "100%" }}>
         {message}

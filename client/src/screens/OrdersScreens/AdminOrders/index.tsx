@@ -1,22 +1,28 @@
 import React, { useEffect } from "react";
 
-import { useOrdersStore } from "~/hooks/stores/orders";
-
 import Loading from "~/shared/components/Loading";
+import { changeCalendarType, toggleDatePicker } from "~/store/features/datePicker/module";
+import { useAppDispatch, useAppSelector } from "~/store/hooks";
+import { fetchOrders } from "~/store/services/orders";
 
 import View from "./components/View";
 
 const AdminOrders = () => {
-  const orders = useOrdersStore((state) => state.orders);
-  const getOrders = useOrdersStore((state) => state.fetchOrders);
-  const loadingOrders = useOrdersStore((state) => state.isLoading);
+  const dispatch = useAppDispatch();
+  const orders = useAppSelector((state) => state.orders.orders);
+  const loadingOrders = useAppSelector((state) => state.orders.isLoading);
+
+  const dateRange = useAppSelector((state) => state.datePicker.dateRange);
+  const isDatePickerVisible = useAppSelector((state) => state.datePicker.isVisible);
 
   useEffect(() => {
-    getOrders();
-  }, []);
+    dispatch(changeCalendarType("days"));
+    !isDatePickerVisible && dispatch(toggleDatePicker());
+    dispatch(fetchOrders());
+  }, [dateRange]);
 
   if (loadingOrders) {
-    return <Loading />;
+    return <Loading height="70vh" />;
   } else {
     return <View orders={orders} />;
   }

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import { useShippersStore } from "~/hooks/stores/shippers";
-
 import Loading from "~/shared/components/Loading";
+import { useAppDispatch, useAppSelector } from "~/store/hooks";
+import { fetchShipperById } from "~/store/services/shippers";
 
 import View from "./components/View";
 
@@ -14,16 +14,16 @@ const ShipperDetails = () => {
     return null;
   }
 
-  const shipper = useShippersStore((state) => state.shipper);
-  const getOrder = useShippersStore((state) => state.fetchRegisteredShipperById);
-  const loadingOrder = useShippersStore((state) => state.isLoadingById);
+  const dispatch = useAppDispatch();
+  const shipper = useAppSelector((state) => state.shippers.shipper);
+  const loadingOrder = useAppSelector((state) => state.shippers.isLoadingById);
 
   useEffect(() => {
-    getOrder(id);
+    dispatch(fetchShipperById(id));
   }, []);
 
   if (loadingOrder || !shipper) {
-    return <Loading />;
+    return <Loading height="70vh" />;
   } else {
     return <View shipper={shipper} />;
   }

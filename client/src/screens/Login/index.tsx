@@ -2,15 +2,12 @@ import { axios } from "~/config/interceptors";
 
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import StyledButton from "~/shared/components/Button";
 
+import { showToast } from "~/store/features/toast/module";
+
+import StyledButton from "~/shared/components/Button";
 import Section from "~/shared/components/Section";
 import StyledInput from "~/shared/components/StyledInput";
-
-import { BASE_URL } from "~/config/variables";
-
-import { useUserStore } from "~/hooks/stores/user";
-import useToastStore from "~/hooks/stores/toast";
 
 import {
   Container,
@@ -20,17 +17,20 @@ import {
   ToolsContainer
 } from "./styles";
 
+import { useAppDispatch, useAppSelector } from "~/store/hooks";
+import { setUser, setAccessToken } from "~/store/features/auth/module";
+
 interface UserCredentials {
   username: string;
   password: string;
 }
 
 const Login = () => {
-  const user = useUserStore((state) => state.user);
-  const setAccessToken = useUserStore((state) => state.setAccessToken);
-  const setUser = useUserStore((state) => state.setUser);
+  const dispatch = useAppDispatch();
+
+  const user = useAppSelector((state) => state.auth.user);
+
   const navigate = useNavigate();
-  const setToastOptions = useToastStore((state) => state.setToastOptions);
 
   useEffect(() => {
     user && navigate("/");
@@ -52,10 +52,22 @@ const Login = () => {
   };
 
   const handleLogin = async (user: any) => {
-    setUser(user);
+    localStorage.removeItem("token");
+    dispatch(setUser(user));
+
+    setAccessToken("acessToken");
+
+    const payload = {
+      status: 200,
+      data: {
+        message: "Login successful!"
+      }
+    };
+
+    dispatch(showToast(payload));
+
     navigate("/");
-    //localStorage.removeItem("token");
-    //
+
     //try {
     //  const response = await axios.post(`${BASE_URL}auth/login`, loginInfo);
     //  if (response.status === 200) {

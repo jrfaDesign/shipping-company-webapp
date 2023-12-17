@@ -7,6 +7,7 @@ export const Wrapper = styled.footer`
   align-items: center;
   padding: 16px 24px;
   height: 33px;
+  justify-content: space-between;
 `;
 
 export const FooterText = styled.p`

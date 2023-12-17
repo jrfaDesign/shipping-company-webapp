@@ -76,18 +76,18 @@ export const Cell = styled.div<CellProps>`
     }
 
   .completed{
-      color: #4caf50;
-      background-color: rgba(76, 175, 80,0.1);
+      color: ${({ theme }) => theme.data.green};
+      background-color: ${({ theme }) => theme.data.green01};
 
   }
   .cancelled{
-      color: #F80A0A;
-      background-color: rgba(248, 10, 10,0.1);
+      color: ${({ theme }) => theme.data.red};
+      background-color: ${({ theme }) => theme.data.red01};
 
   }
   .on-the-road{
-      color: rgb(248, 197, 10);
-      background-color: rgba(248, 197, 10,0.1);
+      color: ${({ theme }) => theme.data.yellow};
+      background-color: ${({ theme }) => theme.data.yellow01};
   }
 
 `;

@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { RegistedShipper } from "~/types/app";
-import useToastStore from "~/hooks/stores/toast";
+import { RegisteredShipper } from "~/types/app";
+
+import { useAppDispatch } from "~/store/hooks";
 
 import StyledButton from "~/shared/components/Button";
 import StyledInput from "~/shared/components/StyledInput";
@@ -8,17 +9,18 @@ import StyledInput from "~/shared/components/StyledInput";
 import { FormContainer, ButtonContainer, MultiInputContainer } from "../styles";
 
 import { FormErrorsProps, FormProps, INITIAL_FORM_DATA, getFormErrors } from "./utils";
+import { showToast } from "~/store/features/toast/module";
 
 interface Props {
-  shipper?: RegistedShipper;
+  shipper?: RegisteredShipper;
 }
 
 const ShipperForm = ({ shipper }: Props) => {
+  const dispatch = useAppDispatch();
   const [formData, setFormData] = useState<FormProps>(shipper ? shipper : INITIAL_FORM_DATA);
   const [formErrors, setFormErrors] = useState<FormErrorsProps>({});
 
-  const setToastOptions = useToastStore((state) => state.setToastOptions);
-  const curstomResponse = {
+  const custumResponse = {
     isVisible: true,
     message: "Houve um erro no pedido, tenta novamente.",
     severity: "error"
@@ -39,10 +41,10 @@ const ShipperForm = ({ shipper }: Props) => {
     if (Object.keys(errors).length === 0) {
       if (shipper) {
         console.log(formData);
-        setToastOptions(curstomResponse);
+        dispatch(showToast(custumResponse));
       } else {
         console.log(formData);
-        setToastOptions(curstomResponse);
+        dispatch(showToast(custumResponse));
       }
     }
   };

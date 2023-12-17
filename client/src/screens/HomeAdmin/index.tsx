@@ -1,20 +1,24 @@
 import View from "./components/View";
-import Loading from "~/shared/components/Loading";
 
 import { useEffect } from "react";
 
-import { useUserStore } from "~/hooks/stores/user";
+import { useAppDispatch, useAppSelector } from "~/store/hooks";
+import { fetchOrdersForThisWeek } from "~/store/services/orders";
+import { changeCalendarType, toggleDatePicker } from "~/store/features/datePicker/module";
 
 const HomeAdmin = () => {
-  const user = useUserStore((state) => state.user);
+  const dispatch = useAppDispatch();
+  const ordersForThisWeek = useAppSelector((state) => state.orders.ordersForThisWeek);
+  const weekRange = useAppSelector((state) => state.datePicker.weekRange);
+  const isDatePickerVisible = useAppSelector((state) => state.datePicker.isVisible);
 
-  /* if (!user) {
-    return <Loading />;
-  } else if (user) {
-    return <View />;
-  } */
+  useEffect(() => {
+    !isDatePickerVisible && dispatch(toggleDatePicker());
+    dispatch(changeCalendarType("week"));
+    dispatch(fetchOrdersForThisWeek());
+  }, [weekRange]);
 
-  return <View />;
+  return <View ordersForThisWeek={ordersForThisWeek} />;
 };
 
 export default HomeAdmin;

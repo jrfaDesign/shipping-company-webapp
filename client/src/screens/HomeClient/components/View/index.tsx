@@ -1,11 +1,11 @@
 import React from "react";
-import { Orders } from "~/types/app";
+import { Order } from "~/types/app";
 import WeekResumeGraph from "../WeekResumeGraph";
 
 import { Container, GraphContainer, ContentWrapper } from "./styles";
 
 interface Props {
-  orders: Orders[];
+  orders: Order[];
 }
 
 const View = ({ orders }: Props) => {

@@ -5,16 +5,16 @@ import { useScreenWidth } from "~/hooks/globalHooks";
 import SearchInput from "~/shared/components/SearchInput";
 import DropdownMenu from "~/shared/components/Table/TableFilters/components/DropdownMenu";
 
-import { Orders, RegistedShipper, RegisteredUser } from "~/types/app";
+import { Order, RegisteredShipper, RegisteredUser } from "~/types/app";
 import OptionsButtons from "./components/OptionsButtons";
 
 import { Container, TextOptionsContainer, SearchInputContainer, TotalText } from "./styles";
 import { getFilterOptions } from "./utils";
 interface Props {
   tableType: "orders" | "users" | "shippers";
-  originalData: (Orders | RegisteredUser | RegistedShipper)[];
-  selectedData: (Orders | RegisteredUser | RegistedShipper)[] | null;
-  setSelectedData: Dispatch<SetStateAction<(Orders | RegisteredUser | RegistedShipper)[]>>;
+  originalData: (Order | RegisteredUser | RegisteredShipper)[] | null;
+  selectedData: (Order | RegisteredUser | RegisteredShipper)[] | null;
+  setSelectedData: Dispatch<SetStateAction<(Order | RegisteredUser | RegisteredShipper)[]>>;
   tableForAdmin?: boolean;
 }
 
@@ -62,7 +62,7 @@ const Filters = ({
       "Estado de Entrega": "deliveryStatus"
     };
 
-    const filteredData = originalData.filter((data: any) => {
+    const filteredData = originalData?.filter((data: any) => {
       const lowerSearchField = searchField.toLowerCase();
       const { shipper, client } = data;
 
@@ -101,7 +101,7 @@ const Filters = ({
     let filteredDataWithFilters = filteredData;
 
     if (filterOptions) {
-      filteredDataWithFilters = filteredData.filter((data: any) =>
+      filteredDataWithFilters = filteredData?.filter((data: any) =>
         Object.keys(filterOptions).every((filterOption: string) => {
           const objectKey = (filterLabelToObjectKey as any)[filterOption];
 
@@ -132,7 +132,7 @@ const Filters = ({
   return (
     <Container>
       <TextOptionsContainer>
-        <TotalText>Total : {selectedData?.length}</TotalText>
+        <TotalText>Total: {selectedData?.length}</TotalText>
         {screenWidth < 769 && (
           <OptionsButtons
             tableType={tableType}

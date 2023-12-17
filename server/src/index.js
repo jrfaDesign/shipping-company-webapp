@@ -1,19 +1,26 @@
 import express from "express"; // framework to create the API using nodeJS
 import cors from "cors"; // set up de rules of comunication between FE and BE
 import mongoose from "mongoose"; //database managing system
+import dotenv from "dotenv";
 
-import { userRouter } from "./routes/users.js";
+import bodyParser from "body-parser";
+
+import { usersRouter } from "./routes/users.js";
+import { ordersRouter } from "./routes/orders.js";
+
+dotenv.config(); // Load environment variables from .env file
 const app = express();
+app.use(bodyParser.json({ limit: "1mb" }));
 
 app.use(express.json());
 app.use(cors());
 
-app.use("/auth", userRouter);
+//app.use("", usersRouter);
+app.use("", ordersRouter);
 
-// add enviorment variables to add password
+mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
-mongoose.connect(
-  "mongodb+srv://jrfadesign:4Wo3FdRHeYlLwTZO@nutri.nwuhlyn.mongodb.net/nutri?retryWrites=true&w=majority"
-);
-
-app.listen(4000, "192.168.1.80", () => console.log("SERVER STARTED"));
+app.listen(4000, () => console.log("SERVER STARTED"));

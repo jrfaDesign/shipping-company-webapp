@@ -7,7 +7,7 @@ export interface User {
   email: string;
 }
 
-export interface Orders {
+export interface Order {
   _id: string;
   shipper: {
     _id: string;
@@ -15,6 +15,7 @@ export interface Orders {
   };
   deliveryStatus: "Completed" | "Cancelled" | "On the road";
   requestedDate: Date | string;
+  lastStatusChangeDate: Date | string;
   deliveryDate: Date | string;
   weight: number;
   client: {
@@ -37,7 +38,7 @@ export interface RegisteredUser {
   company: string;
 }
 
-export interface RegistedShipper {
+export interface RegisteredShipper {
   _id: string;
   name: string;
   email: string;

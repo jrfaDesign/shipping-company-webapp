@@ -1,13 +1,13 @@
 import { AppContainer, Container } from "./styles";
 
-import { useUserStore } from "~/hooks/stores/user";
+import { useAppSelector } from "~/store/hooks";
 
 import View from "./View";
 import { Suspense } from "react";
 import Loading from "~/shared/components/Loading";
 
 const App = () => {
-  const user = useUserStore((state) => state.user);
+  const user = useAppSelector((state) => state.auth.user);
 
   return (
     <div>

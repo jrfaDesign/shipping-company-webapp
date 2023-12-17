@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from "react";
 
-import { Orders, RegistedShipper, RegisteredUser } from "~/types/app";
+import { Orders, RegisteredShipper, RegisteredUser } from "~/types/app";
 
 import { useNavigate } from "react-router-dom";
 
@@ -11,8 +11,8 @@ import { Container, MenuIconContainer } from "./styles";
 
 interface Props {
   tableType: "orders" | "users" | "shippers";
-  originalData: (Orders | RegisteredUser | RegistedShipper)[];
-  setSelectedData: Dispatch<SetStateAction<(Orders | RegisteredUser | RegistedShipper)[]>>;
+  originalData: (Orders | RegisteredUser | RegisteredShipper)[];
+  setSelectedData: Dispatch<SetStateAction<(Orders | RegisteredUser | RegisteredShipper)[]>>;
   filterMenuIsOpen: boolean;
   handleClickFilterBtn: (event: React.MouseEvent<HTMLButtonElement>) => void;
   filterInformation: any;
