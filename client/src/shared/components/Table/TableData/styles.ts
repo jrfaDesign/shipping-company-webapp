@@ -8,35 +8,9 @@ interface CellProps {
 export const Container = styled.div`
   height: 100%;
   overflow: scroll;
-
-  .sticky-container {
-    background:white
-    position: sticky;
-    top: 0; /* Stick to the top of the container */
-    z-index: 1;
-  }
 `;
 
 export const OrdersTable = styled.div``;
-
-export const Header = styled.div<CellProps>`
-  margin: 0 auto;
-  width: 160px;
-  color: ${({ theme }) => theme.colors.lightBlue};
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-
-  display: flex;
-  align-items: center;
-
-  ${tablet} {
-    font-size: 16px;
-    padding: 5px 5px 5px 10px;
-    width: ${(props) => props.width ?? "160px"};
-  }
-`;
 
 export const OrderContainer = styled.div`
   display: flex;
@@ -73,6 +47,7 @@ export const OrderContainer = styled.div`
 `;
 
 export const Cell = styled.div<CellProps>`
+
   width:160px ;
   color: ${({ theme }) => theme.text}
   padding:2px 5px 2px 5px;
@@ -81,6 +56,13 @@ export const Cell = styled.div<CellProps>`
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+
+  &.header{
+    color: ${({ theme }) => theme.colors.lightBlue};
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
   
   ${tablet} {
     font-size: 16px;
@@ -94,18 +76,18 @@ export const Cell = styled.div<CellProps>`
     }
 
   .completed{
-      color: #4caf50;
-      background-color: rgba(76, 175, 80,0.1);
+      color: ${({ theme }) => theme.data.green};
+      background-color: ${({ theme }) => theme.data.green01};
 
   }
   .cancelled{
-      color: #F80A0A;
-      background-color: rgba(248, 10, 10,0.1);
+      color: ${({ theme }) => theme.data.red};
+      background-color: ${({ theme }) => theme.data.red01};
 
   }
   .on-the-road{
-      color: rgb(248, 197, 10);
-      background-color: rgba(248, 197, 10,0.1);
+      color: ${({ theme }) => theme.data.yellow};
+      background-color: ${({ theme }) => theme.data.yellow01};
   }
 
 `;

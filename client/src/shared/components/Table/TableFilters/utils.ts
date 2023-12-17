@@ -1,13 +1,16 @@
 export const getFilterOptions = (
-  tableType: "orders" | "users",
+  tableType: "orders" | "users" | "shippers",
   data: any,
   tableForAdmin: boolean | undefined
 ) => {
   if (tableType === "users") {
     return null;
   }
+  if (tableType === "shippers") {
+    return null;
+  }
   //TODO: get options one ** new option ** based on all orders.state
-  const allCitiesOptions = data.reduce((acc: any, current: any) => {
+  const allCitiesOptions = data?.reduce((acc: any, current: any) => {
     const stateExists = acc.some((item: any) => item.value === current.client.state);
 
     if (!stateExists) {
@@ -17,8 +20,8 @@ export const getFilterOptions = (
     return acc;
   }, []);
 
-  const allShippers = data.reduce((acc: any, current: any) => {
-    const shipperExists = acc.some((item: any) => item.value === current.shipper._id);
+  const allShippers = data?.reduce((acc: any, current: any) => {
+    const shipperExists = acc?.some((item: any) => item.value === current.shipper._id);
 
     if (!shipperExists) {
       acc.push({
@@ -30,8 +33,8 @@ export const getFilterOptions = (
     return acc;
   }, []);
 
-  allShippers.sort((a: any, b: any) => a.label.localeCompare(b.label));
-  allCitiesOptions.sort((a: any, b: any) => a.label.localeCompare(b.label));
+  allShippers?.sort((a: any, b: any) => a.label.localeCompare(b.label));
+  allCitiesOptions?.sort((a: any, b: any) => a.label.localeCompare(b.label));
 
   if (tableType === "orders") {
     const filterOptions = [

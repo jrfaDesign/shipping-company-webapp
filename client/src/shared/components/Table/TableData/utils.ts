@@ -9,6 +9,7 @@ interface TableColumn {
 export interface TableHeaders {
   orders?: TableColumn[];
   users?: TableColumn[];
+  shippers?: TableColumn[];
 }
 
 export const TABLE_HEADER: TableHeaders = {
@@ -30,10 +31,21 @@ export const TABLE_HEADER: TableHeaders = {
 
   users: [
     { label: "Id" },
-    { label: "Nome", width: "300px" },
+    { label: "Nome", width: "400px" },
     { label: "Contacto" },
-    { label: "Email", width: "450px" },
-    { label: "Empresa", width: "300px" }
+    { label: "Email", width: "500px" },
+    { label: "Empresa", width: "400px" }
+  ],
+
+  shippers: [
+    { label: "Id" },
+    { label: "Nome" },
+    { label: "Encomendas" },
+    { label: "Contacto" },
+    { label: "Email", width: "350px" },
+    { label: "Morada", width: "450px" },
+    { label: "Código Postal" },
+    { label: "Concelho" }
   ]
 };
 
@@ -61,9 +73,19 @@ export const KEY_TO_LABEL: KeyToLabel = {
   Morada: "client.deliveryAddress",
   "Código Postal": "client.zip",
   Cidade: "client.state",
-
   Nome: "name",
-  Empresa: "company"
+  Empresa: "company",
+  Encomendas: "orders",
+  Concelho: "state"
 };
 
-export const SORT_EXCEPTIONS = ["deliveryStatus", undefined];
+export const SORT_EXCEPTIONS = [
+  "deliveryStatus",
+  "client.deliveryAddress",
+  "state",
+  "address",
+  "zip",
+  "client.zip",
+  undefined
+];
+

@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 
-import { Orders, RegisteredUser } from "~/types/app";
+import { Order, RegisteredUser, RegisteredShipper } from "~/types/app";
+
+import { useNavigate } from "react-router-dom";
 
 import HorizontalScrollContainer from "~/shared/containers/HorizontalScrollContainer";
 
@@ -8,25 +10,20 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
-import { Container, OrdersTable, OrderContainer, Cell, Header } from "./styles";
-import {
-  KEY_TO_LABEL,
-  SORT_EXCEPTIONS,
-  STATUS_CLASS,
-  STATUS_LABEL,
-  TableHeaders,
-  TABLE_HEADER
-} from "./utils";
+import { Container, OrdersTable, OrderContainer, Cell } from "./styles";
+import { KEY_TO_LABEL, SORT_EXCEPTIONS, STATUS_CLASS, STATUS_LABEL, TABLE_HEADER } from "./utils";
 
 interface Props {
-  tableType: "orders" | "users";
+  tableType: "orders" | "users" | "shippers";
   tableForAdmin?: boolean;
-  data: (Orders | RegisteredUser)[];
+  data: (Order | RegisteredUser | RegisteredShipper)[];
 }
 
 const TableData = ({ tableType, tableForAdmin, data }: Props) => {
   const [sortState, setSortState] = useState<"asc" | "desc" | "unsorted">("unsorted");
   const [sortKey, setSortKey] = useState<string | null>(null);
+
+  const navigate = useNavigate();
 
   function formatDate(dateString: String) {
     const date = new Date(dateString as any);
@@ -100,11 +97,16 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
     } else return <ArrowRightIcon />;
   };
 
+  const handleRowSelection = (data: Order | RegisteredUser | RegisteredShipper) => {
+    const { _id } = data;
+    navigate(_id);
+  };
+
   return (
     <Container>
       <HorizontalScrollContainer width="100%" padding="0">
         <OrdersTable>
-          <OrderContainer className="sticky-container">
+          <OrderContainer>
             {(TABLE_HEADER[tableType] as any)
               .filter((header: any) => {
                 if (tableForAdmin) {
@@ -114,20 +116,21 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
                 }
               })
               .map((headerText: any) => (
-                <Header
+                <Cell
+                  className="header"
                   key={headerText.label}
                   width={headerText?.width}
                   onClick={() => sortData(headerText.label)}
                 >
                   {headerText.label}
                   {SortIcon(headerText.label)}
-                </Header>
+                </Cell>
               ))}
           </OrderContainer>
           {tableType === "orders" && (
             <>
               {sortedData.map((data: any) => (
-                <OrderContainer key={data._id}>
+                <OrderContainer key={data._id} onDoubleClick={() => handleRowSelection(data)}>
                   <Cell>{formatDate(data.requestedDate as any)}</Cell>
                   <Cell>
                     <span className={`status ${STATUS_CLASS[data.deliveryStatus]}`}>
@@ -152,15 +155,32 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
           {tableType === "users" && (
             <>
               {sortedData.map((data: any) => (
-                <OrderContainer key={data._id}>
+                <OrderContainer key={data._id} onDoubleClick={() => handleRowSelection(data)}>
                   <Cell>{data._id}</Cell>
-                  <Cell width="300px">
+                  <Cell width="400px">
                     {data.name} {data.lastName}
                   </Cell>
 
                   <Cell>{data.contact}</Cell>
-                  <Cell width="450px">{data.email ? data.email : " - "} </Cell>
-                  <Cell width="300px">{data.company}</Cell>
+                  <Cell width="500px">{data.email ? data.email : " - "} </Cell>
+                  <Cell width="400px">{data.company}</Cell>
+                </OrderContainer>
+              ))}
+            </>
+          )}
+          {tableType === "shippers" && (
+            <>
+              {sortedData.map((data: any) => (
+                <OrderContainer key={data._id} onDoubleClick={() => handleRowSelection(data)}>
+                  <Cell>{data._id}</Cell>
+                  <Cell>{data.name}</Cell>
+
+                  <Cell>{data.orders.length}</Cell>
+                  <Cell>{data.contact}</Cell>
+                  <Cell width="350px">{data.email ? data.email : " - "} </Cell>
+                  <Cell width="450px">{data.address}</Cell>
+                  <Cell>{data.zip}</Cell>
+                  <Cell>{data.state}</Cell>
                 </OrderContainer>
               ))}
             </>
@@ -172,3 +192,4 @@ const TableData = ({ tableType, tableForAdmin, data }: Props) => {
 };
 
 export default TableData;
+

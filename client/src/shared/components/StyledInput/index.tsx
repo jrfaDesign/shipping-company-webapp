@@ -18,6 +18,7 @@ interface Props {
   disabled?: boolean;
   guideLine?: string;
   width?: string;
+  placeholder?: string;
 }
 
 const StyledInput = ({
@@ -31,7 +32,8 @@ const StyledInput = ({
   onChange,
   disabled,
   guideLine,
-  width
+  width,
+  placeholder
 }: Props) => {
   return (
     <InputWrapper width={width}>
@@ -47,6 +49,7 @@ const StyledInput = ({
         multiline={multiline}
         onChange={onChange}
         disabled={disabled}
+        placeholder={placeholder}
       />
       {!error && !errorText && guideLine && <div className="guideLine">{guideLine}</div>}
     </InputWrapper>

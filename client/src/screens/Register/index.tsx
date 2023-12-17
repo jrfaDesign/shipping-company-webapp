@@ -6,16 +6,14 @@ import { useNavigate } from "react-router-dom";
 import StyledButton from "~/shared/components/Button";
 import Section from "~/shared/components/Section";
 import StyledInput from "~/shared/components/StyledInput";
-import Toast from "~/shared/components/Toast";
-import { DEFAULT_TOAST_VALUE } from "~/shared/components/Toast/utils";
 
 import { BASE_URL } from "~/config/variables";
 
-import { useUserStore } from "~/hooks/stores/user";
 import { validateEmail } from "~/hooks/globalHooks";
-import useToastStore from "~/hooks/stores/toast";
 
 import { Container, FormContainer, ButtonContainer, InputContainer } from "./styles";
+import { useAppDispatch, useAppSelector } from "~/store/hooks";
+import { showToast } from "~/store/features/toast/module";
 
 interface RegisterUserForm {
   name: string;
@@ -42,7 +40,8 @@ interface ToastOptionsProps {
 }
 
 const Register = () => {
-  const user = useUserStore((state) => state.user);
+  const dispatch = useAppDispatch();
+  const user = useAppSelector((state) => state.auth.user);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -59,8 +58,6 @@ const Register = () => {
   });
 
   const [formErrors, setFormErrors] = useState<FormErrorsProps>({});
-
-  const setToastOptions = useToastStore((state) => state.setToastOptions);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { id, value } = event.target;
@@ -122,11 +119,13 @@ const Register = () => {
 
         if (response.status === 200) {
           if (response.data.message === "Registo realizado com sucesso!") {
-            setToastOptions({
-              isVisible: true,
-              message: response.data.message,
-              severity: response.status
-            });
+            dispatch(
+              showToast({
+                isVisible: true,
+                message: response.data.message,
+                severity: response.status
+              })
+            );
             setRegisterForm({
               name: "",
               lastName: "",
@@ -137,21 +136,24 @@ const Register = () => {
             });
           } else {
             setFormErrors({ ...errors, email: "Utilizador já existe" });
-            setToastOptions({
-              isVisible: true,
-              message: response.data.message,
-              severity: response.status
-            });
+            dispatch(
+              showToast({
+                isVisible: true,
+                message: response.data.message,
+                severity: response.status
+              })
+            );
           }
           navigate("/login");
         }
       } catch (err) {
-        console.error(err);
-        setToastOptions({
-          isVisible: true,
-          message: "There was an error, try again later",
-          severity: "error"
-        });
+        dispatch(
+          showToast({
+            isVisible: true,
+            message: "There was an error, try again later",
+            severity: "error"
+          })
+        );
       }
     }
   };

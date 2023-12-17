@@ -6,7 +6,7 @@ interface InputWrapperProps {
 }
 
 export const InputWrapper = styled.div<InputWrapperProps>`
-  max-width: ${(props) => (props.width ? props.width : "100%")};
+  width: ${(props) => (props.width ? props.width : "100%")};
 
   .guideLine {
     color: ${(props) => props.theme.colors.lightBlue};

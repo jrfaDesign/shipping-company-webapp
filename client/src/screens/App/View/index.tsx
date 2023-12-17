@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { Route, Routes } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-
-import useDrawerStore from "~/hooks/stores/drawer";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import Error from "~/screens/404";
 import Header from "shared/containers/Header";
@@ -16,6 +13,7 @@ import { User as UserProps } from "~/types/app";
 import DrawerMenu from "~/shared/containers/DrawerMenu";
 import Login from "~/screens/Login";
 
+import { useAppSelector } from "~/store/hooks";
 import { useScreenWidth } from "~/hooks/globalHooks";
 
 interface Props {
@@ -24,7 +22,7 @@ interface Props {
 
 const View = ({ user }: Props) => {
   const [allRoutes, setAllRoutes] = useState<any>(null);
-  const isDrawerOpen = useDrawerStore((state) => state.drawerIsOpen);
+  const isDrawerOpen = useAppSelector((state) => state.drawer.isOpen);
   const screenWidth = useScreenWidth();
 
   const is404 = useLocation().pathname === "/404";

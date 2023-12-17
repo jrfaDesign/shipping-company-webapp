@@ -7,9 +7,14 @@ interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
-  width: ${(props) => (props.open ? "279px" : "20px")};
+  width: 20px;
+
   padding: ${(props) => (props.open ? "0px" : "20px 15px")};
   transition: all 0.2s ease;
+
+  ${laptop} {
+    width: ${(props) => (props.open ? "279px" : "20px")};
+  }
 `;
 
 export const DrawerHead = styled.div`
