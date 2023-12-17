@@ -1,34 +1,18 @@
-import React, { useEffect } from "react";
-
-import { useShippersStore } from "~/hooks/stores/shippers";
-
-import Loading from "~/shared/components/Loading";
+import React from "react";
 import FullPageWhiteContainer from "~/shared/containers/FullPageWhiteContainer";
+import ShipperForm from "../../Forms/ShipperForm";
 
-import UserForm from "../../Forms/UserForm";
-
-const UserCreationForm = () => {
-  const getShippers = useShippersStore((state) => state.fetchRegisteredShippers);
-  const isLoading = useShippersStore((state) => state.isLoading);
-
+const ShipperCreationForm = () => {
   const HEADER = {
-    title: "Novo utilizador",
-    goBackTo: "/utilizadores"
+    title: "Novo expeditor",
+    goBackTo: "/expeditores"
   };
 
-  useEffect(() => {
-    getShippers();
-  }, []);
-
-  if (isLoading) {
-    return <Loading />;
-  } else {
-    return (
-      <FullPageWhiteContainer header={HEADER}>
-        <UserForm />
-      </FullPageWhiteContainer>
-    );
-  }
+  return (
+    <FullPageWhiteContainer header={HEADER}>
+      <ShipperForm />
+    </FullPageWhiteContainer>
+  );
 };
 
-export default UserCreationForm;
+export default ShipperCreationForm;
